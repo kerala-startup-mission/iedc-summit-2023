@@ -130,7 +130,7 @@ export const iedcCircle = [
 export const prevSummits = [
   {
     date: "04 March 2023",
-    college: "Rajagiri School of Engineering & Technology",
+    college: "Rajagiri School of Engineering & Technology, Ernakulam",
     year: "2023",
     website: "https://2023.iedcsummit.in/",
   },
@@ -142,13 +142,13 @@ export const prevSummits = [
   },
   {
     date: "28-30 January 2021",
-    college: "Adi Shankara Institute of science and technology, Cochin",
+    college: "Adi Shankara Institute of science and technology, Ernakulam",
     year: "2021",
     website: "https://iedcsummit.in/2021/",
   },
   {
     date: "19 October 2019",
-    college: "Sahrdaya College of Engineering and Technology",
+    college: "Sahrdaya College of Engineering and Technology, Thrissur",
     year: "2019",
     website: "https://iedcsummit.in/2019/",
   },

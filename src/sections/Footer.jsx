@@ -21,7 +21,7 @@ export default function Footer() {
         component="footer"
         width="100%"
       >
-        <div class="grid">
+        <div class="grid text-center">
         <Grid container justifyContent="space-evenly" spacing="1%">
           <Grid item xs={12} sm={4} zeroMinWidth paddingBottom={7}>
             <Grid container justifyContent="space-evenly">
@@ -36,7 +36,7 @@ export default function Footer() {
               paddingLeft="4px"
               gutterBottom
             >
-              Kerala Startup Mission | Govenment of Kerala
+              Kerala Startup Mission
             </Typography>
             <Typography
               variant="body2"
@@ -67,23 +67,23 @@ export default function Footer() {
               <br /> 6238998379
             </Typography>
             <Link
-              href="https://www.facebook.com/"
+              href="https://www.facebook.com/keralastartupmission"
               color="#ababab"
               paddingLeft="4px"
             >
               <Facebook />
             </Link>
             <Link
-              href="https://www.instagram.com/"
+              href="https://www.instagram.com/keralastartupmission/"
               color="#ababab"
               sx={{ pl: 1, pr: 1 }}
             >
               <Instagram />
             </Link>
-            <Link href="https://www.twitter.com/" color="#ababab">
+            <Link href="https://twitter.com/startup_mission" color="#ababab">
               <Twitter />
             </Link>
-            <Link href="https://www.linkedin.com/" color="#ababab">
+            <Link href="https://in.linkedin.com/company/kerala-startup-mission" color="#ababab">
               <LinkedIn />
             </Link>
           </Grid>
@@ -111,7 +111,7 @@ export default function Footer() {
               paddingLeft="4px"
               gutterBottom
             >
-              Innovation and Entrepreneurship Development Centre | CET
+              IEDC | CET
             </Typography>
             <Typography
               variant="body2"

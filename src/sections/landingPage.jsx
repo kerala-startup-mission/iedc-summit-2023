@@ -5,6 +5,8 @@ import bg2 from "../assets/img/about/C2.png";
 import logo from "../assets/img/iedcSummit.png";
 import { useInView } from "react-intersection-observer";
 
+import Img from "../assets/img/iedcSummit.png";
+
 function LandingPage({ sectionRef }) {
   const { ref, inView, entry } = useInView({
     threshold: 0.5,
@@ -19,35 +21,38 @@ function LandingPage({ sectionRef }) {
         <img src={bg1} className="mb-[-5px]" />
         <img src={bg2} className="" />
       </div>
-      <div ref={ref} className={`font-dm-sans flex flex-col self-center items-center sm:items-start md:w-9/12 pb-24 pt-24 md:pt-28 md:pb-14 ${ inView ? 'opacity-1 translate-y-0' : 'opacity-0 translate-y-7' } transition duration-500`}>
-        <div className="flex flex-col sm:flex-row items-center pb-16">
+      <div ref={ref} className={`font-dm-sans flex flex-col self-center items-center sm:items-start md:w-9/12 pb-24 pt-24 md:pt-20 md:pb-14 ${ inView ? 'opacity-1 translate-y-0' : 'opacity-0 translate-y-7' } transition duration-500`}>
+        <div className="flex flex-col sm:flex-row items-center pb-8">
           
-          <div className="sm:order-1 flex flex-col items-center sm:items-start">
+          <img src={Img} className="w-72" />
+          {/* <div className="sm:order-1 flex flex-col items-center sm:items-start">
             <h1 className="font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl bg-gradient-to-b from-[#0597F2] to-[#6F04D9] bg-clip-text text-transparent pb-2">
               IEDC SUMMIT
             </h1>
             <h1 className="font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl bg-gradient-to-b from-[#2B394366] to-[#000000D6] bg-clip-text text-transparent">
               2023
             </h1>
-          </div>
+          </div> */}
         </div>
-        
+
+        <CountDown />
+
         <h1 className="font-bold text-2xl md:text-5xl text-[#0597F2] pb-4">
           OCTOBER 12
         </h1>
-        <h1 className="font-semibold text-xl md:text-3xl text-[#676C70] pb-0">
-          COLLEGE OF ENGINEERING,
-        </h1>
+
         <h1 className="font-semibold text-xl md:text-3xl text-[#676C70] pb-4">
-          TRIVANDRUM
+          COLLEGE OF ENGINEERING, TRIVANDRUM
         </h1>
-        <div className="flex items-center w-[232px] h-[58px] bg-[#0597F2] cursor-pointer rounded-[30px] hover:bg-gradient-to-tr from-[#0597F2] to-[#4656E1]">
-          <div className="font-bold text-white text-2xl justify-center mx-auto">
+      
+        <button onClick={ ()=> {
+            popup('iedc-summit-2023-230401');
+          }} className="flex items-center w-[232px] h-[58px] bg-[#0597F2] cursor-pointer rounded-[30px] hover:bg-gradient-to-tr from-[#0597F2] to-[#4656E1]">
+          <div   className="font-bold text-white text-2xl justify-center mx-auto">
             BUY TICKETS
           </div>
-        </div>
+        </button>
       </div>
-      <CountDown />
     </div>
   );
 }

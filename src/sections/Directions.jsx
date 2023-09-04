@@ -30,7 +30,15 @@ const App = ({ sectionRef }) => {
       <h1 className="font-medium md:font-[500] font-darker-grotesque text-5xl md:text-[60px]">Get Directions to the event</h1>
       <div className="flex flex-col mt-20 space-x-3 w-full space-y-10 custom2:flex-row">
         <div className="Maps w-full m-auto flex items-center justify-center">
-          <LoadScript googleMapsApiKey={apiKey}>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15782.081640228585!2d76.9063407!3d8.5458513!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05bec79541c519%3A0x98324eb5aafb3778!2sCollege%20of%20Engineering%20Trivandrum%20(CET)!5e0!3m2!1sen!2sin!4v1693841860889!5m2!1sen!2sin" 
+          width="600" 
+          height="450"
+          style={{ border: 0 }} 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+          {/* <LoadScript googleMapsApiKey={apiKey}>
             <GoogleMap
               mapContainerStyle={containerStyle}
               center={center}
@@ -38,7 +46,7 @@ const App = ({ sectionRef }) => {
             >
               <Marker position={center} />
             </GoogleMap>
-          </LoadScript>
+          </LoadScript> */}
         </div>
         <div className="flex flex-col p-0 w-full overflow-x-auto custom2:p-12">
           <nav>
