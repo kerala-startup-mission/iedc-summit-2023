@@ -35,25 +35,25 @@ function CountDown() {
 
   return (
     <div className="font-dm-sans mb-8 text-5xl lg:text-6xl font-normal bg-gradient-to-b from-blue-500 to-blue-900 text-white bg-clip-text w-[85vw] sm:w-[65vw] lg:w-[40vw] grid grid-cols-4 gap-5 justify-between">
-      <div className=" text-center py-5 rounded-2xl bg-gradient-to-b from-blue-500 to-blue-900">
+      <div className=" text-center py-5 px-3 rounded-2xl bg-gradient-to-b from-blue-500 to-blue-900">
         <h1>{days}</h1>
         <p className="font-bold text-white bg-clip-text text-xs lg:text-md">
           DAYS
         </p>
       </div>
-      <div className=" text-center py-5 rounded-2xl bg-gradient-to-b from-blue-500 to-blue-900 ">
+      <div className=" text-center py-5 px-3 rounded-2xl bg-gradient-to-b from-blue-500 to-blue-900 ">
         <h1>{hours}</h1>
         <p className="font-bold text-white bg-clip-text text-xs lg:text-md">
           HOURS
         </p>
       </div>
-      <div className="text-center py-5 rounded-2xl bg-gradient-to-b from-blue-500 to-blue-900">
+      <div className="text-center py-5 px-3 rounded-2xl bg-gradient-to-b from-blue-500 to-blue-900">
         <h1>{minutes}</h1>
         <p className="font-bold text-white bg-clip-text text-xs lg:text-md">
           MINUTES
         </p>
       </div>
-      <div className="text-center py-5 rounded-2xl bg-gradient-to-b from-blue-500 to-blue-900">
+      <div className="text-center py-5 px-3 rounded-2xl bg-gradient-to-b from-blue-500 to-blue-900">
         <h1>{seconds}</h1>
         <p className="font-bold text-white bg-clip-text text-xs lg:text-md">
           SECONDS
