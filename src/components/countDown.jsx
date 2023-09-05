@@ -36,27 +36,27 @@ function CountDown() {
   return (
     <div className="font-dm-sans mb-8 text-5xl lg:text-6xl font-normal bg-gradient-to-b from-blue-500 to-blue-900 text-white bg-clip-text w-[85vw] sm:w-[65vw] lg:w-[40vw] grid grid-cols-4 gap-5 justify-between">
       <div className=" text-center py-5 px-3 rounded-2xl bg-gradient-to-b from-blue-500 to-blue-900">
-        <h1>{days}</h1>
+        <h1 className="text-2xl md:text-6xl">{days}</h1>
         <p className="font-bold text-white bg-clip-text text-xs lg:text-md">
-          DAYS
+          DAY
         </p>
       </div>
       <div className=" text-center py-5 px-3 rounded-2xl bg-gradient-to-b from-blue-500 to-blue-900 ">
-        <h1>{hours}</h1>
+        <h1 className="text-2xl md:text-6xl">{hours}</h1>
         <p className="font-bold text-white bg-clip-text text-xs lg:text-md">
-          HOURS
+          HOUR
         </p>
       </div>
       <div className="text-center py-5 px-3 rounded-2xl bg-gradient-to-b from-blue-500 to-blue-900">
-        <h1>{minutes}</h1>
+        <h1 className="text-2xl md:text-6xl">{minutes}</h1>
         <p className="font-bold text-white bg-clip-text text-xs lg:text-md">
-          MINUTES
+          MIN
         </p>
       </div>
       <div className="text-center py-5 px-3 rounded-2xl bg-gradient-to-b from-blue-500 to-blue-900">
-        <h1>{seconds}</h1>
+        <h1 className="text-2xl md:text-6xl">{seconds}</h1>
         <p className="font-bold text-white bg-clip-text text-xs lg:text-md">
-          SECONDS
+          SEC
         </p>
       </div>
     </div>
