@@ -80,7 +80,7 @@ const App = ({ sectionRef }) => {
                       : "text-[#858585] underline"
                   }`}
                 >
-                  Petta
+                  Pettah
                 </button>
               </div>
             </div>
