@@ -34,12 +34,12 @@ function Navbar({ navbarItems }) {
   return (
     <nav
       className={`font-dm-sans font-[600] py-4 w-full self-center fixed top-0 z-50 transition-shadow transition-colors duration-500 ${
-        !blur && "bg-white shadow-[0px_4px_4px_0px_#00000017]"
+        !blur && "backdrop-blur-lg shadow-[0px_4px_4px_0px_#00000017]"
       } ${isDropDownOpen && "bg-white"}`}
     >
-      <div className="hidden md:flex md:justify-end container mx-auto px-10 space-x-10">
+      <div className="hidden md:flex md:justify-evenly">
         <a href="/" className="cursor-pointer">
-          {/* <StartupMissionLogo /> */}
+          <StartupMissionLogo />
         </a>
         {navbarItems.map((item, index) => (
           <a
