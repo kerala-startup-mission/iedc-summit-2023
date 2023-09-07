@@ -10,7 +10,7 @@ import KSUMlogo from "../assets/img/footer/KSUM logo.png";
 import IEDClogo from "../assets/img/footer/IEDC logo.png";
 import cetLogo from "../assets/img/footer/Cet_emblem.png";
 import IEDCcetLogo from "../assets/img/footer/IEDC CET logo.png";
-
+import Team from "../components/Team";
 
 export default function Footer() {
   return (
@@ -21,7 +21,7 @@ export default function Footer() {
         component="footer"
         width="100%"
       >
-        <div class="grid text-center">
+        <div class="grid">
         <Grid container justifyContent="space-evenly" spacing="1%">
           <Grid item xs={12} sm={4} zeroMinWidth paddingBottom={7}>
             <Grid container justifyContent="space-evenly">
@@ -36,7 +36,7 @@ export default function Footer() {
               paddingLeft="4px"
               gutterBottom
             >
-              Kerala Startup Mission
+              Kerala Startup Mission | Govenment of Kerala
             </Typography>
             <Typography
               variant="body2"
@@ -67,23 +67,23 @@ export default function Footer() {
               <br /> 6238998379
             </Typography>
             <Link
-              href="https://www.facebook.com/keralastartupmission"
+              href="https://www.facebook.com/"
               color="#ababab"
               paddingLeft="4px"
             >
               <Facebook />
             </Link>
             <Link
-              href="https://www.instagram.com/keralastartupmission/"
+              href="https://www.instagram.com/"
               color="#ababab"
               sx={{ pl: 1, pr: 1 }}
             >
               <Instagram />
             </Link>
-            <Link href="https://twitter.com/startup_mission" color="#ababab">
+            <Link href="https://www.twitter.com/" color="#ababab">
               <Twitter />
             </Link>
-            <Link href="https://in.linkedin.com/company/kerala-startup-mission" color="#ababab">
+            <Link href="https://www.linkedin.com/" color="#ababab">
               <LinkedIn />
             </Link>
           </Grid>
@@ -111,7 +111,7 @@ export default function Footer() {
               paddingLeft="4px"
               gutterBottom
             >
-              IEDC | CET
+              Innovation and Entrepreneurship Development Centre | CET
             </Typography>
             <Typography
               variant="body2"
@@ -173,8 +173,8 @@ export default function Footer() {
           <Typography variant="body2" color="#605d5d" align="center">
             {"Copyright © "}
             {new Date().getFullYear()}
-            <Link color="#ababab" href="https://your-website.com/"></Link>
             {"‎ Kerala Startup Mission. All Rights Reserved."}
+            <Team />  
           </Typography>
         </Container>
         </div>

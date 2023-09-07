@@ -1,6 +1,6 @@
-import Schedule from "./sections/Schedule";
-import Speakers from "./sections/Speakers";
-import Events from "./sections/Events";
+// import Schedule from "./sections/Schedule";
+// import Speakers from "./sections/Speakers";
+// import Events from "./sections/Events";
 import Calls from "./sections/Calls";
 import LandingPage from "./sections/landingPage";
 import AboutSummit from "./sections/AboutSummit";
@@ -9,18 +9,30 @@ import About from "./sections/About";
 import Footer from "./sections/Footer";
 import Directions from "./sections/Directions";
 import PrevSummut from "./sections/prevSummits";
-import Team from "./sections/Team";
-import { useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import Navbar from "./components/Navbar";
 import { VolunteerCalls } from "./data.js";
+import LoadingScreen from "./sections/loadingScreen";
+
 
 function App() {
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 8000)
+  }, [])
+
+
+
   const homeSectionRef = useRef(null);
   const aboutSectionRef = useRef(null);
   const speakersSectionRef = useRef(null);
   const eventsSectionRef = useRef(null);
   const venueSectionRef = useRef(null);
-
+  console.log(Calls);
   const navbarItems = [
     { text: "HOME", href: "#", sectionRef: homeSectionRef },
     { text: "ABOUT", href: "#about", sectionRef: aboutSectionRef },
@@ -30,22 +42,28 @@ function App() {
   ];
   return (
     <div className="flex flex-col justify-center items-center overflow-hidden">
-      <Navbar navbarItems={navbarItems} />
-      <LandingPage sectionRef={homeSectionRef} />
-      <AboutSummit sectionRef={aboutSectionRef} />
-      <IedcCircle />
-      <About />
-      <PrevSummut />
-      <Calls
-        title="Join Us"
-        button="Apply Now"
-        eventData={VolunteerCalls}
-        sectionRef={eventsSectionRef}
-        eventDescrition=""
-      />
-      <Directions sectionRef={venueSectionRef} />
-       
-      <Footer />
+      { loading ? (
+        <LoadingScreen />
+      ) : (
+        <>
+          <Navbar navbarItems={navbarItems} />
+          <LandingPage sectionRef={homeSectionRef} />
+          <AboutSummit sectionRef={aboutSectionRef} />
+          <IedcCircle />
+          <loadingScreen></loadingScreen>
+          <Calls
+            title="Join Us"
+            button="Apply Now"
+            eventData={VolunteerCalls}
+            sectionRef={eventsSectionRef}
+            eventDescrition=""
+          />
+          <PrevSummut />
+          <About />
+          <Directions sectionRef={venueSectionRef} />
+          <Footer />
+        </>
+      )}
     </div>
   );
 }
