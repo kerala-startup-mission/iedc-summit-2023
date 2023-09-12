@@ -12,7 +12,7 @@ import PrevSummut from "./sections/prevSummits";
 import { useState, useEffect, useRef } from "react";
 import Navbar from "./components/Navbar";
 import { joinUs } from "./data.js";
-import LoadingScreen from "./sections/loadingScreen";
+import LoadingScreen from "./sections/LoadingScreen";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -29,7 +29,6 @@ function App() {
   const speakersSectionRef = useRef(null);
   const eventsSectionRef = useRef(null);
   const venueSectionRef = useRef(null);
-  console.log(Calls);
   const navbarItems = [
     { text: "HOME", href: "#", sectionRef: homeSectionRef },
     { text: "ABOUT", href: "#about", sectionRef: aboutSectionRef },

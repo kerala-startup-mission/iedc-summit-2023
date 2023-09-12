@@ -77,9 +77,8 @@ const About = () => {
         ) : null
         }
       </div>
-
-      <div className={`w-10/12 xs:w-11/12 min-h-[80vh] ${ inViewTwo ? 'opacity-1 translate-y-0' : 'opacity-0 translate-y-7' } font-dm-sans lg:flex place-items-center transition duration-300`} ref={refTwo}>
-        <div className="flex-1 mb-8 md:mb-0">
+      <div className={`w-10/12 xs:w-11/12 min-h-[80vh] ${ inViewTwo ? 'opacity-1 translate-y-0' : 'opacity-0 translate-y-7' } font-dm-sans flex flex-col-reverse lg:flex-row place-items-center transition duration-300`} ref={refTwo}>
+        <div className="flex-1 mt-8 md:mt-0">
           <Paragraph
             header={aboutSections[1].header}
             heading={aboutSections[1].heading}
