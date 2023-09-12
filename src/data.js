@@ -1,4 +1,3 @@
-// import Alt from "./assets/img/speakers/sashi.jpg";
 import Alt from "./assets/img/noavatar.png";
 import nivedNarayanan from "./assets/img/teams/Nived Narayanan.jpg";
 import johnGeorge from "./assets/img/teams/John George.jpg";
@@ -166,7 +165,22 @@ export const prevSummits = [
 ];
 
 export const joinUs = [
-  
+  {
+    ticketTitle: "Student Product Showcase",
+    ticketImg: studentProd,
+    ticketDescription:
+      "Showcase your talents and your love for technology at the IEDC Summit 2023. Exhibit projects, Connect with mentors, investors and many more! Join us now!",
+    ticketLink:
+      "https://forms.gle/qtTdJAQetEniAT897",
+  },
+  {
+    ticketTitle: "Flea Market",
+    ticketImg: fleaMarket,
+    ticketDescription:
+      "Showcase and sell your products at Asia's biggest entrepreneurship event, the IEDC Summit 2023. Book your stalls now!",
+    ticketLink:
+      "https://forms.gle/qtTdJAQetEniAT897",
+  },
   {
     ticketTitle: "Start-ups",
     ticketImg: startupEng,
@@ -223,22 +237,6 @@ export const joinUs = [
       "https://docs.google.com/forms/d/e/1FAIpQLSdYnVS2-aLea81lRFJYJDtThaSGkN-VrQuNLTkrJ2hNLpM8KA/viewform?usp=sf_link",
   },
   {
-    ticketTitle: "Student Product Showcase",
-    ticketImg: studentProd,
-    ticketDescription:
-      "Showcase your talents and your love for technology at the IEDC Summit 2023. Exhibit projects, Connect with mentors, investors and many more! Join us now!",
-    ticketLink:
-      "https://forms.gle/qtTdJAQetEniAT897",
-  },
-  {
-    ticketTitle: "Flea Market",
-    ticketImg: fleaMarket,
-    ticketDescription:
-      "Showcase and sell your products at Asia's biggest entrepreneurship event, the IEDC Summit 2023. Book your stalls now!",
-    ticketLink:
-      "https://forms.gle/qtTdJAQetEniAT897",
-  },
-  {
     ticketTitle: "Volunteers",
     ticketImg: volunteers,
     ticketDescription:
@@ -246,7 +244,6 @@ export const joinUs = [
     ticketLink:
       "https://docs.google.com/forms/d/e/1FAIpQLSeHVP308qlb2O4f8095wB5XK4yTsRaWVbvex87RF-JT6m_e-w/viewform",
   },
-  
   {
     ticketTitle: "Campus Ambassador",
     ticketImg: campusAmb,

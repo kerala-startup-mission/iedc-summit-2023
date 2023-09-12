@@ -1,7 +1,6 @@
 import React from "react";
 import PreSumCard from "../components/prevSumCard";
 import VideoCard from "../components/videoCard";
-import Idea from "../assets/img/idea.gif";
 import { prevSummits } from "../data";
 import Summit from "../assets/img/Summit.jpg";
 
@@ -21,12 +20,10 @@ function prevSummut() {
           <PreSumCard summit={summit} key={index} />
         ))}
       </div>
-      <div className="sm:grid lg:grid-cols-3 sm:grid-cols-2 flex flex-col items-center gap-3 sm:justify-items-center">
+      <div className="sm:grid lg:grid-cols-3 sm:grid-cols-2 flex flex-col items-center gap-8 sm:justify-items-center">
         <VideoCard videoID={"fPmUPSigxrg"} />
         <VideoCard videoID={"k1wGLf7s5tA"} />
         <VideoCard videoID={"UqKGvZuhsCU"} />
-      </div>
-      <div className="sm:grid lg:grid-cols-3 sm:grid-cols-2 flex flex-col items-center gap-3 sm:justify-items-center">
         <VideoCard videoID={"jzyTX9SRTpk"} />
         <VideoCard videoID={"XrPAxDk_dM4"} />
         <img

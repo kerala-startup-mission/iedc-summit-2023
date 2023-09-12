@@ -16,10 +16,7 @@ function Navbar({ navbarItems }) {
       setIsDropDownOpen(false);
     };
     window.addEventListener("scroll", scrollHandler);
-
-    console.log(window.scrollY);
     scrollHandler();
-
     return () => {
       window.removeEventListener("scroll", scrollHandler);
     };
