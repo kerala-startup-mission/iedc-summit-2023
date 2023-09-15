@@ -1,6 +1,6 @@
 // import Schedule from "./sections/Schedule";
 // import Speakers from "./sections/Speakers";
-// import Events from "./sections/Events";
+import Events from "./sections/Events";
 import Calls from "./sections/Calls";
 import LandingPage from "./sections/landingPage";
 import AboutSummit from "./sections/AboutSummit";
@@ -11,7 +11,7 @@ import Directions from "./sections/Directions";
 import PrevSummut from "./sections/prevSummits";
 import { useState, useEffect, useRef } from "react";
 import Navbar from "./components/Navbar";
-import { joinUs } from "./data.js";
+import { joinUs ,eventData} from "./data.js";
 import LoadingScreen from "./sections/loadingScreen";
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 8000);
+    }, 1000);
   }, []);
 
   const homeSectionRef = useRef(null);
@@ -56,6 +56,13 @@ function App() {
           />
           <PrevSummut />
           <About />
+          <Events
+          title="Events"
+          button="Register Now"
+          eventData={eventData}
+          sectionRef={eventsSectionRef}
+          eventDescrition=""/>
+
           <Directions sectionRef={venueSectionRef} />
           <Footer />
         </>
