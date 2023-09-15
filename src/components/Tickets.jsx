@@ -3,7 +3,8 @@ import React, { useState } from "react";
 function Ticket(props) {
   const numberOfSquares = 14;
   const squares = [];
-  const { buttonTitle, eventName, eventDescription, eventLink } = props;
+  const { buttonTitle, eventName, eventImg, eventDescription, eventLink } =
+    props;
   for (let i = 0; i < numberOfSquares; i++) {
     squares.push(
       <div
@@ -14,8 +15,13 @@ function Ticket(props) {
   }
 
   return (
-    <div className=" mb-6  overflow-hidden relative flex flex-col h-[622px] bg-gradient-to-b from-[#17C4E8] to-[#0E79BE] w-[365.82px] rounded-[30px] ">
-      <div className="h-[234px] bg-white  self-center m-[19px]  w-11/12 rounded-[30px]"></div>
+    <div className=" mb-6  overflow-hidden relative flex flex-col h-[622px] 
+    bg-[#3866F2] hover:bg-gradient-to-br from-[#1687F2] to-[#5D25E1]
+    w-[365.82px] rounded-[30px]"
+    >
+      <div className="h-[234px] bg-white  self-center m-[19px]  w-11/12 rounded-[30px]">
+        <img src={eventImg} alt="mathew" className="rounded-[30px] w-full h-full " />
+      </div>
       <div className="self-center flex flex-row bg-lime- ">
         <div className="w-[38px] rotate-180  overflow-hidden">
           <div className="w-[75px] h-[75px] bg-white rounded-[75px]"></div>
@@ -36,10 +42,10 @@ function Ticket(props) {
         </div>
         <div className="justify-center flex">
         <a
-  href={eventLink}
-  target="_blank"
-  className="text-center font-[700] absolute bottom-5 text-xl font-extrabold w-[151px] h-[60px] bg-[#FFFFFF] shadow-md rounded-[30px] flex items-center justify-center"
->
+          href={eventLink}
+          target="_blank"
+          className="text-center font-[700] absolute bottom-5 text-xl font-extrabold w-[151px] h-[60px] bg-[#FFFFFF] shadow-md rounded-[30px] flex items-center justify-center hover:bg-[#E1F3FE]"
+        >
   {buttonTitle}
 </a>
 
