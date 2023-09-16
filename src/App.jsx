@@ -47,6 +47,12 @@ function App() {
           <AboutSummit sectionRef={aboutSectionRef} />
           <IedcCircle />
           <loadingScreen></loadingScreen>
+          <Events
+          title="Events"
+          button="Register Now"
+          eventData={eventData}
+          sectionRef={eventsSectionRef}
+          eventDescrition=""/>
           <Calls
             title="Join Us"
             button="Apply Now"
@@ -56,12 +62,7 @@ function App() {
           />
           <PrevSummut />
           <About />
-          <Events
-          title="Events"
-          button="Register Now"
-          eventData={eventData}
-          sectionRef={eventsSectionRef}
-          eventDescrition=""/>
+          
 
           <Directions sectionRef={venueSectionRef} />
           <Footer />
