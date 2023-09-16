@@ -25,6 +25,7 @@ import fleaMarket from "./assets/img/calls/fleaMarket.jpg"
 
 import mascotChallenge from "./assets/img/events/mascotChallenge.jpg"
 import excelAdvanced from "./assets/img/events/excelAdvanced.jpg"
+import aiMentalHealth from "./assets/img/events/AIMentalHealth.jpg"
 export const speakers = [
   {
     img: Alt,
@@ -312,14 +313,14 @@ export const TeamMembers = [
   },
 ];
 export const eventData=[
-  /*{
+  {
     ticketTitle: "Mascot Design Challenge",
     ticketImg: mascotChallenge,
     ticketDescription:
       "Design a mascot that embodies the concept of the 'Circle of Innovation'",
     ticketLink:
       "https://forms.gle/rjNuvLr6UK4M7SEs8",
-  }*/,
+  },
   {
     ticketTitle: "Advanced Excel Masterclass",
     ticketImg: excelAdvanced,
@@ -328,4 +329,10 @@ export const eventData=[
     ticketLink:
       "https://forms.gle/QyfJrPuQ5H3QFRYF9",
   },
+  {
+    ticketTitle: "AI in Mental Health",
+    ticketImg: aiMentalHealth,
+    ticketDescription: "",
+    ticketLink: "https://forms.gle/dLFZsJhaMzhWcDfNA"
+  }
   ]

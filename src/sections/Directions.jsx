@@ -50,14 +50,14 @@ const App = ({ sectionRef }) => {
         </div>
         <div className="flex flex-col p-0 w-full overflow-x-auto custom2:p-12">
           <nav>
-            <div className="container mx-auto ml-0 flex">
+            <div className="border-b-2 container mx-auto ml-0 flex">
               <div className="space-x-4 items-start text-4xl flex flex-wrap flex-row  font-darker-grotesque font-semibold custom1:flex-row custom2:flex-col custom2:items-center custom1:items-start">
                 <button
                   onClick={() => handleLinkClick("TVC")}
                   className={`nav-link  ml-0 custom2:ml-4 custom1:ml-0 ${
                     activeLink === "TVC"
-                      ? "text-[#09189C] underline"
-                      : "text-[#858585] underline"
+                      ? "text-[#3866F2] border-b-2 border-[#3866F2]"
+                      : "text-[#858585]"
                   }`}
                 >
                   TVC
@@ -66,8 +66,8 @@ const App = ({ sectionRef }) => {
                   onClick={() => handleLinkClick("Kochuveli")}
                   className={`nav-link ${
                     activeLink === "Kochuveli"
-                      ? "text-[#09189C] underline"
-                      : "text-[#858585] underline"
+                      ? "text-[#3866F2] border-b-2 border-[#3866F2]"
+                      : "text-[#858585]"
                   }`}
                 >
                   Kochuveli
@@ -76,8 +76,8 @@ const App = ({ sectionRef }) => {
                   onClick={() => handleLinkClick("Petta")}
                   className={`nav-link ${
                     activeLink === "Petta"
-                      ? "text-[#09189C] underline"
-                      : "text-[#858585] underline"
+                      ? "text-[#3866F2] border-b-2 border-[#3866F2]"
+                      : "text-[#858585]"
                   }`}
                 >
                   Pettah
