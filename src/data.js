@@ -26,6 +26,9 @@ import fleaMarket from "./assets/img/calls/fleaMarket.jpg"
 import mascotChallenge from "./assets/img/events/mascotChallenge.jpg"
 import excelAdvanced from "./assets/img/events/excelAdvanced.jpg"
 import aiMentalHealth from "./assets/img/events/AIMentalHealth.jpg"
+import gameDesign from "./assets/img/events/gameDesign.jpg"
+import shortFilm from "./assets/img/events/shortFilm.jpg"
+
 export const speakers = [
   {
     img: Alt,
@@ -334,5 +337,28 @@ export const eventData=[
     ticketImg: aiMentalHealth,
     ticketDescription: "",
     ticketLink: "https://forms.gle/dLFZsJhaMzhWcDfNA"
-  }
+  },
+  {
+    ticketTitle: "Game Character Design Workshop",
+    ticketImg: gameDesign,
+    ticketDescription: "Build your dream game world and characters with this fun and insightful workshop on game development. Register now!",
+    ticketLink: "https://forms.gle/FgZafxhtTZnPXb6y8"
+  },
+  {
+    ticketTitle: "VFX Workshop",
+    ticketImg: Alt,
+    ticketDescription: "Dive into the world of visual effects, learn the niches of visual design to make stunning effects and forge your career path in the industry. Join now!",
+    ticketLink: "https://forms.gle/dLFZsJhaMzhWcDfNA"
+  },{
+    ticketTitle: "Valorant Competition",
+    ticketImg: Alt,
+    ticketDescription: "Calling all ardent gamers! Show off your skills and get to the top of the table with this exciting Valorant competition organized just for you. Register now!",
+    ticketLink: "https://forms.gle/dLFZsJhaMzhWcDfNA"
+  },
+  {
+    ticketTitle: "Short Film Competition",
+    ticketImg: shortFilm,
+    ticketDescription: "Pick up your cameras, clean up your lenses and sell your story for a chance to be featured on the big screen. Join now",
+    ticketLink: "https://forms.gle/1YS17eGTL9w6M1JR8"
+  },
   ]
