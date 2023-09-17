@@ -342,19 +342,19 @@ export const eventData=[
     ticketTitle: "Game Character Design Workshop",
     ticketImg: gameDesign,
     ticketDescription: "Build your dream game world and characters with this fun and insightful workshop on game development. Register now!",
-    ticketLink: "https://forms.gle/FgZafxhtTZnPXb6y8"
+    ticketLink: "https://forms.gle/QzqGVnFJ7M9KutMP8"
   },
-  {
+ /* {
     ticketTitle: "VFX Workshop",
     ticketImg: Alt,
     ticketDescription: "Dive into the world of visual effects, learn the niches of visual design to make stunning effects and forge your career path in the industry. Join now!",
-    ticketLink: "https://forms.gle/dLFZsJhaMzhWcDfNA"
+    ticketLink: ""
   },{
     ticketTitle: "Valorant Competition",
     ticketImg: Alt,
     ticketDescription: "Calling all ardent gamers! Show off your skills and get to the top of the table with this exciting Valorant competition organized just for you. Register now!",
-    ticketLink: "https://forms.gle/dLFZsJhaMzhWcDfNA"
-  },
+    ticketLink: "https://forms.gle/xyVrApbt8pTN2Urv5"
+  },*/
   {
     ticketTitle: "Short Film Competition",
     ticketImg: shortFilm,
