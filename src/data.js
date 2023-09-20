@@ -172,7 +172,7 @@ export const prevSummits = [
 ];
 
 export const joinUs = [
-  {
+  { ticketButton: "Apply Now",
     ticketTitle: "Student Product Showcase",
     ticketImg: studentProd,
     ticketDescription:
@@ -180,7 +180,7 @@ export const joinUs = [
     ticketLink:
       "https://forms.gle/qtTdJAQetEniAT897",
   },
-  {
+  { ticketButton: "Apply Now",
     ticketTitle: "Flea Market",
     ticketImg: fleaMarket,
     ticketDescription:
@@ -188,7 +188,7 @@ export const joinUs = [
     ticketLink:
       "https://forms.gle/qtTdJAQetEniAT897",
   },
-  {
+  { ticketButton: "Apply Now",
     ticketTitle: "Start-ups",
     ticketImg: startupEng,
     ticketDescription:
@@ -196,7 +196,7 @@ export const joinUs = [
     ticketLink:
       "https://docs.google.com/forms/d/e/1FAIpQLSe8wz7WoImaqrtfjqZAA41vYCFV-RxlpO59bPtarNpJUQJUFw/viewform?usp=sf_link",
   },
-  {
+  { ticketButton: "Apply Now",
     ticketTitle: "Communities",
     ticketImg: communityEng,
     ticketDescription:
@@ -204,7 +204,7 @@ export const joinUs = [
     ticketLink:
       "https://docs.google.com/forms/d/e/1FAIpQLSeDPqNv3cvpsIMT4cYCY5SllVEVbvoUVYl-qGg-mGNLQPeOCg/viewform?usp=sf_link",
   },
-  {
+  { ticketButton: "Apply Now",
     ticketTitle: "Investors",
     ticketImg: invesrtorEng,
     ticketDescription:
@@ -212,14 +212,14 @@ export const joinUs = [
     ticketLink:
       "https://docs.google.com/forms/d/e/1FAIpQLScCdW_1haP3qJiGsduCVbl0T2QiH4CIz2qKaNXEI8-bkIOqWQ/viewform?usp=sf_link",
   },
-  {
+  { ticketButton: "Apply Now",
     ticketTitle: "Mentors ",
     ticketImg: mentorEng,
     ticketDescription: "Mold the young and aspiring innovators. Join us as a Mentor and be their guiding light!",
     ticketLink:
       "https://docs.google.com/forms/d/e/1FAIpQLScLPb79tRtdFEIhihjGqaRYJYzf-ULBn2jWyaAQFplEoX_kew/viewform?usp=sf_link",
   },
-  {
+  { ticketButton: "Apply Now",
     ticketTitle: "Corporates ",
     ticketImg: corporateEng,
     ticketDescription:
@@ -227,7 +227,7 @@ export const joinUs = [
     ticketLink:
       "https://docs.google.com/forms/d/e/1FAIpQLSfxsN-jncTmn_1kVCsEJijCH6V0n9_dLRo_wytVtroVc-3cPQ/viewform?usp=sf_link",
   },
-  {
+  { ticketButton: "Apply Now",
     ticketTitle: "Government Departments ",
     ticketImg: govtEng,
     ticketDescription:
@@ -235,7 +235,7 @@ export const joinUs = [
     ticketLink:
       "https://docs.google.com/forms/d/e/1FAIpQLScoI8Zb2A3bw0dp2WdRE0KunLXL2UbphSPW05FibqrC229bFQ/viewform?usp=sf_link",
   },
-  {
+  { ticketButton: "Apply Now",
     ticketTitle: "Industries ",
     ticketImg: industryEng,
     ticketDescription:
@@ -243,15 +243,15 @@ export const joinUs = [
     ticketLink:
       "https://docs.google.com/forms/d/e/1FAIpQLSdYnVS2-aLea81lRFJYJDtThaSGkN-VrQuNLTkrJ2hNLpM8KA/viewform?usp=sf_link",
   },
-  {
+  { ticketButton: "List Published",
     ticketTitle: "Volunteers",
     ticketImg: volunteers,
     ticketDescription:
       "Be the driving force behind innovation – Join our IEDC Summit Volunteering Team!",
     ticketLink:
-      "https://docs.google.com/forms/d/e/1FAIpQLSeHVP308qlb2O4f8095wB5XK4yTsRaWVbvex87RF-JT6m_e-w/viewform",
+      "https://docs.google.com/spreadsheets/d/1mb830MuWfnEwQ-vHTsTZDsnTquEBEdmQknfgtKUCHWg/edit?usp=drivesdk",
   },
-  {
+  { ticketButton: "Apply Now",
     ticketTitle: "Campus Ambassador",
     ticketImg: campusAmb,
     ticketDescription:
