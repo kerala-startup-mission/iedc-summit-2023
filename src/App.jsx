@@ -55,7 +55,7 @@ function App() {
           eventDescrition=""/>
           <Calls
             title="Join Us"
-            button="Apply Now"
+            
             eventData={joinUs}
             sectionRef={eventsSectionRef}
             eventDescrition=""

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 function callCard(props) {
   
-  const { buttonTitle, eventName, eventImg, eventDescription, eventLink } =
+  const { eventName, eventImg, eventDescription, eventLink, buttonTitle } =
     props;
 
   return (
