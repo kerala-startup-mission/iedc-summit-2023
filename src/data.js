@@ -28,6 +28,8 @@ import excelAdvanced from "./assets/img/events/excelAdvanced.jpg"
 import aiMentalHealth from "./assets/img/events/AIMentalHealth.jpg"
 import gameDesign from "./assets/img/events/gameDesign.jpg"
 import shortFilm from "./assets/img/events/shortFilm.jpg"
+import treasureHunt from "./assets/img/events/TreasureHunt.jpg"
+import uiWorkshop from "./assets/img/events/UIUX_workshop.jpg"
 
 export const speakers = [
   {
@@ -325,7 +327,7 @@ export const eventData=[
       "https://forms.gle/rjNuvLr6UK4M7SEs8",
   },
   {
-    ticketTitle: "Advanced Excel Masterclass",
+    ticketTitle: "Visualization using Power Bi and Excel",
     ticketImg: excelAdvanced,
     ticketDescription:
       "Learn, explore and advance your skills in data management and visualisation with this advanced excel and Power BI masterclass. Secure your spot now!",
@@ -355,6 +357,18 @@ export const eventData=[
     ticketDescription: "Calling all ardent gamers! Show off your skills and get to the top of the table with this exciting Valorant competition organized just for you. Register now!",
     ticketLink: "https://forms.gle/xyVrApbt8pTN2Urv5"
   },*/
+  
+  {
+    ticketTitle: "Treasure Hunt",
+    ticketImg:treasureHunt ,
+    ticketDescription: "Put on your detective hats and get ready for an enthralling experience as we set off for a treasure hunt like never before !",
+    ticketLink: ""
+  },{
+    ticketTitle: "UI UX E-commerce Workshop",
+    ticketImg: uiWorkshop,
+    ticketDescription: "Up your game with our UI/UX E-Commerce  workshop and get a kickstart to build your dream website !",
+    ticketLink: ""
+  },
   {
     ticketTitle: "Short Film Competition",
     ticketImg: shortFilm,
