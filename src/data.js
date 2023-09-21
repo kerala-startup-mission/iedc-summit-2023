@@ -327,7 +327,7 @@ export const eventData=[
       "https://forms.gle/rjNuvLr6UK4M7SEs8",
   },
   {
-    ticketTitle: "Visualization using Power Bi and Excel",
+    ticketTitle: "Visualisation using PowerBI",
     ticketImg: excelAdvanced,
     ticketDescription:
       "Learn, explore and advance your skills in data management and visualisation with this advanced excel and Power BI masterclass. Secure your spot now!",
@@ -343,8 +343,8 @@ export const eventData=[
   {
     ticketTitle: "Game Character Design Workshop",
     ticketImg: gameDesign,
-    ticketDescription: "Build your dream game world and characters with this fun and insightful workshop on game development. Register now!",
-    ticketLink: "https://forms.gle/QzqGVnFJ7M9KutMP8"
+    ticketDescription: "Certificates will be ready in 2-3 days. If you have any questions, feel free to reach out. Your patience is appreciated.",
+    ticketLink: ""
   },
  /* {
     ticketTitle: "VFX Workshop",

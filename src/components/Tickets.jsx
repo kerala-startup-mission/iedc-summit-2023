@@ -41,13 +41,16 @@ function Ticket(props) {
           </p>
         </div>
         <div className="justify-center flex">
-        <a
-          href={eventLink}
-          target="_blank"
-          className="text-center font-[700] absolute bottom-5 text-xl font-extrabold w-[151px] h-[60px] bg-[#FFFFFF] shadow-md rounded-[30px] flex items-center justify-center hover:bg-[#E1F3FE]"
-        >
-  {buttonTitle}
-</a>
+        {eventLink !== '' ? (
+          <a
+            href={eventLink}
+            target="_blank"
+            className="text-center font-[700] absolute bottom-5 text-xl font-extrabold w-[151px] h-[60px] bg-[#FFFFFF] shadow-md rounded-[30px] flex items-center justify-center hover:bg-[#E1F3FE]"
+          >
+            {buttonTitle}
+          </a>
+        ) : null}
+
 
         </div>
       </div>
