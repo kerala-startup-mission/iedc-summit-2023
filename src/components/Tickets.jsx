@@ -15,12 +15,17 @@ function Ticket(props) {
   }
 
   return (
-    <div className=" mb-6  overflow-hidden relative flex flex-col h-[622px] 
+    <div
+      className=" mb-6  overflow-hidden relative flex flex-col h-[622px] 
     bg-[#3866F2] hover:bg-gradient-to-br from-[#1687F2] to-[#5D25E1]
     w-[365.82px] rounded-[30px]"
     >
       <div className="h-[234px] bg-white  self-center m-[19px]  w-11/12 rounded-[30px]">
-        <img src={eventImg} alt="mathew" className="rounded-[30px] w-full h-full " />
+        <img
+          src={eventImg}
+          alt="event"
+          className="rounded-[30px] w-full h-full "
+        />
       </div>
       <div className="self-center flex flex-row bg-lime- ">
         <div className="w-[38px] rotate-180  overflow-hidden">
@@ -33,25 +38,23 @@ function Ticket(props) {
       </div>
       <div className="font-dm-sans">
         <div className="w-11/12 mx-auto  h-fit items-center  mx-auto">
-              <h1 className="font-[900] text-3xl leading-tight">
-                {eventName}
-              </h1>
-          <p className=" font-[300] text-[18px]">
-          {eventDescription}
-          </p>
+          <h1 className="font-[900] text-3xl leading-tight">{eventName}</h1>
+          <p className=" font-[300] text-[18px]">{eventDescription}</p>
         </div>
         <div className="justify-center flex">
-        {eventLink !== '' ? (
-          <a
-            href={eventLink}
-            target="_blank"
-            className="text-center font-[700] absolute bottom-5 text-xl font-extrabold w-[151px] h-[60px] bg-[#FFFFFF] shadow-md rounded-[30px] flex items-center justify-center hover:bg-[#E1F3FE]"
-          >
-            {buttonTitle}
-          </a>
-        ) : null}
-
-
+          {eventLink !== "" ? (
+            <a
+              href={eventLink}
+              target="_blank"
+              className="text-center font-[700] absolute bottom-5 text-xl font-extrabold w-[151px] h-[60px] bg-[#FFFFFF] shadow-md rounded-[30px] flex items-center justify-center hover:bg-[#E1F3FE]"
+            >
+              {buttonTitle}
+            </a>
+          ) : (
+            <h2 className="text-center font-[700] absolute bottom-8 text-2xl font-extrabold">
+              Event Closed
+            </h2>
+          )}
         </div>
       </div>
     </div>
