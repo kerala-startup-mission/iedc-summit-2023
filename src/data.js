@@ -336,7 +336,7 @@ export const eventData=[
     ticketTitle: "AI in Mental Health",
     ticketImg: aiMentalHealth,
     ticketDescription: "A student panel discussion. Learn from diverse perspectives and innovative solutions. Explore the future of mental health with today's bright minds.",
-    ticketLink: "https://forms.gle/dLFZsJhaMzhWcDfNA"
+    ticketLink: ""
   },
   {
     ticketTitle: "Game Character Design Workshop",
