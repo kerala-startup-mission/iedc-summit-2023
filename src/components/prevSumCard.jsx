@@ -81,7 +81,6 @@ function preSumCard({ summit }) {
               strokeLinejoin="round"
             />
           </svg>
-
           <p className="font-[400] text-[16px] sm:text-[20px]">{summit.date}</p>
         </span>
       </div>
