@@ -1,15 +1,15 @@
 import React from "react";
 function preSumCard({ summit }) {
   return (
-    <div className="w-full lg:w-1/4 p-3 px-4">
+    <a
+      className="w-full lg:w-1/4 p-3 px-4"
+      href={summit.website}
+      target="_blank"
+    >
       <div className="flex items-center">
-        <a
-          className="bg-gradient-to-br from-[#0597F2] to-[#6F04D9] bg-clip-text text-transparent font-[600] text-[40px] sm:text-[68px] mx-auto items-center"
-          href={summit.website}
-          target="_blank"
-        >
-        {summit.year}
-        </a>
+        <p className="bg-gradient-to-br from-[#0597F2] to-[#6F04D9] bg-clip-text text-transparent font-[600] text-[40px] sm:text-[68px] mx-auto items-center">
+          {summit.year}
+        </p>
       </div>
       <div className="flex flex-col justify-between lg:h-32">
         <span className="flex gap-5">
@@ -77,11 +77,10 @@ function preSumCard({ summit }) {
               strokeLinejoin="round"
             />
           </svg>
-
           <p className="font-[400] text-[16px] sm:text-[20px]">{summit.date}</p>
         </span>
       </div>
-    </div>
+    </a>
   );
 }
 export default preSumCard;
