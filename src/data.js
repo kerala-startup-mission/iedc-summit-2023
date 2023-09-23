@@ -28,6 +28,12 @@ import excelAdvanced from "./assets/img/events/excelAdvanced.jpg"
 import aiMentalHealth from "./assets/img/events/AIMentalHealth.jpg"
 import gameDesign from "./assets/img/events/gameDesign.jpg"
 import shortFilm from "./assets/img/events/shortFilm.jpg"
+import valoComp from "./assets/img/events/valorantCompetition.jpg"
+import metaMysteries from "./assets/img/events/metaMysteries.jpg"
+import disruptiveInfo from "./assets/img/events/disruptiveInformation.jpg"
+import exoskeleton from "./assets/img/events/exoskeleton.jpg"
+import uiux from "./assets/img/events/uiux.jpg"
+import vfx from "./assets/img/events/vfx.jpg"
 
 export const speakers = [
   {
@@ -325,12 +331,48 @@ export const eventData=[
       "https://forms.gle/rjNuvLr6UK4M7SEs8",
   },
   {
+    ticketTitle: "Meta Mysteries",
+    ticketImg: metaMysteries,
+    ticketDescription: "Put on your detective hats and get ready for an enthralling experience as we set off for a treasure hunt like never before !",
+    ticketLink: "https://forms.gle/w4aXPF2s8WoHfE2E7"
+  },
+  {
+    ticketTitle: "Disruptive Innovation",
+    ticketImg: disruptiveInfo,
+    ticketDescription: "Join us for a discussion on disruptive innovation, focusing on how start-ups are transforming traditional industries like transportation and healthcare, inspiring and challenging possibilities.",
+    ticketLink: "https://forms.gle/jRzTSDR94MDaun1w7"
+  },
+  {
     ticketTitle: "Visualisation using PowerBI",
     ticketImg: excelAdvanced,
     ticketDescription:
       "Learn, explore and advance your skills in data management and visualisation with this advanced excel and Power BI masterclass. Secure your spot now!",
     ticketLink:
       "https://forms.gle/QyfJrPuQ5H3QFRYF9",
+  },
+  {
+    ticketTitle: "UI/UX E-Commerce Workshop",
+    ticketImg: uiux,
+    ticketDescription: "Up your game with our UI/UX E-Commerce  workshop and get a kickstart to build your dream website !",
+    ticketLink: "https://forms.gle/qkaUjzpqZjJ9ttwM6"
+  },
+  {
+    ticketTitle: "Exploring the future of Lower limb exoskeletons workshop",
+    ticketImg: exoskeleton,
+    ticketDescription: 'Join our workshop on "Exploring the future of Lower Limb Exoskeletons," exploring how these advanced devices are revolutionizing accessibility and enhancing human potential.',
+    ticketLink: "https://forms.gle/N3gtuNyrLz3W1kieA"
+  },
+  {
+    ticketTitle: "Short Film Competition",
+    ticketImg: shortFilm,
+    ticketDescription: "Pick up your cameras, clean up your lenses and sell your story for a chance to be featured on the big screen. Join now",
+    ticketLink: "https://forms.gle/1YS17eGTL9w6M1JR8"
+  },
+  {
+    ticketTitle: "Valorant Competition",
+    ticketImg: valoComp,
+    ticketDescription: "Calling all ardent gamers! Show off your skills and get to the top of the table with this exciting Valorant competition organized just for you. Register now!",
+    ticketLink: "https://forms.gle/xyVrApbt8pTN2Urv5"
   },
   {
     ticketTitle: "AI in Mental Health",
@@ -348,17 +390,6 @@ export const eventData=[
     ticketTitle: "VFX Workshop",
     ticketImg: Alt,
     ticketDescription: "Dive into the world of visual effects, learn the niches of visual design to make stunning effects and forge your career path in the industry. Join now!",
-    ticketLink: ""
-  },{
-    ticketTitle: "Valorant Competition",
-    ticketImg: Alt,
-    ticketDescription: "Calling all ardent gamers! Show off your skills and get to the top of the table with this exciting Valorant competition organized just for you. Register now!",
-    ticketLink: "https://forms.gle/xyVrApbt8pTN2Urv5"
-  },*/
-  {
-    ticketTitle: "Short Film Competition",
-    ticketImg: shortFilm,
-    ticketDescription: "Pick up your cameras, clean up your lenses and sell your story for a chance to be featured on the big screen. Join now",
-    ticketLink: "https://forms.gle/1YS17eGTL9w6M1JR8"
-  },
+    ticketLink: "https://forms.gle/zUADrWtXpMo1yKDB7"
+  }, */
   ]
