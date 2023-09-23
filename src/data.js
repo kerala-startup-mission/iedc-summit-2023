@@ -28,8 +28,13 @@ import excelAdvanced from "./assets/img/events/excelAdvanced.jpg"
 import aiMentalHealth from "./assets/img/events/AIMentalHealth.jpg"
 import gameDesign from "./assets/img/events/gameDesign.jpg"
 import shortFilm from "./assets/img/events/shortFilm.jpg"
-import treasureHunt from "./assets/img/events/TreasureHunt.jpg"
-import uiWorkshop from "./assets/img/events/UIUX_workshop.jpg"
+import valoComp from "./assets/img/events/valorantCompetition.jpg"
+import metaMysteries from "./assets/img/events/metaMysteries.jpg"
+import disruptiveInfo from "./assets/img/events/disruptiveInformation.jpg"
+import exoskeleton from "./assets/img/events/exoskeleton.jpg"
+import uiux from "./assets/img/events/uiux.jpg"
+import vfx from "./assets/img/events/vfx.jpg"
+import masteringMarketing from "./assets/img/events/masteringMarketing.jpg"
 
 export const speakers = [
   {
@@ -327,6 +332,18 @@ export const eventData=[
       "https://forms.gle/rjNuvLr6UK4M7SEs8",
   },
   {
+    ticketTitle: "Meta Mysteries",
+    ticketImg: metaMysteries,
+    ticketDescription: "Put on your detective hats and get ready for an enthralling experience as we set off for a treasure hunt like never before !",
+    ticketLink: "https://forms.gle/w4aXPF2s8WoHfE2E7"
+  },
+  {
+    ticketTitle: "Disruptive Innovation",
+    ticketImg: disruptiveInfo,
+    ticketDescription: "Join us for a discussion on disruptive innovation, focusing on how start-ups are transforming traditional industries like transportation and healthcare, inspiring and challenging possibilities.",
+    ticketLink: "https://forms.gle/jRzTSDR94MDaun1w7"
+  },
+  {
     ticketTitle: "Visualisation using PowerBI",
     ticketImg: excelAdvanced,
     ticketDescription:
@@ -334,6 +351,44 @@ export const eventData=[
     ticketLink:
       "https://forms.gle/QyfJrPuQ5H3QFRYF9",
   },
+  {
+    ticketTitle: "VFX Workshop",
+    ticketImg: vfx,
+    ticketDescription: "Dive into the world of visual effects, learn the niches of visual design to make stunning effects and forge your career path in the industry. Join now!",
+    ticketLink: "https://forms.gle/zUADrWtXpMo1yKDB7"
+  },
+  {
+    ticketTitle: "Exploring the future of Lower limb exoskeletons workshop",
+    ticketImg: exoskeleton,
+    ticketDescription: '',
+    ticketLink: "https://forms.gle/N3gtuNyrLz3W1kieA"
+  },
+  {
+    ticketTitle: "Valorant Competition",
+    ticketImg: valoComp,
+    ticketDescription: "Calling all ardent gamers! Show off your skills and get to the top of the table with this exciting Valorant competition organized just for you. Register now!",
+    ticketLink: "https://forms.gle/xyVrApbt8pTN2Urv5"
+  },
+  {
+    ticketTitle: "UI/UX E-Commerce Workshop",
+    ticketImg: uiux,
+    ticketDescription: "Up your game with our UI/UX E-Commerce  workshop and get a kickstart to build your dream website !",
+    ticketLink: "https://forms.gle/qkaUjzpqZjJ9ttwM6"
+  },
+  {
+    ticketTitle: "Short Film Competition",
+    ticketImg: shortFilm,
+    ticketDescription: "Pick up your cameras, clean up your lenses and sell your story for a chance to be featured on the big screen. Join now",
+    ticketLink: "https://forms.gle/1YS17eGTL9w6M1JR8"
+  },
+  {
+    ticketTitle: "Marketing Workshop",
+    ticketImg: masteringMarketing,
+    ticketDescription: "Ready to supercharge student startups? Join our workshop on \"Addressing Student Startup Challenges\"! Ignite your startup journey! Don't miss this opportunity to conquer challenges and propel your startup forward.",
+    ticketLink: "https://forms.gle/81y3ZPVmWPKwJPFg9"
+  },
+
+
   {
     ticketTitle: "AI in Mental Health",
     ticketImg: aiMentalHealth,
@@ -345,34 +400,5 @@ export const eventData=[
     ticketImg: gameDesign,
     ticketDescription: "Certificates will be ready in 2-3 days. If you have any questions, feel free to reach out. Your patience is appreciated.",
     ticketLink: ""
-  },
- /* {
-    ticketTitle: "VFX Workshop",
-    ticketImg: Alt,
-    ticketDescription: "Dive into the world of visual effects, learn the niches of visual design to make stunning effects and forge your career path in the industry. Join now!",
-    ticketLink: ""
-  },{
-    ticketTitle: "Valorant Competition",
-    ticketImg: Alt,
-    ticketDescription: "Calling all ardent gamers! Show off your skills and get to the top of the table with this exciting Valorant competition organized just for you. Register now!",
-    ticketLink: "https://forms.gle/xyVrApbt8pTN2Urv5"
-  },*/
-  
-  {
-    ticketTitle: "Treasure Hunt",
-    ticketImg:treasureHunt ,
-    ticketDescription: "Put on your detective hats and get ready for an enthralling experience as we set off for a treasure hunt like never before !",
-    ticketLink: ""
-  },{
-    ticketTitle: "UI UX E-commerce Workshop",
-    ticketImg: uiWorkshop,
-    ticketDescription: "Up your game with our UI/UX E-Commerce  workshop and get a kickstart to build your dream website !",
-    ticketLink: ""
-  },
-  {
-    ticketTitle: "Short Film Competition",
-    ticketImg: shortFilm,
-    ticketDescription: "Pick up your cameras, clean up your lenses and sell your story for a chance to be featured on the big screen. Join now",
-    ticketLink: "https://forms.gle/1YS17eGTL9w6M1JR8"
   },
   ]
