@@ -11,7 +11,7 @@ function TeamCard({ member }) {
           <p className="text-2xl font-semibold">
             {member.name}
           </p>
-          <p className="text-xl lg:text-xl xl:text-2xl font-[300]">
+          <p className="text-xl lg:text-xl font-[300]">
             {member.role}
           </p>
         </div>

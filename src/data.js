@@ -282,7 +282,7 @@ export const TeamMembers = [
     image: mathewVK,
   },
   {
-    name: "John George",
+    name: "John George Chelamattom",
     role: "FullStack Developer",
     image: johnGeorge,
   },
