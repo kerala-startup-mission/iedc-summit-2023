@@ -1,184 +1,68 @@
 import React from "react";
-import Container from "@mui/material/Container";
-import Typography from "@mui/material/Typography";
-import Link from "@mui/material/Link";
-import { Box } from "@mui/material";
-import { Grid, Divider } from "@mui/material";
-import { Facebook, Instagram, Twitter, LinkedIn } from "@mui/icons-material";
-import "../assets/css/footer.css";
+
 import KSUMlogo from "../assets/img/footer/KSUM logo.png";
 import IEDClogo from "../assets/img/footer/IEDC logo.png";
 import cetLogo from "../assets/img/footer/Cet_emblem.png";
 import IEDCcetLogo from "../assets/img/footer/IEDC CET logo.png";
 import Team from "../components/Team";
 
-export default function Footer() {
+const Footer = () => {
   return (
-    
-      <Box
-        backgroundColor="#1f1f1f"
-        paddingTop="50px"
-        component="footer"
-        width="100%"
-      >
-        <div className="grid">
-        <Grid container justifyContent="space-evenly" spacing="1%">
-          <Grid item xs={12} sm={4} zeroMinWidth paddingBottom={7}>
-            <Grid container justifyContent="space-evenly">
-              <img src={KSUMlogo} className=" h-24 w-30" />
-              <img src={IEDClogo} className=" h-28 w-30" />
-            </Grid>
+    <footer className="w-full bg-[#1f1f1f] pt-16">
+      <div className="container mx-auto">
+        <div className="flex flex-col md:flex-row">
+          {/* First Grid Item */}
+          <div className="flex w-1/2 p-5  flex-col">
+            <div className="flex flex-wrap ">
+              <img src={KSUMlogo} className="h-24 w-30" alt="KSUM Logo" />
+              <img src={IEDClogo} className="h-28 w-30" alt="IEDC Logo" />
+            </div>
+            <div className="text-white ">
+              <p className="text-base">Kerala Startup Mission | Government of Kerala</p>
+              <p className="text-sm text-gray-300 pb-20">G3B, Thejaswini, Technopark Campus<br />Kariavattom, Trivandrum, Kerala, 695581</p>
+              <p className="text-base text-gray-300">For Queries:</p>
+              <p className="text-base text-white">iedckerala@startupmission.in</p>
+              <p className="text-base text-white pt-5 pb-7">Bergin Russel<br />iedckerala@startupmission.in<br />6238998379</p>
+              <a href="https://www.facebook.com/" className="text-gray-300 pl-4">Facebook</a>
+              <a href="https://www.instagram.com/" className="text-gray-300 pl-1 pr-1">Instagram</a>
+              <a href="https://www.twitter.com/" className="text-gray-300">Twitter</a>
+              <a href="https://www.linkedin.com/" className="text-gray-300">LinkedIn</a>
+            </div>
+          </div>
 
-            <Typography
-              variant="body1"
-              color="#ffffff"
-              paddingTop="10px"
-              paddingLeft="4px"
-              gutterBottom
-            >
-              Kerala Startup Mission | Govenment of Kerala
-            </Typography>
-            <Typography
-              variant="body2"
-              color="#ababab"
-              paddingBottom="20px"
-              paddingLeft="4px"
-            >
-              G3B, Thejaswini, Technopark Campus
-              <br /> Kariavattom, Trivandrum, Kerala, 695581
-            </Typography>
+          {/* Divider */}
+          <div className="md:block hidden border-l border-gray-300"></div>
 
-            <Typography variant="body1" color="#ababab" paddingLeft="4px">
-              For Queries:
-            </Typography>
-            <Typography variant="body1" color="#ffffff" paddingLeft="4px">
-              iedckerala@startupmission.in
-            </Typography>
-            <Typography
-              variant="body1"
-              color="#ffffff"
-              paddingTop="20px"
-              paddingBottom="30px"
-              paddingLeft="4px"
-              gutterBottom
-            >
-              Bergin Russel
-              <br /> iedckerala@startupmission.in
-              <br /> 6238998379
-            </Typography>
-            <Link
-              href="https://www.facebook.com/"
-              color="#ababab"
-              paddingLeft="4px"
-            >
-              <Facebook />
-            </Link>
-            <Link
-              href="https://www.instagram.com/"
-              color="#ababab"
-              sx={{ pl: 1, pr: 1 }}
-            >
-              <Instagram />
-            </Link>
-            <Link href="https://www.twitter.com/" color="#ababab">
-              <Twitter />
-            </Link>
-            <Link href="https://www.linkedin.com/" color="#ababab">
-              <LinkedIn />
-            </Link>
-          </Grid>
-
-          <Divider
-            orientation="vertical"
-            color="#ababab"
-            flexItem
-            sx={{ display: { xs: "none", sm: "block" } }}
-          />
-
-          <Grid item xs={12} sm={4} zeroMinWidth paddingBottom={7}>
-            <Grid container justifyContent="space-evenly">
-              <img src={cetLogo} className=" h-24 w-28" />
-              <img
-                src={IEDCcetLogo}
-                className=" h-24 w-30"
-                style={{ paddingTop: 10 }}
-              />
-            </Grid>
-            <Typography
-              variant="body1"
-              color="#ffffff"
-              paddingTop="10px"
-              paddingLeft="4px"
-              gutterBottom
-            >
-              Innovation and Entrepreneurship Development Centre | CET
-            </Typography>
-            <Typography
-              variant="body2"
-              color="#ababab"
-              paddingBottom="20px"
-              paddingLeft="4px"
-            >
-              College of Engineering Trivandrum,
-              <br /> Sreekaryam, Thiruvananathapuram, Kerala, 695016
-            </Typography>
-
-            <Typography variant="body1" color="#ababab" paddingLeft="4px">
-              For Queries:
-              <br />
-            </Typography>
-            <Typography variant="body1" color="#ffffff" paddingLeft="4px">
-              iedcsummit@cet.ac.in
-            </Typography>
-            <Typography
-              variant="body1"
-              color="#ffffff"
-              paddingTop="20px"
-              paddingBottom="30px"
-              paddingLeft="4px"
-              gutterBottom
-            >
-              IEDC CET
-              <br /> iedc@cet.ac.in
-              <br /> +91 9995620503
-            </Typography>
-            <Link
-              href="https://www.facebook.com/iedccet/"
-              color="#ababab"
-              paddingLeft="4px"
-            >
-              <Facebook />
-            </Link>
-            <Link
-              href="https://www.instagram.com/iedc_cet/?hl=en"
-              color="#ababab"
-              sx={{ pl: 1, pr: 1 }}
-            >
-              <Instagram />
-            </Link>
-            <Link href="https://twitter.com/CetIedc" color="#ababab">
-              <Twitter />
-            </Link>
-            <Link href="https://www.linkedin.com/company/innovation-and-entrepreneurship-development-cell-cet/?originalSubdomain=in" color="#ababab">
-              <LinkedIn />
-            </Link>
-          </Grid>
-        </Grid>
-        <Container
-          width="100%"
-          sx={{
-            p: 3,
-          }}
-        >
-          <Typography variant="body2" color="#605d5d" align="center">
-            {"Copyright © "}
-            {new Date().getFullYear()}
-            {"‎ Kerala Startup Mission. All Rights Reserved."}
-            <Team />  
-          </Typography>
-        </Container>
+          {/* Second Grid Item */}
+          <div className="flex w-1/2 p-5 flex-col">
+            <div className="flex space-x-4">
+              <img src={cetLogo} className="h-24 w-28" alt="CET Logo" />
+              <img src={IEDCcetLogo} className="h-24 w-30" alt="IEDC CET Logo" style={{ paddingTop: 10 }} />
+            </div>
+            <div className="text-white pt-10 pl-4">
+              <p className="text-base">Innovation and Entrepreneurship Development Centre | CET</p>
+              <p className="text-sm text-gray-300 pb-20">College of Engineering Trivandrum, Sreekaryam, Thiruvananathapuram, Kerala, 695016</p>
+              <p className="text-base text-gray-300">For Queries:</p>
+              <p className="text-base text-white">iedcsummit@cet.ac.in</p>
+              <p className="text-base text-white pt-5 pb-7">IEDC CET<br />iedc@cet.ac.in<br />+91 9995620503</p>
+              <a href="https://www.facebook.com/iedccet/" className="text-gray-300 pl-4">Facebook</a>
+              <a href="https://www.instagram.com/iedc_cet/?hl=en" className="text-gray-300 pl-1 pr-1"></a>
+              <a href="https://twitter.com/CetIedc" className="text-gray-300"></a>
+              <a href="https://www.linkedin.com/company/innovation-and-entrepreneurship-development-cell-cet/?originalSubdomain=in" className="text-gray-300">LinkedIn</a>
+            </div>
+          </div>
         </div>
-      </Box>
-    
+
+        {/* Copyright */}
+        <div className="pt-12">
+          <p className="text-sm text-gray-600 text-center">
+            &copy; {new Date().getFullYear()} Kerala Startup Mission. All Rights Reserved.
+          </p>
+          {/* Include the 'Team' component if needed */}
+        </div>
+      </div>
+    </footer>
   );
 }
+
+export default Footer;
