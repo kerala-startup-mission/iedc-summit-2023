@@ -9,7 +9,6 @@ function App() {
     <Routes>
       <Route path="/" element={<MainPage/>}/>
       <Route path="/LeaderBoard" element={<LeaderboardPage/>}/>
-      
     </Routes>
   </Router>
     
