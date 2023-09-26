@@ -46,7 +46,7 @@ function mainPage() {
           <Navbar navbarItems={navbarItems} />
           <LandingPage sectionRef={homeSectionRef} />
           <AboutSummit sectionRef={aboutSectionRef} />
-          {/* <Tshirt /> */}
+          <Tshirt /> 
           <IedcCircle />
           <loadingScreen></loadingScreen>
           <Events
