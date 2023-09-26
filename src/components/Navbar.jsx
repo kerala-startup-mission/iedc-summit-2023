@@ -14,7 +14,6 @@ function Navbar({ navbarItems }) {
     const scrollPrgress = (winScroll / height) * 100;
 
     setScroll(scrollPrgress);
-    console.log(scrollPrgress);
   }
 
   useEffect(() => {

@@ -3,7 +3,6 @@ import { TeamMembers } from "../data";
 import TeamCard from "../components/TeamCard";
 
 function Team() {
-  console.log("hello");
   return (
     <div className="relative font-dm-sans  flex flex-col overflow-auto  p-5" style={{height: '75vh'}}>
       <div className="w-11/12 space-y-6 text-center self-center flex flex-col  bg-[#C9D9E8]" >

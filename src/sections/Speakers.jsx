@@ -84,32 +84,6 @@ function Speakers({ sectionRef }) {
       </div>
     </div>
   );
-  // } else {
-  //   return (
-  //     <div className="my-5">
-  //       <div className="font-darker-grotesque text-5xl text-black text-center font-semibold">
-  //         <h1>The Speakers</h1>
-  //       </div>
-  //       <Swiper
-  //         spaceBetween={50}
-  //         slidesPerView={1}
-  //         onSlideChange={() => console.log("slide change")}
-  //         onSwiper={(swiper) => console.log(swiper)}
-  //         className="bg-gray-300"
-  //       >
-  //         {speakers.map((speaker) => (
-  //           <SwiperSlide>
-  //             <Speaker speaker={speaker} key={speaker.name} />
-  //           </SwiperSlide>
-  //         ))}
-  //         {/* <SwiperSlide>Slide 1</SwiperSlide>
-  //         <SwiperSlide>Slide 2</SwiperSlide>
-  //         <SwiperSlide>Slide 3</SwiperSlide>
-  //         <SwiperSlide>Slide 4</SwiperSlide> */}
-  //       </Swiper>
-  //     </div>
-  //   );
-  // }
 }
 
 export default Speakers;
