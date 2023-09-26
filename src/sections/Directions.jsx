@@ -1,21 +1,5 @@
 import React, { useState } from "react";
 
-import { GoogleMap, Marker, LoadScript } from "@react-google-maps/api";
-
-const containerStyle = {
-  width: "600px",
-  height: "400px",
-  borderRadius: "10px",
-  boxShadow: "5px 5px 10px rgba(0, 0, 0, 0.1)",
-};
-
-const center = {
-  lat: 8.546137753741851,
-  lng: 76.90639433950193,
-};
-
-const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
-
 const App = ({ sectionRef }) => {
   const [activeLink, setActiveLink] = useState("TVC");
   const [content, setContent] = useState("TVC");
