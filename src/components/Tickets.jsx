@@ -16,14 +16,14 @@ function Ticket(props) {
 
   return (
     <div
-      className=" mb-6  overflow-hidden relative flex flex-col h-[622px] 
+      className="flex-none mb-6  overflow-hidden relative flex flex-col h-[622px] 
     bg-[#3866F2] hover:bg-gradient-to-br from-[#1687F2] to-[#5D25E1]
     w-[365.82px] rounded-[30px]"
     >
       <div className="h-[234px] bg-white  self-center m-[19px]  w-11/12 rounded-[30px]">
         <img
           src={eventImg}
-          alt="event"
+          alt="mathew"
           className="rounded-[30px] w-full h-full "
         />
       </div>
@@ -47,14 +47,11 @@ function Ticket(props) {
               href={eventLink}
               target="_blank"
               className="text-center font-[700] absolute bottom-5 text-xl font-extrabold w-[151px] h-[60px] bg-[#FFFFFF] shadow-md rounded-[30px] flex items-center justify-center hover:bg-[#E1F3FE]"
+              rel="noreferrer"
             >
               {buttonTitle}
             </a>
-          ) : (
-            <h2 className="text-center font-[700] absolute bottom-8 text-2xl font-extrabold">
-              Event Closed
-            </h2>
-          )}
+          ) : null}
         </div>
       </div>
     </div>

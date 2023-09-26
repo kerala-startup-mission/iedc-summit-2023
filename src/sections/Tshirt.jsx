@@ -1,13 +1,7 @@
 import React from "react";
 import TshirtVector from "../assets/img/tshirt.png";
 
-// import { useMediaQuery } from "react-responsive";
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import "swiper/css";
-
 function Tshirt() {
-  // const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
-  // if (!isMobile) {
   return (
     <div className="relative w-full flex  h-[578px]  ">
       <div className="absolute left-[35%] w-1/3 h-full z-10 ">
