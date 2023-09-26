@@ -21,7 +21,7 @@ const Footer = () => {
             </div>
             <div className="text-white w-full">
               <p className="text-base">
-                Kerala Startup Mission | Govenment of Kerala
+                Kerala Startup Mission | Government of Kerala
               </p>
               <p className="text-sm text-gray-300 pb-5">
                 G3B, Thejaswini, Technopark Campus

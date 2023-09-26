@@ -35,6 +35,7 @@ import exoskeleton from "./assets/img/events/exoskeleton.jpg"
 import uiux from "./assets/img/events/uiux.jpg"
 import vfx from "./assets/img/events/vfx.jpg"
 import masteringMarketing from "./assets/img/events/masteringMarketing.jpg"
+import bestIedcChallenge from "./assets/img/events/BestIedcChallenge.jpg"
 
 export const speakers = [
   {
@@ -268,8 +269,6 @@ export const joinUs = [
   },
 ];
 
-
-
 export const TeamMembers = [
   {
     name: "Nived Narayanan",
@@ -322,6 +321,7 @@ export const TeamMembers = [
     image: ajayGosh,
   },
 ];
+
 export const eventData=[
   {
     ticketTitle: "Mascot Design Challenge",
@@ -330,6 +330,12 @@ export const eventData=[
       "Design a mascot that embodies the concept of the 'Circle of Innovation'",
     ticketLink:
       "https://forms.gle/rjNuvLr6UK4M7SEs8",
+  },
+  {
+    ticketTitle: "Best IEDC Challenge",
+    ticketImg: bestIedcChallenge,
+    ticketDescription: "Raise the Banner for IEDC Summit 2023: A Challenge for the Best Campaigner!",
+    ticketLink: "https://drive.google.com/drive/folders/1444YhNt1AavjOU57biL8crfsxFeCCPDv?usp=drive_link"
   },
   {
     ticketTitle: "Meta Mysteries",
@@ -387,8 +393,6 @@ export const eventData=[
     ticketDescription: "Ready to supercharge student startups? Join our workshop on \"Addressing Student Startup Challenges\"! Ignite your startup journey! Don't miss this opportunity to conquer challenges and propel your startup forward.",
     ticketLink: "https://forms.gle/81y3ZPVmWPKwJPFg9"
   },
-
-
   {
     ticketTitle: "AI in Mental Health",
     ticketImg: aiMentalHealth,
@@ -401,4 +405,4 @@ export const eventData=[
     ticketDescription: "Certificates will be ready in 2-3 days. If you have any questions, feel free to reach out. Your patience is appreciated.",
     ticketLink: ""
   },
-  ]
+]
