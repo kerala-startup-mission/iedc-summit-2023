@@ -2,8 +2,9 @@ import React, { useState } from "react";
 
 function Ticket(props) {
   const numberOfSquares = 14;
+  const buttonTitleArray=["Register Now","Event Completed","Registrations Closed","Forthcoming Results"]
   const squares = [];
-  const { buttonTitle, eventName, eventImg, eventDescription, eventLink } =
+  const { eventName, eventImg, eventDescription, eventLink ,eventButton} =
     props;
   for (let i = 0; i < numberOfSquares; i++) {
     squares.push(
@@ -42,16 +43,25 @@ function Ticket(props) {
           <p className=" font-[300] text-[18px]">{eventDescription}</p>
         </div>
         <div className="justify-center flex">
-          {eventLink !== "" ? (
+          {eventButton == 0 ? (
             <a
               href={eventLink}
               target="_blank"
               className="text-center font-[700] absolute bottom-5 text-xl font-extrabold w-[151px] h-[60px] bg-[#FFFFFF] shadow-md rounded-[30px] flex items-center justify-center hover:bg-[#E1F3FE]"
               rel="noreferrer"
             >
-              {buttonTitle}
+              {buttonTitleArray[0]}
             </a>
-          ) : null}
+          ) : (
+            <a
+              
+              
+              className="text-center font-[700] absolute bottom-5 text-xl font-extrabold w-[151px] h-[60px]  shadow-md rounded-[30px] flex items-center justify-center"
+              rel="noreferrer"
+            >
+              {buttonTitleArray[eventButton]}
+            </a>
+          )}
         </div>
       </div>
     </div>

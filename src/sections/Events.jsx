@@ -25,11 +25,12 @@ function Events(props) {
           eventData.map((ticket, index) => (
             <Tickets
               key={index}
-              buttonTitle={button}
+              
               eventName={ticket.ticketTitle}
               eventImg={ticket.ticketImg}
               eventDescription={ticket.ticketDescription}
               eventLink={ticket.ticketLink}
+              eventButton={ticket.ticketButton}
             />
           ))}
       </div>

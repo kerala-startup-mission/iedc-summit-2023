@@ -111,8 +111,7 @@ const App = ({ sectionRef }) => {
                 <p className="font-semibold pr-12 text-xl text-[#605D5D] font-darker-grotesque">
                   Pettah Railway Station - Pettah bus stop (Board Chavadimukku
                   bus) - Chavadimukku Junction Stop (Final Stop) - CET
-                  <br/>
-                  <strong>R6Q9Y2M1Z8X5A3B7</strong>
+                  
                 </p>
               </div>
             )}
