@@ -322,87 +322,104 @@ export const TeamMembers = [
   },
 ];
 
-export const eventData=[
-  {
-    ticketTitle: "Mascot Design Challenge",
-    ticketImg: mascotChallenge,
-    ticketDescription:
-      "Design a mascot that embodies the concept of the 'Circle of Innovation'",
-    ticketLink:
-      "https://forms.gle/rjNuvLr6UK4M7SEs8",
-  },
+export const eventData = [
   {
     ticketTitle: "Best IEDC Challenge",
     ticketImg: bestIedcChallenge,
     ticketDescription: "Raise the Banner for IEDC Summit 2023: A Challenge for the Best Campaigner!",
-    ticketLink: "https://drive.google.com/drive/folders/1444YhNt1AavjOU57biL8crfsxFeCCPDv?usp=drive_link"
-  },
-  {
-    ticketTitle: "Meta Mysteries",
-    ticketImg: metaMysteries,
-    ticketDescription: "Put on your detective hats and get ready for an enthralling experience as we set off for a treasure hunt like never before !",
-    ticketLink: "https://forms.gle/w4aXPF2s8WoHfE2E7"
-  },
-  {
-    ticketTitle: "Disruptive Innovation",
-    ticketImg: disruptiveInfo,
-    ticketDescription: "Join us for a discussion on disruptive innovation, focusing on how start-ups are transforming traditional industries like transportation and healthcare, inspiring and challenging possibilities.",
-    ticketLink: "https://forms.gle/jRzTSDR94MDaun1w7"
-  },
-  {
-    ticketTitle: "Visualisation using PowerBI",
-    ticketImg: excelAdvanced,
-    ticketDescription:
-      "Learn, explore and advance your skills in data management and visualisation with this advanced excel and Power BI masterclass. Secure your spot now!",
-    ticketLink:
-      "https://forms.gle/QyfJrPuQ5H3QFRYF9",
-  },
-  {
-    ticketTitle: "VFX Workshop",
-    ticketImg: vfx,
-    ticketDescription: "Dive into the world of visual effects, learn the niches of visual design to make stunning effects and forge your career path in the industry. Join now!",
-    ticketLink: "https://forms.gle/zUADrWtXpMo1yKDB7"
+    ticketLink: "https://drive.google.com/drive/folders/1444YhNt1AavjOU57biL8crfsxFeCCPDv?usp=drive_link",
+    ticketButton: 0
   },
   {
     ticketTitle: "Exploring the future of Lower limb exoskeletons workshop",
     ticketImg: exoskeleton,
     ticketDescription: '',
-    ticketLink: "https://forms.gle/N3gtuNyrLz3W1kieA"
+    ticketLink: "https://forms.gle/N3gtuNyrLz3W1kieA",
+    ticketButton: 0
   },
   {
     ticketTitle: "Valorant Competition",
     ticketImg: valoComp,
-    ticketDescription: "Calling all ardent gamers! Show off your skills and get to the top of the table with this exciting Valorant competition organized just for you. Register now!",
-    ticketLink: "https://forms.gle/xyVrApbt8pTN2Urv5"
+    ticketDescription: "Calling all ardent gamers! Show off your skills and get to the top of the table with this exciting Valorant competition organized just for you. Register now!",
+    ticketLink: "https://forms.gle/xyVrApbt8pTN2Urv5",
+    ticketButton: 0
   },
   {
     ticketTitle: "UI/UX E-Commerce Workshop",
     ticketImg: uiux,
-    ticketDescription: "Up your game with our UI/UX E-Commerce  workshop and get a kickstart to build your dream website !",
-    ticketLink: "https://forms.gle/qkaUjzpqZjJ9ttwM6"
+    ticketDescription: "Up your game with our UI/UX E-Commerce  workshop and get a kickstart to build your dream website!",
+    ticketLink: "https://forms.gle/qkaUjzpqZjJ9ttwM6",
+    ticketButton: 0
   },
   {
     ticketTitle: "Short Film Competition",
     ticketImg: shortFilm,
     ticketDescription: "Pick up your cameras, clean up your lenses and sell your story for a chance to be featured on the big screen. Join now",
-    ticketLink: "https://forms.gle/1YS17eGTL9w6M1JR8"
+    ticketLink: "https://forms.gle/1YS17eGTL9w6M1JR8",
+    ticketButton: 0
+  },
+  {
+    ticketTitle: "Best IEDC Challenge",
+    ticketImg: bestIedcChallenge,
+    ticketDescription: "Raise the Banner for IEDC Summit 2023: A Challenge for the Best Campaigner!",
+    ticketLink: "https://drive.google.com/drive/folders/1444YhNt1AavjOU57biL8crfsxFeCCPDv?usp=drive_link",
+    ticketButton: 0
   },
   {
     ticketTitle: "Marketing Workshop",
     ticketImg: masteringMarketing,
-    ticketDescription: "Ready to supercharge student startups? Join our workshop on \"Addressing Student Startup Challenges\"! Ignite your startup journey! Don't miss this opportunity to conquer challenges and propel your startup forward.",
-    ticketLink: "https://forms.gle/81y3ZPVmWPKwJPFg9"
+    ticketDescription: "Ready to supercharge student startups? Join our workshop on \"Addressing Student Startup Challenges\"! Ignite your startup journey! Don't miss this opportunity to conquer challenges and propel your startup forward.",
+    ticketLink: "https://forms.gle/81y3ZPVmWPKwJPFg9",
+    ticketButton: 0
+  },
+  {
+    ticketTitle: "Meta Mysteries",
+    ticketImg: metaMysteries,
+    ticketDescription: "Put on your detective hats and get ready for an enthralling experience as we set off for a treasure hunt like never before !",
+    ticketLink: "https://forms.gle/w4aXPF2s8WoHfE2E7",
+    ticketButton: 1
+  },
+  {
+    ticketTitle: "Disruptive Innovation",
+    ticketImg: disruptiveInfo,
+    ticketDescription: "Join us for a discussion on disruptive innovation, focusing on how start-ups are transforming traditional industries like transportation and healthcare, inspiring and challenging possibilities.",
+    ticketLink: "https://forms.gle/jRzTSDR94MDaun1w7",
+    ticketButton: 1
   },
   {
     ticketTitle: "AI in Mental Health",
     ticketImg: aiMentalHealth,
     ticketDescription: "A student panel discussion. Learn from diverse perspectives and innovative solutions. Explore the future of mental health with today's bright minds.",
-    ticketLink: ""
+    ticketLink: "",
+    ticketButton: 1
   },
   {
     ticketTitle: "Game Character Design Workshop",
     ticketImg: gameDesign,
     ticketDescription: "Certificates will be ready in 2-3 days. If you have any questions, feel free to reach out. Your patience is appreciated.",
-    ticketLink: ""
+    ticketLink: "",
+    ticketButton: 1
   },
-]
+  {
+    ticketTitle: "Visualisation using PowerBI",
+    ticketImg: excelAdvanced,
+    ticketDescription: "Learn, explore and advance your skills in data management and visualisation with this advanced excel and Power BI masterclass. Secure your spot now!",
+    ticketLink: "https://forms.gle/QyfJrPuQ5H3QFRYF9",
+    ticketButton: 2
+  },
+  {
+    ticketTitle: "VFX Workshop",
+    ticketImg: vfx,
+    ticketDescription: "Dive into the world of visual effects, learn the niches of visual design to make stunning effects and forge your career path in the industry. Join now!",
+    ticketLink: "https://forms.gle/zUADrWtXpMo1yKDB7",
+    ticketButton: 2
+  },
+  
+  {
+    ticketTitle: "Mascot Design Challenge",
+    ticketImg: mascotChallenge,
+    ticketDescription: "Design a mascot that embodies the concept of the 'Circle of Innovation'",
+    ticketLink: "https://forms.gle/rjNuvLr6UK4M7SEs8",
+    ticketButton: 3
+  }
+];
