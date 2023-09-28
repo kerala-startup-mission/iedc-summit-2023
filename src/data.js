@@ -328,11 +328,11 @@ export const eventData = [
     ticketTitle: "Best IEDC Challenge",
     ticketImg: bestIedcChallenge,
     ticketDescription: "Raise the Banner for IEDC Summit 2023: A Challenge for the Best Campaigner!",
-    ticketLink: "https://drive.google.com/drive/folders/1444YhNt1AavjOU57biL8crfsxFeCCPDv?usp=drive_link",
+    ticketLink: "https://forms.gle/LaW3bUeuR86JN98A8",
     ticketButton: 0
   },
   {
-    ticketTitle: "Exploring SKetchUp",
+    ticketTitle: "Exploring SketchUp",
     ticketImg: sketchUp,
     ticketDescription: "Gear up for an exciting new learning opportunity, presented to you by IEDC CET, the 3D modelling workshop, Exploring SketchUp !",
     ticketLink: "https://forms.gle/Lm7yHT7FHbYRiynM9",
