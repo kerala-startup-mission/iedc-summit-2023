@@ -18,7 +18,7 @@ function Ticket(props) {
   return (
     <div
       className="flex-none mb-6  overflow-hidden relative flex flex-col h-[622px] 
-    bg-[#3866F2] hover:bg-gradient-to-br from-[#1687F2] to-[#5D25E1]
+    bg-[#189AFF] hover:bg-gradient-to-br from-[#1869ff] to-[#812dd4]
     w-[365.82px] rounded-[30px]"
     >
       <div className="h-[234px] bg-white  self-center m-[19px]  w-11/12 rounded-[30px]">
@@ -47,7 +47,7 @@ function Ticket(props) {
             <a
               href={eventLink}
               target="_blank"
-              className="text-center font-[700] absolute bottom-5 text-xl font-extrabold w-[151px] h-[60px] bg-[#FFFFFF] shadow-md rounded-[30px] flex items-center justify-center hover:bg-[#E1F3FE]"
+              className="text-center font-[700] absolute bottom-5 text-xl font-extrabold w-[151px] h-[60px] bg-[#FFFFFF] shadow-md rounded-[30px] flex items-center justify-center hover:bg-[#E1F3FE] hover:border-[#0E79BE] hover:border-4"
               rel="noreferrer"
             >
               {buttonTitleArray[0]}
