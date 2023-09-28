@@ -366,13 +366,7 @@ export const eventData = [
     ticketLink: "https://forms.gle/1YS17eGTL9w6M1JR8",
     ticketButton: 0
   },
-  {
-    ticketTitle: "Best IEDC Challenge",
-    ticketImg: bestIedcChallenge,
-    ticketDescription: "Raise the Banner for IEDC Summit 2023: A Challenge for the Best Campaigner!",
-    ticketLink: "https://drive.google.com/drive/folders/1444YhNt1AavjOU57biL8crfsxFeCCPDv?usp=drive_link",
-    ticketButton: 0
-  },
+  
   {
     ticketTitle: "Marketing Workshop",
     ticketImg: masteringMarketing,
