@@ -22,7 +22,7 @@ function Events(props) {
 
 
   return (
-    <div className="mt-4 bg-zinc-200 w-full flex justify-center">
+    <div className="mt-4 bg-zinc-100 w-full flex justify-center">
 
     
     <div
