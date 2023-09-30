@@ -14,6 +14,7 @@ function LandingPage({ sectionRef }) {
 
   const [modal, setModal] = useState(false);
   const toggleModal = () => {
+    document.body.style.overflow = modal ? "unset" : "hidden";
     setModal(!modal);
   };
   return (
@@ -60,15 +61,15 @@ function LandingPage({ sectionRef }) {
               Grab Your Tickets
             </a>
           </div>
-          {/* <button
+          <button
             className="border-2 border-[#0698F3] rounded-[30px] px-4 py-2 text-2xl text-[#0698F3] font-bold hover:bg-gradient-to-br from-[#0597F2] to-[#6F04D9] hover:text-white"
             onClick={toggleModal}
           >
             OFFICIAL MERCH
-          </button> */}
+          </button>
         </div>
       </div>
-      {/* {modal && (<Tshirt toggleModal={toggleModal} />)} */}
+      {modal && (<Tshirt toggleModal={toggleModal} />)}
     </div>
   );
 }
