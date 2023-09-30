@@ -11,8 +11,9 @@ import Directions from "../sections/Directions";
 import PrevSummut from "../sections/prevSummits";
 import { useState, useEffect, useRef } from "react";
 import Navbar from "../components/Navbar";
-import { joinUs ,eventData} from "../data";
+import { joinUs , faqData ,eventData} from "../data";
 import LoadingScreen from "../sections/LoadingScreen";
+import FAQ from "../sections/FAQ";
 
 function mainPage() {
   const [loading, setLoading] = useState(false);
@@ -62,6 +63,7 @@ function mainPage() {
           <PrevSummut />
           <About />
           <Directions sectionRef={venueSectionRef} />
+          <FAQ faqData={faqData}/>
           <Footer />
         </>
       )}
