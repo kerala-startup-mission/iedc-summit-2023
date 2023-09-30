@@ -21,9 +21,9 @@ function callCard(props) {
         </div>
         <div className="justify-center flex h-full relative w-full">
           <a
-            href={eventLink}
+            href=""
             target="_blank"
-            className="text-center absolute border-[1px] border-black bottom-2  lg:right-2 lg:right-11 text-md font-medium w-[151px] h-8 rounded-md flex items-center justify-center bg-white hover:bg-gradient-to-tr from-[#0597F2] to-[#6F04D9] hover:text-white hover:border-0"
+            className="text-center absolute border-[1px] border-black bottom-2  lg:right-2 lg:right-11 text-md font-medium w-[151px] h-8 rounded-md flex items-center justify-center bg-gray-200 "
             rel="noreferrer"
           >
             {buttonTitle}
