@@ -19,7 +19,7 @@ const Footer = () => {
               <img src={KSUMlogo} className="h-24 md:w-30" alt="KSUM Logo" />
               <img src={IEDClogo} className="h-28 md:w-30" alt="IEDC Logo" />
             </div>
-            <div className="text-white w-full">
+            <div className="text-white xl:w-[530px] lg:w-[400px]">
               <p className="text-base">
                 Kerala Startup Mission | Government of Kerala
               </p>
