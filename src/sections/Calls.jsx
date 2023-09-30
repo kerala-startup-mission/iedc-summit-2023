@@ -1,9 +1,32 @@
-import React from "react";
+import React,{useEffect,useState} from "react";
 import CallCard from "../components/callsCard";
 import "../assets/css/textBackdrop.css";
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules';
 
 function Calls(props) {
   const { title, sectionRef, eventData, eventDescription } = props;
+  const [slides, setSlidesPerView] = useState(3);
+  useEffect(() => {
+    const handleResize = () => {
+      const screenWidth = window.innerWidth;
+       if (screenWidth <= 650) {
+        setSlidesPerView(1);
+      }
+      else if (screenWidth <= 768) {
+        setSlidesPerView(2);
+      } else if (screenWidth <= 1024) {
+        setSlidesPerView(3);
+      } else {
+        setSlidesPerView(4);
+      }
+    };handleResize();
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <div
@@ -24,18 +47,33 @@ function Calls(props) {
         </p>
       </div>
       <div className="w-5/6space-x-5 flex md:flex-wrap overflow-x-auto scroll-smooth gap-16 md:gap-0 pb-8 md:justify-evenly horiz-scroll">
-        {eventData &&
+      <Swiper
+      spaceBetween={0}
+      slidesPerView={slides}
+      pagination={{
+        clickable: true,
+        
+      }}
+      
+      modules={[Pagination]}
+      
+    
+     
+      
+    >
+{eventData &&
           eventData.length > 0 &&
           eventData.map((ticket, index) => (
-            <CallCard
+            <SwiperSlide  ><CallCard
               key={index}
               buttonTitle="Closed"
               eventImg={ticket.ticketImg}
               eventName={ticket.ticketTitle}
               eventDescription={ticket.ticketDescription}
               eventLink={ticket.ticketLink}
-            />
+            /></SwiperSlide>
           ))}
+          </Swiper>
       </div>
     </div>
   );
