@@ -38,6 +38,11 @@ import masteringMarketing from "./assets/img/events/masteringMarketing.jpg"
 import bestIedcChallenge from "./assets/img/events/BestIedcChallenge.jpg"
 import sketchUp from "./assets/img/events/sketchUp.jpg"
 import photoComp from "./assets/img/events/photoComp.png"
+import autocad from "./assets/img/events/Autocad.jpg"
+import cricket from "./assets/img/events/Cricket.jpg"
+import fashion from "./assets/img/events/Fashionshow.jpg"
+import warehouse from "./assets/img/events/SmartwareHouse.jpg"
+
 
 export const speakers = [
   {
@@ -375,14 +380,7 @@ export const eventData = [
     ticketButton: 0,
     sectionId:1
   },
-  {
-    ticketTitle: "Short Film Competition",
-    ticketImg: shortFilm,
-    ticketDescription: "Pick up your cameras, clean up your lenses and sell your story for a chance to be featured on the big screen. Join now",
-    ticketLink: "https://forms.gle/1YS17eGTL9w6M1JR8",
-    ticketButton: 0,
-    sectionId:2
-  },
+  
   {
     ticketTitle: "Marketing Workshop",
     ticketImg: masteringMarketing,
@@ -405,6 +403,53 @@ export const eventData = [
     ticketLink: "https://forms.gle/N3gtuNyrLz3W1kieA",
     ticketButton: 0
   },
+  
+  {
+    ticketTitle: "Cricket Auction",
+    ticketImg: cricket,
+    ticketDescription: "Is cricket more than just a game for you?  Then come join us with your team. It's Auction time. Bid the best teams at the best price",
+    ticketLink: "https://forms.gle/A1UVwCxEzeDuT2w19",
+    ticketButton: 0,
+    sectionId:1
+  },
+  {
+    ticketTitle: "Workshop on basics of AutoCAD 2D & 3D  and Revit",
+    ticketImg: autocad,
+    ticketDescription: "Upgrade your technical drawing and engineering skills with two of the best computer-aided design software.",
+    ticketLink: "https://forms.gle/6HNN1PEexPLiUUwe9",
+    ticketButton: 0,
+    sectionId:1
+  },
+  {
+    ticketTitle: "SMART WAREHOUSE COMPETITION",
+    ticketImg: warehouse,
+    ticketDescription: "Leverage your technical expertise to automate an entire warehouse to enhance productivity, optimize time and minimize errors.",
+    ticketLink: "https://forms.gle/oedFzsjHJaTkayzY6",
+    ticketButton: 0,
+    sectionId:1
+  },
+
+  {
+    ticketTitle: "Short Film Competition",
+    ticketImg: shortFilm,
+    ticketDescription: "Pick up your cameras, clean up your lenses and sell your story for a chance to be featured on the big screen. Join now",
+    ticketLink: "https://forms.gle/1YS17eGTL9w6M1JR8",
+    ticketButton: 0,
+    sectionId:2
+  },
+  
+  {
+    ticketTitle: "FASHION SHOW",
+    ticketImg: fashion,
+    ticketDescription: "Explore the realms of unconventional style and create a fashion story showcasing exceptional designs through mesmerizing choreography.",
+    ticketLink: "https://forms.gle/CZemJLRU37ifaS689",
+    ticketButton: 0,
+    sectionId:2
+  },
+
+
+
+
   {
     ticketTitle: "Meta Mysteries",
     ticketImg: metaMysteries,
@@ -461,5 +506,10 @@ export const eventData = [
     ticketLink: "https://forms.gle/rjNuvLr6UK4M7SEs8",
     ticketButton: 3,
     sectionId:1
-  }
+  },
+
+
+
+  
+
 ];
