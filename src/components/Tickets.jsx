@@ -10,7 +10,7 @@ function Ticket(props) {
     squares.push(
       <div
         key={i}
-        className="shadow-inner  border-2 bg-zinc-200 w-[15px] h-[15px] rounded-[15px] mr-2"
+        className="shadow-inner  border-2 bg-zinc-100 w-[15px] h-[15px] rounded-[15px] mr-2"
       ></div>
     );
   }
@@ -23,7 +23,7 @@ function Ticket(props) {
     w-[350px] rounded-[30px] "
 
     >
-      <div className="h-[50%]  shadow-2xl shadow-blue-100  border border-2 rounded-[20px]  w-full self-center     rounded-t-[30px]">
+      <div className="h-[50%]   shadow-2xl shadow-blue-100  border border-2 rounded-[20px]  w-full self-center     rounded-t-[30px]">
         <img
           src={eventImg}
           alt="mathew"
@@ -35,11 +35,11 @@ function Ticket(props) {
       <div className="h-[50%] ">
         <div className=" flex flex-row h-[25%] items-center  mx-auto">
           <div className="w-[38px]  rotate-180  overflow-hidden">
-            <div className="shadow-inner  w-[75px] bg-zinc-200 h-[75px] bg-white rounded-[75px]"></div>
+            <div className="shadow-inner  w-[75px] bg-zinc-100 h-[75px] bg-white rounded-[75px]"></div>
           </div>
           <div className="ml-2 my-auto mx-auto flex">{squares}</div>
           <div className="w-[38px]   overflow-hidden">
-            <div className="shadow-inner w-[75px] bg-zinc-200 h-[75px] bg-white rounded-[75px]"></div>
+            <div className="shadow-inner w-[75px] bg-zinc-100 h-[75px] bg-white rounded-[75px]"></div>
           </div>
 
         </div>

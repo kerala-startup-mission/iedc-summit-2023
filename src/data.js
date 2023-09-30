@@ -38,6 +38,11 @@ import masteringMarketing from "./assets/img/events/masteringMarketing.jpg"
 import bestIedcChallenge from "./assets/img/events/BestIedcChallenge.jpg"
 import sketchUp from "./assets/img/events/sketchUp.jpg"
 import photoComp from "./assets/img/events/photoComp.png"
+import autocad from "./assets/img/events/Autocad.jpg"
+import cricket from "./assets/img/events/Cricket.jpg"
+import fashion from "./assets/img/events/Fashionshow.jpg"
+import warehouse from "./assets/img/events/SmartWarehouse.jpg"
+
 
 export const speakers = [
   {
@@ -375,14 +380,7 @@ export const eventData = [
     ticketButton: 0,
     sectionId:1
   },
-  {
-    ticketTitle: "Short Film Competition",
-    ticketImg: shortFilm,
-    ticketDescription: "Pick up your cameras, clean up your lenses and sell your story for a chance to be featured on the big screen. Join now",
-    ticketLink: "https://forms.gle/1YS17eGTL9w6M1JR8",
-    ticketButton: 0,
-    sectionId:2
-  },
+  
   {
     ticketTitle: "Marketing Workshop",
     ticketImg: masteringMarketing,
@@ -405,6 +403,53 @@ export const eventData = [
     ticketLink: "https://forms.gle/N3gtuNyrLz3W1kieA",
     ticketButton: 0
   },
+  
+  {
+    ticketTitle: "Cricket Auction",
+    ticketImg: cricket,
+    ticketDescription: "Is cricket more than just a game for you?  Then come join us with your team. It's Auction time. Bid the best teams at the best price",
+    ticketLink: "https://forms.gle/A1UVwCxEzeDuT2w19",
+    ticketButton: 0,
+    sectionId:1
+  },
+  {
+    ticketTitle: "Workshop on basics of AutoCAD 2D & 3D  and Revit",
+    ticketImg: autocad,
+    ticketDescription: "Upgrade your technical drawing and engineering skills with two of the best computer-aided design software.",
+    ticketLink: "https://forms.gle/6HNN1PEexPLiUUwe9",
+    ticketButton: 0,
+    sectionId:1
+  },
+  {
+    ticketTitle: "Smart Warehouse Competition",
+    ticketImg: warehouse,
+    ticketDescription: "Leverage your technical expertise to automate an entire warehouse to enhance productivity, optimize time and minimize errors.",
+    ticketLink: "https://forms.gle/oedFzsjHJaTkayzY6",
+    ticketButton: 0,
+    sectionId:1
+  },
+
+  {
+    ticketTitle: "Short Film Competition",
+    ticketImg: shortFilm,
+    ticketDescription: "Pick up your cameras, clean up your lenses and sell your story for a chance to be featured on the big screen. Join now",
+    ticketLink: "https://forms.gle/1YS17eGTL9w6M1JR8",
+    ticketButton: 0,
+    sectionId:2
+  },
+
+  {
+    ticketTitle: "Fashion Show",
+    ticketImg: fashion,
+    ticketDescription: "Explore the realms of unconventional style and create a fashion story showcasing exceptional designs through mesmerizing choreography.",
+    ticketLink: "https://forms.gle/CZemJLRU37ifaS689",
+    ticketButton: 0,
+    sectionId:2
+  },
+
+
+
+
   {
     ticketTitle: "Meta Mysteries",
     ticketImg: metaMysteries,
@@ -461,5 +506,65 @@ export const eventData = [
     ticketLink: "https://forms.gle/rjNuvLr6UK4M7SEs8",
     ticketButton: 3,
     sectionId:1
-  }
+  },
+
+];
+
+
+export const faqData = [
+  {
+    question:
+      "How many types of tickets are available for the IEDC Summit 2023?",
+    answer:
+      "IEDC Summit 2023 offers 3 categories of tickets:\n(i) An IEDC Group Pass that admits 20 members from the IEDC in any institution. Entry is priced at 499 per head.\n(ii) An individual academia pass for a student and faculties of any educational institution, priced at 499.\n(iii) An individual pass for any other individual, priced at 999.",
+  },
+  
+  {
+    question:
+      "What would an attendee get with an entry pass, at the IEDC Summit 2023?",
+    answer:
+      'An attendee possessing an entry pass would receive:\n* A registration kit\n* Complimentary lunch\n* Access to all events happening at the IEDC Summit 2023',
+  },
+  {
+    question:
+      "How can I submit the project for the Student Product Showcase?",
+    answer:
+      "If you're interested in showcasing your product, visit iedcsummit.in and click on 'Apply Now' on the Student Product Showcase section.",
+  },
+  {
+    question:
+      "Is the Summit open to individuals not currently studying in an institution?",
+    answer:
+      "Yes, any interested individual out of college can register with the individual pass.",
+  },
+  {
+    question:
+      "What are the facilities provided by CET for students attending the summit?",
+    answer:
+      "",
+  },
+  {
+    question:
+      "What are the perks of registering for the summit?",
+    answer:
+      "Unlimited access to all the events of the summit, as well as certificates worth activity points.",
+  },
+  {
+    question:
+      "Who is this summit aimed at?",
+    answer:
+      "This summit is for ANY interested individual or institution, with the various ticket passes offered by KSUM.",
+  },
+  {
+    question:
+      "Upto when are registrations open?",
+    answer:
+      "Registrations are open till Sept 30. Seats filling fast!",
+  },
+  {
+    question:
+      "Do I need to be registered for the IEDC Summit to attend the pre-summit events?",
+    answer:
+      "NO, you do not need to be registered for the IEDC Summit to attend the pre-summit events.",
+  },
 ];
