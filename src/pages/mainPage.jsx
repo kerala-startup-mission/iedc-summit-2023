@@ -22,7 +22,7 @@ function mainPage() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 1000);
+    }, 4000);
   }, []);
 
   const homeSectionRef = useRef(null);
