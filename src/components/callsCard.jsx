@@ -12,10 +12,10 @@ function callCard(props) {
       />
       <div className="font-dm-sans flex-[2] flex items-center flex-col w-full">
         <div className="text-white w-11/12 h-fit mt-4 items-center  mx-auto">
-          <h1 className="font-[900] text-left text-2xl leading-tight">
+          <h1 className="font-[900] text-left text-xl leading-tight">
             {eventName}
           </h1>
-          <p className=" font-[300] block  text-sm text-lg">
+          <p className=" font-[300] block text-sm">
             {eventDescription}
           </p>
         </div>

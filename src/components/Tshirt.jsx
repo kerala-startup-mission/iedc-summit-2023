@@ -2,7 +2,7 @@ import TshirtVector from "../assets/img/tshirt.png";
 
 function Tshirt(props) {
   return (
-    <div className="fixed w-11/12 md:w-[1100px] top-24 md:top-0 md:bottom-32 self-center bg-black rounded-[20px] z-20">
+    <div className="fixed w-11/12 md:w-[1100px] top-24 md:top-32 self-center bg-black rounded-[20px] z-20">
       <div className="flex justify-end">
         <button
           onClick={props.toggleModal}
@@ -19,12 +19,12 @@ function Tshirt(props) {
           />
         </div>
         <div className="w-full flex justify-between items-end">
-          <p className="ml-2 text-lg md:text-6xl text-gray-200 italic font-extrabold">
+          <p className="ml-2 text-lg md:text-6xl text-gray-600 italic font-extrabold">
             GRAB YOUR
           </p>
           <hr className="border-2 border-solid w-3/5 border-[#0597F2] float-right mb-1 md:mb-4" />
         </div>
-        <div className="overflow-hidden whitespace-nowrap flex flex-col text-2xl md:text-6xl text-white italic font-extrabold w-full bg-gradient-to-r from-[#0597F2] to-[#6F04D9] md:py-4">
+        <div className="overflow-hidden whitespace-nowrap flex flex-col text-2xl md:text-5xl lg:text-6xl text-white italic font-extrabold w-full bg-gradient-to-r from-[#0597F2] to-[#6F04D9] md:py-4">
           <p className="">
             GRAB <span className="opacity-10">GRAB GRAB GRAB GRAB GRAB</span>
           </p>
@@ -46,13 +46,13 @@ function Tshirt(props) {
         </div>
         <div className="w-full flex justify-between items-start">
           <hr className="border-2 border-solid w-3/5 border-[#0597F2] float-left mt-1 md:mt-4" />
-          <p className="text-lg md:text-6xl text-gray-200 italic font-extrabold mr-4">
+          <p className="text-lg md:text-6xl text-gray-600 italic font-extrabold mr-4">
             TEES NOW
           </p>
         </div>
       </div>
-      <div className="relative text-center flex justify-center bottom-8 text-xl md:text-4xl font-bold">
-        <div className="text-white bg-white rounded-xl px-4 py-2">
+      <div className="relative text-center flex justify-center bottom-8 text-xl md:text-3xl font-bold">
+        <div className="text-white bg-white rounded-xl px-3 py-1">
           <a
             className="bg-gradient-to-br from-[#0597F2] to-[#6F04D9] bg-clip-text text-transparent"
             href="https://forms.gle/iXavxdwCC1vBns2A7"
