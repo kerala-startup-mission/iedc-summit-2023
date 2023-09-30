@@ -46,10 +46,11 @@ const App = ({ sectionRef }) => {
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15782.081640228585!2d76.9063407!3d8.5458513!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05bec79541c519%3A0x98324eb5aafb3778!2sCollege%20of%20Engineering%20Trivandrum%20(CET)!5e0!3m2!1sen!2sin!4v1693841860889!5m2!1sen!2sin" 
           width="600" 
           height="450"
-          style={{ border: 0 }} 
+           
           allowFullScreen="" 
           loading="lazy" 
-          referrerPolicy="no-referrer-when-downgrade">
+          referrerPolicy="no-referrer-when-downgrade"
+          className="rounded-lg 2 shadow-lg">
         </iframe>
           {/* <LoadScript googleMapsApiKey={apiKey}>
             <GoogleMap

@@ -1,5 +1,5 @@
 import React from "react";
-import loadingAnimation from "../assets/img/idea.gif";
+import loadingAnimation from "../assets/img/idea_sped.gif";
 
 const LoadingScreen = () => {
   return (

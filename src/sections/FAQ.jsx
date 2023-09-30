@@ -31,14 +31,14 @@ function FAQ({faqData}, { sectionRef }){
 
         <div className="space-y-5 mt-8">
           {faqData.map((faq, index) => (
-            <div key={index} className="p-2 text-white rounded-md shadow-md border-[2px]  border-[#389bf2] bg-zinc-100">
+            <div key={index} className="p-2 text-white rounded-md shadow-lg border-[1px] border-blue-300 bg-zinc-100">
               <div className="flex justify-between items-center">
                 <div className="flex-1">
                   <button
                     className="text-left w-full focus:outline-none"
                     onClick={() => handleQuestionClick(index)}
                   >
-                    <span className="font-bold text-[#3866F2]">{faq.question}</span>
+                    <span className="font-semibold text-[#3866F2]">{faq.question}</span>
                   </button>
                 </div>
                 <div>
@@ -47,16 +47,16 @@ function FAQ({faqData}, { sectionRef }){
                     onClick={() => handleQuestionClick(index)}
                   >
                     {expandedQuestion === index ? <svg width="20" height="20" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5 13.3477H21" stroke="#9BA9B3" strokeWidth="5.14286" strokeLinecap="round" strokeLinejoin="round"/>
+                        <path d="M5 13.3477H21" stroke="#0597F1" strokeWidth="5.14286" strokeLinecap="round" strokeLinejoin="round"/>
                         </svg>
                         : <svg width="20" height="20" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M13 3.34766V23.3477M3 13.3477H23" stroke="#9BA9B3" strokeWidth="5.14286" strokeLinecap="round" strokeLinejoin="round"/>
+                        <path d="M13 3.34766V23.3477M3 13.3477H23" stroke="#0597F1" strokeWidth="5.14286" strokeLinecap="round" strokeLinejoin="round"/>
                         </svg>}
                   </button>
                 </div>
               </div>
               {expandedQuestion === index && (
-                <div className="py-3 font-semibold text-[#64748B]">
+                <div className="py-3 font-[10px] text-[#64748B]">
                   <p>{faq.answer}</p>
                 </div>
               )}

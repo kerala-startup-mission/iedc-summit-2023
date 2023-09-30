@@ -41,7 +41,7 @@ import photoComp from "./assets/img/events/photoComp.png"
 import autocad from "./assets/img/events/Autocad.jpg"
 import cricket from "./assets/img/events/Cricket.jpg"
 import fashion from "./assets/img/events/Fashionshow.jpg"
-import warehouse from "./assets/img/events/SmartwareHouse.jpg"
+import warehouse from "./assets/img/events/SmartWarehouse.jpg"
 
 
 export const speakers = [
@@ -516,14 +516,14 @@ export const faqData = [
     question:
       "How many types of tickets are available for the IEDC Summit 2023?",
     answer:
-      "IEDC Summit 2023 offers 3 categories of tickets: (i) An IEDC Group Pass that admits 20 members from the IEDC in any institution. Entry is priced at 499 per head. (ii) An individual academia pass for a student and faculties of any educational institution, priced at 499. (iii) An individual pass for any other individual, priced at 999.",
+      "IEDC Summit 2023 offers 3 categories of tickets:\n(i) An IEDC Group Pass that admits 20 members from the IEDC in any institution. Entry is priced at 499 per head.\n(ii) An individual academia pass for a student and faculties of any educational institution, priced at 499.\n(iii) An individual pass for any other individual, priced at 999.",
   },
   
   {
     question:
       "What would an attendee get with an entry pass, at the IEDC Summit 2023?",
     answer:
-      'An attendee possessing an entry pass would receive: * A registration kit  * Complimentary lunch  * Access to all events happening at the IEDC Summit 2023',
+      'An attendee possessing an entry pass would receive:\n* A registration kit\n* Complimentary lunch\n* Access to all events happening at the IEDC Summit 2023',
   },
   {
     question:
