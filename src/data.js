@@ -37,6 +37,7 @@ import vfx from "./assets/img/events/vfx.jpg"
 import masteringMarketing from "./assets/img/events/masteringMarketing.jpg"
 import bestIedcChallenge from "./assets/img/events/BestIedcChallenge.jpg"
 import sketchUp from "./assets/img/events/sketchUp.jpg"
+import photoComp from "./assets/img/events/photoComp.png"
 
 export const speakers = [
   {
@@ -317,7 +318,7 @@ export const TeamMembers = [
     image: adwaithHR,
   },
   {
-    name: "Ajay Gosh",
+    name: "Ajay Ghosh",
     role: "Animations",
     image: ajayGosh,
   },
@@ -329,6 +330,13 @@ export const eventData = [
     ticketImg: bestIedcChallenge,
     ticketDescription: "Raise the Banner for IEDC Summit 2023: A Challenge for the Best Campaigner!",
     ticketLink: "https://forms.gle/LaW3bUeuR86JN98A8",
+    ticketButton: 0
+  },
+  {
+    ticketTitle: "Photography Competition",
+    ticketImg: photoComp,
+    ticketDescription: "Capture your best shot! Seize the moment and send us a sneak peek of the world through your lens.",
+    ticketLink: "https://forms.gle/ZXAjYsk2pNbVg8jV8",
     ticketButton: 0
   },
   {
