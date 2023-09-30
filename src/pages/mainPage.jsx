@@ -34,7 +34,7 @@ function mainPage() {
     { text: "HOME", href: "#", sectionRef: homeSectionRef },
     { text: "ABOUT", href: "#about", sectionRef: aboutSectionRef },
     //{ text: "", href: "#speakers", sectionRef: speakersSectionRef },
-    //{ text: "EVENTS", href: "#events", sectionRef: eventsSectionRef },
+    { text: "EVENTS", href: "#events", sectionRef: eventsSectionRef },
     { text: "VENUE", href: "#venue", sectionRef: venueSectionRef },
   ];
   return (
@@ -57,7 +57,6 @@ function mainPage() {
           <Calls
             title="Join Us"
             eventData={joinUs}
-            sectionRef={eventsSectionRef}
             eventDescrition=""
           />
           <PrevSummut />

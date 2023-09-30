@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
 import StartupMissionLogo from "./startupMissionLogo";
+import { AiOutlineClose } from "react-icons/ai"
 
 function Navbar({ navbarItems }) {
   const [isDropDownOpen, setIsDropDownOpen] = useState(false);
@@ -68,7 +69,8 @@ function Navbar({ navbarItems }) {
       <div className="md:hidden items-center justify-around flex duration-500">
         <StartupMissionLogo />
         <button onClick={toggleDropDown}>
-          <FaBars className="text-2xl" />
+          { !isDropDownOpen && <FaBars className="text-2xl" /> }
+          { isDropDownOpen && <AiOutlineClose className="text-2xl" /> }
         </button>
 
         <div
