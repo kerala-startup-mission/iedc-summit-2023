@@ -359,13 +359,6 @@ export const eventData = [
     ticketButton: 0
   },
   {
-    ticketTitle: "Best IEDC Challenge",
-    ticketImg: bestIedcChallenge,
-    ticketDescription: "Raise the Banner for IEDC Summit 2023: A Challenge for the Best Campaigner!",
-    ticketLink: "https://drive.google.com/drive/folders/1444YhNt1AavjOU57biL8crfsxFeCCPDv?usp=drive_link",
-    ticketButton: 0
-  },
-  {
     ticketTitle: "Marketing Workshop",
     ticketImg: masteringMarketing,
     ticketDescription: "Ready to supercharge student startups? Join our workshop on \"Addressing Student Startup Challenges\"! Ignite your startup journey! Don't miss this opportunity to conquer challenges and propel your startup forward.",
