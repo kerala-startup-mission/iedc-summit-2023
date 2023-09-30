@@ -12,8 +12,7 @@ import PrevSummut from "../sections/prevSummits";
 import { useState, useEffect, useRef } from "react";
 import Navbar from "../components/Navbar";
 import { joinUs ,eventData} from "../data";
-import LoadingScreen from "../sections/loadingScreen";
-import Tshirt from "../sections/Tshirt";
+import LoadingScreen from "../sections/LoadingScreen";
 
 function mainPage() {
   const [loading, setLoading] = useState(false);
@@ -46,7 +45,6 @@ function mainPage() {
           <Navbar navbarItems={navbarItems} />
           <LandingPage sectionRef={homeSectionRef} />
           <AboutSummit sectionRef={aboutSectionRef} />
-          {/* <Tshirt />  */}
           <IedcCircle />
           <loadingScreen></loadingScreen>
           <Events
@@ -57,15 +55,12 @@ function mainPage() {
           eventDescrition=""/>
           <Calls
             title="Join Us"
-            
             eventData={joinUs}
             sectionRef={eventsSectionRef}
             eventDescrition=""
           />
           <PrevSummut />
           <About />
-          
-
           <Directions sectionRef={venueSectionRef} />
           <Footer />
         </>
