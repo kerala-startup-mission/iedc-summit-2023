@@ -20,7 +20,7 @@ function Ticket(props) {
       className="flex-none mb-6  overflow-hidden relative flex flex-col h-[622px] 
 
     bg-white
-    w-[350px] rounded-[30px] "
+    w-[350px] rounded-[30px] mb-12 "
 
     >
       <div className="h-[50%]   shadow-2xl shadow-blue-100  border border-2 rounded-[20px]  w-full self-center     rounded-t-[30px]">

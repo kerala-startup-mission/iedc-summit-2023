@@ -5,17 +5,17 @@ function callCard(props) {
     props;
 
   return (
-    <div className="flex-none mb-6  overflow-hidden relative flex flex-col h-[451px] bg-[#2c2c2c]  border-[1px] border-[#3866F266] shadow-lg hover:shadow-xl  w-[300px] rounded-lg lg:rounded-2xl ">
+    <div className="flex-none mb-12  overflow-hidden relative flex flex-col h-[451px] bg-[#2c2c2c]  border-[1px] border-[#3866F266] shadow-lg hover:shadow-xl  w-[340px] rounded-lg lg:rounded-2xl ">
       <img
         src={eventImg}
         className=" shadow-lg h-full flex-1 h-1/2 bg-orange-300   rounded-t-md object-cover"
       />
       <div className="font-dm-sans flex-[2] flex items-center flex-col w-full">
         <div className="text-white w-11/12 h-fit mt-4 items-center  mx-auto">
-          <h1 className="font-[900] text-left text-2xl leading-tight">
+          <h1 className="font-[900] text-left text-xl leading-tight">
             {eventName}
           </h1>
-          <p className=" font-[300] block  text-sm text-lg">
+          <p className=" font-[300] block text-sm">
             {eventDescription}
           </p>
         </div>
