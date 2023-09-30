@@ -23,7 +23,7 @@ function Calls(props) {
           {eventDescription}
         </p>
       </div>
-      <div className="flex md:flex-wrap overflow-x-auto scroll-smooth gap-16 md:gap-0 pb-8 md:justify-evenly horiz-scroll">
+      <div className="w-5/6space-x-5 flex md:flex-wrap overflow-x-auto scroll-smooth gap-16 md:gap-0 pb-8 md:justify-evenly horiz-scroll">
         {eventData &&
           eventData.length > 0 &&
           eventData.map((ticket, index) => (
