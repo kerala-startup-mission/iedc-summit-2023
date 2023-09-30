@@ -59,7 +59,7 @@ function Events(props) {
                 {link.text}
               </button>
             ))}
-            <hr className="w-full border border-[1px] opacity-30 border-black"></hr>
+            <hr className="w-full border-[1px] opacity-30 border-black"></hr>
           </div>
         </div>
       </nav>
