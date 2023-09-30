@@ -36,6 +36,7 @@ import uiux from "./assets/img/events/uiux.jpg"
 import vfx from "./assets/img/events/vfx.jpg"
 import masteringMarketing from "./assets/img/events/masteringMarketing.jpg"
 import bestIedcChallenge from "./assets/img/events/BestIedcChallenge.jpg"
+import sketchUp from "./assets/img/events/sketchUp.jpg"
 
 export const speakers = [
   {
@@ -327,7 +328,14 @@ export const eventData = [
     ticketTitle: "Best IEDC Challenge",
     ticketImg: bestIedcChallenge,
     ticketDescription: "Raise the Banner for IEDC Summit 2023: A Challenge for the Best Campaigner!",
-    ticketLink: "https://drive.google.com/drive/folders/1444YhNt1AavjOU57biL8crfsxFeCCPDv?usp=drive_link",
+    ticketLink: "https://forms.gle/LaW3bUeuR86JN98A8",
+    ticketButton: 0
+  },
+  {
+    ticketTitle: "Exploring SketchUp",
+    ticketImg: sketchUp,
+    ticketDescription: "Gear up for an exciting new learning opportunity, presented to you by IEDC CET, the 3D modelling workshop, Exploring SketchUp !",
+    ticketLink: "https://forms.gle/Lm7yHT7FHbYRiynM9",
     ticketButton: 0
   },
   {
@@ -358,6 +366,10 @@ export const eventData = [
     ticketLink: "https://forms.gle/1YS17eGTL9w6M1JR8",
     ticketButton: 0
   },
+<<<<<<< HEAD
+=======
+  
+>>>>>>> 81c1083f1f513e0c4d9b52eaa72fd24e32119093
   {
     ticketTitle: "Marketing Workshop",
     ticketImg: masteringMarketing,
