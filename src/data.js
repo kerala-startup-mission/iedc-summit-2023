@@ -330,42 +330,66 @@ export const eventData = [
     ticketImg: bestIedcChallenge,
     ticketDescription: "Raise the Banner for IEDC Summit 2023: A Challenge for the Best Campaigner!",
     ticketLink: "https://forms.gle/LaW3bUeuR86JN98A8",
-    ticketButton: 0
+    ticketButton: 0,
+    sectionId:1
   },
   {
     ticketTitle: "Photography Competition",
     ticketImg: photoComp,
     ticketDescription: "Capture your best shot! Seize the moment and send us a sneak peek of the world through your lens.",
     ticketLink: "https://forms.gle/ZXAjYsk2pNbVg8jV8",
-    ticketButton: 0
+    ticketButton: 0,
+    sectionId:1
   },
   {
+
+    ticketTitle: "Exploring SketchUp",
+    ticketImg: sketchUp,
+    ticketDescription: "Gear up for an exciting new learning opportunity, presented to you by IEDC CET, the 3D modelling workshop, Exploring SketchUp !",
+    ticketLink: "https://forms.gle/Lm7yHT7FHbYRiynM9",
+    ticketButton: 0,
+    sectionId:1
+  },
+  {
+    ticketTitle: "Exploring the future of Lower limb exoskeletons workshop",
+    ticketImg: exoskeleton,
+    ticketDescription: '',
+    ticketLink: "https://forms.gle/N3gtuNyrLz3W1kieA",
+    ticketButton: 0,
+    sectionId:1
+  },
+  {
+
     ticketTitle: "Valorant Competition",
     ticketImg: valoComp,
     ticketDescription: "Calling all ardent gamers! Show off your skills and get to the top of the table with this exciting Valorant competition organized just for you. Register now!",
     ticketLink: "https://forms.gle/xyVrApbt8pTN2Urv5",
-    ticketButton: 0
+    ticketButton: 0,
+    sectionId:1
   },
   {
     ticketTitle: "UI/UX E-Commerce Workshop",
     ticketImg: uiux,
     ticketDescription: "Up your game with our UI/UX E-Commerce  workshop and get a kickstart to build your dream website!",
     ticketLink: "https://forms.gle/qkaUjzpqZjJ9ttwM6",
-    ticketButton: 0
+    ticketButton: 0,
+    sectionId:1
   },
   {
     ticketTitle: "Short Film Competition",
     ticketImg: shortFilm,
     ticketDescription: "Pick up your cameras, clean up your lenses and sell your story for a chance to be featured on the big screen. Join now",
     ticketLink: "https://forms.gle/1YS17eGTL9w6M1JR8",
-    ticketButton: 0
+    ticketButton: 0,
+    sectionId:2
   },
   {
     ticketTitle: "Marketing Workshop",
     ticketImg: masteringMarketing,
     ticketDescription: "Ready to supercharge student startups? Join our workshop on \"Addressing Student Startup Challenges\"! Ignite your startup journey! Don't miss this opportunity to conquer challenges and propel your startup forward.",
     ticketLink: "https://forms.gle/81y3ZPVmWPKwJPFg9",
-    ticketButton: 0
+    ticketButton: 0,
+    sectionId:1
   },
   {
     ticketTitle: "Exploring SketchUp",
@@ -386,42 +410,48 @@ export const eventData = [
     ticketImg: metaMysteries,
     ticketDescription: "Put on your detective hats and get ready for an enthralling experience as we set off for a treasure hunt like never before !",
     ticketLink: "https://forms.gle/w4aXPF2s8WoHfE2E7",
-    ticketButton: 1
+    ticketButton: 1,
+    sectionId:1
   },
   {
     ticketTitle: "Disruptive Innovation",
     ticketImg: disruptiveInfo,
     ticketDescription: "Join us for a discussion on disruptive innovation, focusing on how start-ups are transforming traditional industries like transportation and healthcare, inspiring and challenging possibilities.",
     ticketLink: "https://forms.gle/jRzTSDR94MDaun1w7",
-    ticketButton: 1
+    ticketButton: 1,
+    sectionId:1
   },
   {
     ticketTitle: "AI in Mental Health",
     ticketImg: aiMentalHealth,
     ticketDescription: "A student panel discussion. Learn from diverse perspectives and innovative solutions. Explore the future of mental health with today's bright minds.",
     ticketLink: "",
-    ticketButton: 1
+    ticketButton: 1,
+    sectionId:1
   },
   {
     ticketTitle: "Game Character Design Workshop",
     ticketImg: gameDesign,
     ticketDescription: "Certificates will be ready in 2-3 days. If you have any questions, feel free to reach out. Your patience is appreciated.",
     ticketLink: "",
-    ticketButton: 1
+    ticketButton: 1,
+    sectionId:1
   },
   {
     ticketTitle: "Visualisation using PowerBI",
     ticketImg: excelAdvanced,
     ticketDescription: "Learn, explore and advance your skills in data management and visualisation with this advanced excel and Power BI masterclass. Secure your spot now!",
     ticketLink: "https://forms.gle/QyfJrPuQ5H3QFRYF9",
-    ticketButton: 2
+    ticketButton: 2,
+    sectionId:1
   },
   {
     ticketTitle: "VFX Workshop",
     ticketImg: vfx,
     ticketDescription: "Dive into the world of visual effects, learn the niches of visual design to make stunning effects and forge your career path in the industry. Join now!",
     ticketLink: "https://forms.gle/zUADrWtXpMo1yKDB7",
-    ticketButton: 2
+    ticketButton: 2,
+    sectionId:1
   },
   
   {
@@ -429,6 +459,7 @@ export const eventData = [
     ticketImg: mascotChallenge,
     ticketDescription: "Design a mascot that embodies the concept of the 'Circle of Innovation'",
     ticketLink: "https://forms.gle/rjNuvLr6UK4M7SEs8",
-    ticketButton: 3
+    ticketButton: 3,
+    sectionId:1
   }
 ];
