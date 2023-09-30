@@ -41,7 +41,7 @@ import photoComp from "./assets/img/events/photoComp.png"
 import autocad from "./assets/img/events/Autocad.jpg"
 import cricket from "./assets/img/events/Cricket.jpg"
 import fashion from "./assets/img/events/Fashionshow.jpg"
-import warehouse from "./assets/img/events/SmartWareHouse.jpg"
+import warehouse from "./assets/img/events/SmartWarehouse.jpg"
 
 
 export const speakers = [
