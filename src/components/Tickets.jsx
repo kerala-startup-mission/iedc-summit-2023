@@ -18,8 +18,10 @@ function Ticket(props) {
   return (
     <div
       className="flex-none mb-6  overflow-hidden relative flex flex-col h-[622px] 
+
     bg-white
     w-[350px] rounded-[30px] "
+
     >
       <div className="h-[50%]  shadow-2xl shadow-blue-100  border border-2 rounded-[20px]  w-full self-center     rounded-t-[30px]">
         <img
@@ -28,6 +30,7 @@ function Ticket(props) {
           className=" rounded-[20px] w-full h-full  "
         />
       </div>
+
       
       <div className="h-[50%] ">
         <div className=" flex flex-row h-[25%] items-center  mx-auto">
@@ -38,6 +41,7 @@ function Ticket(props) {
           <div className="w-[38px]   overflow-hidden">
             <div className="shadow-inner w-[75px] bg-zinc-200 h-[75px] bg-white rounded-[75px]"></div>
           </div>
+
         </div>
         <div className="h-[75%]   border-t-0 rounded-b-[30px]">
           <div className="  h-3/4 p-2 w-full  items-center  mx-auto">

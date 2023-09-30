@@ -342,6 +342,7 @@ export const eventData = [
     sectionId:1
   },
   {
+
     ticketTitle: "Exploring SketchUp",
     ticketImg: sketchUp,
     ticketDescription: "Gear up for an exciting new learning opportunity, presented to you by IEDC CET, the 3D modelling workshop, Exploring SketchUp !",
@@ -358,6 +359,7 @@ export const eventData = [
     sectionId:1
   },
   {
+
     ticketTitle: "Valorant Competition",
     ticketImg: valoComp,
     ticketDescription: "Calling all ardent gamers! Show off your skills and get to the top of the table with this exciting Valorant competition organized just for you. Register now!",
@@ -381,7 +383,6 @@ export const eventData = [
     ticketButton: 0,
     sectionId:2
   },
-  
   {
     ticketTitle: "Marketing Workshop",
     ticketImg: masteringMarketing,
@@ -389,6 +390,20 @@ export const eventData = [
     ticketLink: "https://forms.gle/81y3ZPVmWPKwJPFg9",
     ticketButton: 0,
     sectionId:1
+  },
+  {
+    ticketTitle: "Exploring SketchUp",
+    ticketImg: sketchUp,
+    ticketDescription: "Gear up for an exciting new learning opportunity, presented to you by IEDC CET, the 3D modelling workshop, Exploring SketchUp !",
+    ticketLink: "https://forms.gle/Lm7yHT7FHbYRiynM9",
+    ticketButton: 0
+  },
+  {
+    ticketTitle: "Exploring the future of Lower limb exoskeletons workshop",
+    ticketImg: exoskeleton,
+    ticketDescription: '',
+    ticketLink: "https://forms.gle/N3gtuNyrLz3W1kieA",
+    ticketButton: 0
   },
   {
     ticketTitle: "Meta Mysteries",
