@@ -29,7 +29,7 @@ function Calls(props) {
           eventData.map((ticket, index) => (
             <CallCard
               key={index}
-              buttonTitle={ticket.ticketButton}
+              buttonTitle="Closed"
               eventImg={ticket.ticketImg}
               eventName={ticket.ticketTitle}
               eventDescription={ticket.ticketDescription}
