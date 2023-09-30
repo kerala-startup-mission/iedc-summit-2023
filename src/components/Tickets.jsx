@@ -23,7 +23,7 @@ function Ticket(props) {
     w-[350px] rounded-[30px] "
 
     >
-      <div className="h-[50%]  shadow-2xl shadow-blue-100  border border-2 rounded-[20px]  w-full self-center     rounded-t-[30px]">
+      <div className="h-[50%]   shadow-2xl shadow-blue-100  border border-2 rounded-[20px]  w-full self-center     rounded-t-[30px]">
         <img
           src={eventImg}
           alt="mathew"

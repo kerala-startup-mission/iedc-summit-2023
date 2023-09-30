@@ -15,7 +15,7 @@ function Events(props) {
     { id: '2', text: 'Everything is Entrepreneurship' },
     { id: '3', text: 'Industry of future' },
     { id: '4', text: 'Startup Symposium' },
-    // Add more links here as needed
+    
   ];
 
   
