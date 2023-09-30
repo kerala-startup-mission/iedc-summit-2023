@@ -12,7 +12,7 @@ import PrevSummut from "../sections/prevSummits";
 import { useState, useEffect, useRef } from "react";
 import Navbar from "../components/Navbar";
 import { joinUs , faqData ,eventData} from "../data";
-import LoadingScreen from "../sections/LoadingScreen";
+import LoadingScreen from "../sections/loadingScreen";
 import FAQ from "../sections/FAQ";
 
 function mainPage() {
