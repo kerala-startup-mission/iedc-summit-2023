@@ -68,7 +68,7 @@ function LandingPage({ sectionRef }) {
           </button> */}
         </div>
       </div>
-      {modal && (<Tshirt toggleModal={toggleModal} />)}
+      {/* {modal && (<Tshirt toggleModal={toggleModal} />)} */}
     </div>
   );
 }
