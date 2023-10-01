@@ -41,6 +41,9 @@ import autocad from "./assets/img/events/Autocad.jpg";
 import cricket from "./assets/img/events/Cricket.jpg";
 import fashion from "./assets/img/events/Fashionshow.jpg";
 import warehouse from "./assets/img/events/SmartWarehouse.jpg";
+import craftEntre from "./assets/img/events/CraftEntrepreneurship.jpg";
+import craftCareer from "./assets/img/events/CraftingYourCareer.jpg";
+import marsStation from "./assets/img/events/LivingStationInMars.jpg";
 
 export const speakers = [
   {
@@ -517,6 +520,52 @@ export const eventData = [
     ticketButton: 3,
     sectionId: 1,
   },
+  {
+    ticketTitle: "Crafting Your Career Narrative",
+    ticketImg: craftCareer,
+    ticketDescription:
+      "Elevate your professional path through a career narrative that authentically shapes your work history, encompassing prior job experiences and skill development.",
+    ticketLink: "https://forms.gle/XKb6VrbRknCNzr6C8",
+    ticketButton: 0,
+    sectionId: 1,
+  },
+  {
+    ticketTitle: "Craft Entrepreneurship From Disposable Items",
+    ticketImg: craftEntre,
+    ticketDescription:
+      "Join us in revolutionizing today's world by investing in sustainable solutions. Harness your creativity and innovation to turn discarded items into assets.",
+    ticketLink:
+      "https://docs.google.com/forms/d/1litIGK0zx30G0UQOkrnlhcOmPNF083zijD-Y-D3ehiE/edit?ts=6511a517",
+    ticketButton: 0,
+    sectionId: 1,
+  },
+  {
+    ticketTitle: "Design Competition: Living Station in Mars",
+    ticketImg: marsStation,
+    ticketDescription:
+      "Tap into the realm of technology and unleash the magic within by designing a habitable station on our neighboring planet.",
+    ticketLink: "https://forms.gle/oduFJnqR9awPbmpD8",
+    ticketButton: 0,
+    sectionId: 1,
+  },
+  // {
+  //   ticketTitle: "Innovation Song Challenge",
+  //   ticketImg: mascotChallenge,
+  //   ticketDescription:
+  //     "Discover the inner musician in you.A  song infused with innovation could be a delight to others' ears.",
+  //   ticketLink: "",
+  //   ticketButton: 3,
+  //   sectionId: 1,
+  // },
+  // {
+  //   ticketTitle: "Design Co Working Space Challenge",
+  //   ticketImg: mascotChallenge,
+  //   ticketDescription:
+  //     "Create dynamic coworking spaces that cater to every aspect of the present volatile work ecosystem.",
+  //   ticketLink: "",
+  //   ticketButton: 3,
+  //   sectionId: 1,
+  // },
 ];
 
 export const faqData = [
