@@ -37,7 +37,7 @@ const AboutSummit = ({ sectionRef }) => {
     ),
   };
   return (
-    <div ref={sectionRef} className="relative">
+    <div ref={sectionRef} className="relative z-20">
       <div className="w-[500px] h-[500px] md:w-[700px] md:h-[700px] lg:w-[900px] lg:h-[900px] bg-transparent border-[#3866F2] border-[70px] md:border-[100px] lg:border-[140px] right-[-250px] md:right-[-350px] lg:right-[-450px] top-[750px] md:top-[1000px] lg:top-[350px] opacity-40 absolute rounded-full"></div>
       <div
         ref={ref}

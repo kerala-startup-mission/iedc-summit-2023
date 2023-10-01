@@ -18,15 +18,15 @@ function LandingPage({ sectionRef }) {
     setModal(!modal);
   };
   return (
-    <div ref={sectionRef} className="relative w-full bg- flex flex-col pb-12">
-      <img src={bg0} className="absolute right-0 -z-50" />
-      <div className="absolute left-0 right-0 top-48 sm:top-20 md:top-6 lg:top-0 flex flex-col items-start w-72 md:w-[22rem] lg:w-auto -z-50">
+    <div ref={sectionRef} className="relative w-full flex flex-col pb-12">
+      <img src={bg0} className="absolute right-0 z-10" />
+      <div className="absolute left-0 right-0 top-48 sm:top-20 md:top-6 lg:top-0 flex flex-col items-start w-72 md:w-[22rem] lg:w-auto z-10">
         <img src={bg1} className="mb-[-5px]" />
-        <img src={bg2} className="" />
+        <img src={bg2} />
       </div>
       <div
         ref={ref}
-        className={`font-dm-sans flex flex-col self-center items-center sm:items-start md:w-9/12 pb-24 pt-24 md:pt-28 md:pb-14 ${
+        className={`font-dm-sans flex flex-col self-center items-center sm:items-start md:w-9/12 pb-24 pt-24 md:pt-28 md:pb-14 z-20 ${
           inView ? "opacity-1 translate-y-0" : "opacity-0 translate-y-7"
         } transition duration-500`}
       >
@@ -50,7 +50,7 @@ function LandingPage({ sectionRef }) {
         <h1 className="font-semibold text-xl md:text-3xl text-[#676C70] pb-4">
           TRIVANDRUM
         </h1>
-        <div className="flex flex-col md:flex-row gap-4 items-center ">
+        <div className="flex flex-col md:flex-row gap-4 items-center">
           <div className="flex items-center w-[232px] h-[58px] bg-[#0597F2] cursor-pointer rounded-[30px] hover:bg-gradient-to-tr from-[#0597F2] to-[#4656E1]">
             <a
               onClick={() => {
@@ -69,7 +69,7 @@ function LandingPage({ sectionRef }) {
           </button>
         </div>
       </div>
-      {modal && (<Tshirt toggleModal={toggleModal} />)}
+      {modal && <Tshirt toggleModal={toggleModal} />}
     </div>
   );
 }
