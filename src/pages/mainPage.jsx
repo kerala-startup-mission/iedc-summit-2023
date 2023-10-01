@@ -11,7 +11,7 @@ import Directions from "../sections/Directions";
 import PrevSummut from "../sections/prevSummits";
 import { useState, useEffect, useRef } from "react";
 import Navbar from "../components/Navbar";
-import { joinUs , faqData ,eventData} from "../data";
+import { joinUs, faqData, eventData } from "../data";
 import LoadingScreen from "../sections/loadingScreen";
 import FAQ from "../sections/FAQ";
 
@@ -38,7 +38,7 @@ function mainPage() {
     { text: "VENUE", href: "#venue", sectionRef: venueSectionRef },
   ];
   return (
-    <div className="flex flex-col justify-center items-center overflow-hidden">
+    <div className="flex flex-col justify-center items-center overflow-hidden bg-zinc-50">
       {loading ? (
         <LoadingScreen />
       ) : (
@@ -49,20 +49,17 @@ function mainPage() {
           <IedcCircle />
           <loadingScreen></loadingScreen>
           <Events
-          title="Events"
-          button="Register Now"
-          eventData={eventData}
-          sectionRef={eventsSectionRef}
-          eventDescrition=""/>
-          <Calls
-            title="Join Us"
-            eventData={joinUs}
+            title="Events"
+            button="Register Now"
+            eventData={eventData}
+            sectionRef={eventsSectionRef}
             eventDescrition=""
           />
+          <Calls title="Join Us" eventData={joinUs} eventDescrition="" />
           <PrevSummut />
           <About />
           <Directions sectionRef={venueSectionRef} />
-          <FAQ faqData={faqData}/>
+          <FAQ faqData={faqData} />
           <Footer />
         </>
       )}

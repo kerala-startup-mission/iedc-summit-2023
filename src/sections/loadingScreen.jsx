@@ -10,7 +10,7 @@ const LoadingScreen = () => {
       <h4 className="font-darker-grotesque text-center font-semibold text-6xl">
         IEDC SUMMIT 2023
       </h4>
-      <h2 className="mt-10 font-dm-sans font-medium text-2xl text-slate-500">
+      <h2 className="mt-10 font-dm-sans font-medium text-2xl text-zinc-500">
         Loading...
       </h2>
     </div>
