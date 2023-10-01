@@ -4,6 +4,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
+
+import { FaSearch } from "react-icons/fa";
+
 function Events(props) {
   const { title, button, sectionRef, eventData, eventDescription } = props;
 
@@ -39,13 +42,16 @@ function Events(props) {
         <h1 className="font-[700] text-[75px] text-center text-[#0065B2]">
           {title}
         </h1>
-        <input
-          type="search"
-          value={search}
-          placeholder="Search event"
-          onChange={handleSearch}
-          className="self-center w-[45%] px-6 py-2 z-30 rounded-full border-2 border-[#777] text-lg outline-none"
-        />
+        <div className="self-center relative z-20 w-[45%]">
+          <input
+            type="search"
+            value={search}
+            placeholder="Search event"
+            onChange={handleSearch}
+            className="w-full px-6 py-2 z-30 rounded-full border-2 border-[#777] text-lg outline-none"
+          />
+          <FaSearch className="absolute right-6 text-[#999] top-1/3" />
+        </div>
         <div className="w-full flex flex-col">
           <div className="flex flex-col p-0 w-full  custom2:p-10">
             <nav>
