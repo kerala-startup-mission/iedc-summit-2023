@@ -22,12 +22,11 @@ function Ticket(props) {
 
   return (
     <div
-      className="flex-none mb-6  overflow-hidden relative flex flex-col h-[622px] 
-
+      className="flex-none overflow-hidden relative flex flex-col h-[622px] border-b-2 border-gray-200
     bg-white
     w-[350px] rounded-[30px] mb-12 "
     >
-      <div className="h-[50%]   shadow-2xl shadow-blue-100  border border-2 rounded-[20px]  w-full self-center     rounded-t-[30px]">
+      <div className="h-[50%] shadow-2xl shadow-blue-100 border-2 rounded-[20px]  w-full self-center     rounded-t-[30px]">
         <img
           src={eventImg}
           alt="Event Image"
