@@ -1,5 +1,4 @@
 // import Schedule from "./sections/Schedule";
-// import Speakers from "./sections/Speakers";
 import Events from "../sections/Events";
 import Calls from "../sections/Calls";
 import LandingPage from "../sections/landingPage";
@@ -14,6 +13,7 @@ import Navbar from "../components/Navbar";
 import { joinUs, faqData, eventData } from "../data";
 import LoadingScreen from "../sections/loadingScreen";
 import FAQ from "../sections/FAQ";
+import Speakers from "../sections/Speakers";
 
 function mainPage() {
   const [loading, setLoading] = useState(false);
@@ -33,7 +33,7 @@ function mainPage() {
   const navbarItems = [
     { text: "HOME", href: "#", sectionRef: homeSectionRef },
     { text: "ABOUT", href: "#about", sectionRef: aboutSectionRef },
-    //{ text: "", href: "#speakers", sectionRef: speakersSectionRef },
+    { text: "", href: "#speakers", sectionRef: speakersSectionRef },
     { text: "EVENTS", href: "#events", sectionRef: eventsSectionRef },
     { text: "VENUE", href: "#venue", sectionRef: venueSectionRef },
   ];
@@ -47,7 +47,7 @@ function mainPage() {
           <LandingPage sectionRef={homeSectionRef} />
           <AboutSummit sectionRef={aboutSectionRef} />
           <IedcCircle />
-          <loadingScreen></loadingScreen>
+          <loadingScreen/>
           <Events
             title="Events"
             button="Register Now"
@@ -55,6 +55,7 @@ function mainPage() {
             sectionRef={eventsSectionRef}
             eventDescrition=""
           />
+          <Speakers sectionRef={speakersSectionRef} />
           <Calls title="Join Us" eventData={joinUs} eventDescrition="" />
           <PrevSummut />
           <About />
