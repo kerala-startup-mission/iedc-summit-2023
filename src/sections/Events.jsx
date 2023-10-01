@@ -4,14 +4,12 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
-
-import { FaSearch } from "react-icons/fa";
+import EventSearch from "../components/EventSearch";
 
 function Events(props) {
   const { title, button, sectionRef, eventData, eventDescription } = props;
 
   const [activeLink, setActiveLink] = useState("1");
-  const [search, setSearch] = useState("");
 
   const links = [
     { id: "1", text: "Road To Summit" },
@@ -19,10 +17,6 @@ function Events(props) {
     { id: "3", text: "Industry of future" },
     { id: "4", text: "Startup Symposium" },
   ];
-
-  const handleSearch = (e) => {
-    setSearch((string) => e.target.value);
-  };
 
   const handleLinkClick = (linkId) => {
     setActiveLink(linkId);
@@ -42,16 +36,7 @@ function Events(props) {
         <h1 className="font-[700] text-[75px] text-center text-[#0065B2]">
           {title}
         </h1>
-        <div className="self-center relative z-20 w-full sm:w-[75%] md:w-[50%]">
-          <input
-            type="search"
-            value={search}
-            placeholder="Search event"
-            onChange={handleSearch}
-            className="w-full px-6 py-2 z-30 rounded-full border-2 border-[#777] text-lg outline-none"
-          />
-          <FaSearch className="absolute right-6 text-[#999] top-1/3" />
-        </div>
+        <EventSearch />
         <div className="w-full flex flex-col">
           <div className="flex flex-col p-0 w-full  custom2:p-10">
             <nav>
