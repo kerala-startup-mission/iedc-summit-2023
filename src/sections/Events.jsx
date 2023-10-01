@@ -42,7 +42,7 @@ function Events(props) {
         <h1 className="font-[700] text-[75px] text-center text-[#0065B2]">
           {title}
         </h1>
-        <div className="self-center relative z-20 w-[45%]">
+        <div className="self-center relative z-20 w-full sm:w-[75%] md:w-[50%]">
           <input
             type="search"
             value={search}
