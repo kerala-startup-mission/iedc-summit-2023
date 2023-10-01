@@ -23,7 +23,7 @@ function callCard(props) {
           <a
             href=""
             target="_blank"
-            className="text-center absolute border-[1px] border-black bottom-2  lg:right-2 lg:right-11 text-md font-medium w-[151px] h-8 rounded-md flex items-center justify-center bg-gray-200 "
+            className="text-center absolute border-[1px] border-black bottom-2  lg:right-2  text-md font-medium w-24 h-6 rounded-md flex items-center justify-center bg-gray-200 "
             rel="noreferrer"
           >
             {buttonTitle}
