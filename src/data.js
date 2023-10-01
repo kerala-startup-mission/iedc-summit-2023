@@ -187,22 +187,6 @@ export const prevSummits = [
 export const joinUs = [
   {
     ticketButton: "Apply Now",
-    ticketTitle: "Student Product Showcase",
-    ticketImg: studentProd,
-    ticketDescription:
-      "Showcase your talents and your love for technology at the IEDC Summit 2023. Exhibit projects, Connect with mentors, investors and many more! Join us now!",
-    ticketLink: "https://forms.gle/qtTdJAQetEniAT897",
-  },
-  {
-    ticketButton: "Apply Now",
-    ticketTitle: "Flea Market",
-    ticketImg: fleaMarket,
-    ticketDescription:
-      "Showcase and sell your products at Asia's biggest entrepreneurship event, the IEDC Summit 2023. Book your stalls now!",
-    ticketLink: "https://forms.gle/qtTdJAQetEniAT897",
-  },
-  {
-    ticketButton: "Apply Now",
     ticketTitle: "Start-ups",
     ticketImg: startupEng,
     ticketDescription:
@@ -248,15 +232,6 @@ export const joinUs = [
   },
   {
     ticketButton: "Apply Now",
-    ticketTitle: "Government Departments ",
-    ticketImg: govtEng,
-    ticketDescription:
-      "Let’s recognize the full potential of the innovation and entrepreneurship ecosystem by working together. Join us at the IEDC Summit 2023!",
-    ticketLink:
-      "https://docs.google.com/forms/d/e/1FAIpQLScoI8Zb2A3bw0dp2WdRE0KunLXL2UbphSPW05FibqrC229bFQ/viewform?usp=sf_link",
-  },
-  {
-    ticketButton: "Apply Now",
     ticketTitle: "Industries ",
     ticketImg: industryEng,
     ticketDescription:
@@ -281,6 +256,31 @@ export const joinUs = [
       "Empower your campus, lead innovation, and shape the future as a Campus Ambassador!",
     ticketLink:
       "https://docs.google.com/forms/d/e/1FAIpQLScELRKFTHPidYEnD-bLfuxa6B8Zoba9EkSThh3hMZ3ZBad26g/viewform",
+  },
+  {
+    ticketButton: "Apply Now",
+    ticketTitle: "Flea Market",
+    ticketImg: fleaMarket,
+    ticketDescription:
+      "Showcase and sell your products at Asia's biggest entrepreneurship event, the IEDC Summit 2023. Book your stalls now!",
+    ticketLink: "https://forms.gle/qtTdJAQetEniAT897",
+  },
+  {
+    ticketButton: "Apply Now",
+    ticketTitle: "Government Departments ",
+    ticketImg: govtEng,
+    ticketDescription:
+      "Let’s recognize the full potential of the innovation and entrepreneurship ecosystem by working together. Join us at the IEDC Summit 2023!",
+    ticketLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLScoI8Zb2A3bw0dp2WdRE0KunLXL2UbphSPW05FibqrC229bFQ/viewform?usp=sf_link",
+  },
+  {
+    ticketButton: "Apply Now",
+    ticketTitle: "Student Product Showcase",
+    ticketImg: studentProd,
+    ticketDescription:
+      "Showcase your talents and your love for technology at the IEDC Summit 2023. Exhibit projects, Connect with mentors, investors and many more! Join us now!",
+    ticketLink: "https://forms.gle/qtTdJAQetEniAT897",
   },
 ];
 
@@ -391,14 +391,6 @@ export const eventData = [
     ticketLink: "https://forms.gle/81y3ZPVmWPKwJPFg9",
     ticketButton: 0,
     sectionId: 1,
-  },
-  {
-    ticketTitle: "Exploring SketchUp",
-    ticketImg: sketchUp,
-    ticketDescription:
-      "Gear up for an exciting new learning opportunity, presented to you by IEDC CET, the 3D modelling workshop, Exploring SketchUp !",
-    ticketLink: "https://forms.gle/Lm7yHT7FHbYRiynM9",
-    ticketButton: 0,
   },
   {
     ticketTitle: "Cricket Auction",
