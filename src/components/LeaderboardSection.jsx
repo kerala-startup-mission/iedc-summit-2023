@@ -6,7 +6,7 @@ function LBmodal() {
   return (
       <div className=" relative w-full flex justify-center bg-gradient-to-br from-[#0597F2] to-[#6F04D9] p-1 ">
         <a className="absolute top-2 md:top-5 left-2 md:left-5 p-2 bg-transparent text-white border-[#FFF8] rounded-[10px] border-2 z-20" href="/">Go To Home</a>
-        <img src={bg} className="invisible lg:visible absolute top-12" />
+        <img src={bg} className="invisible lg:visible fixed top-12" />
         <div className="mx-4 my-4 w-5/6 sm:w-9/12 z-10">
           <div className="flex justify-end pt-8 pb-12 w-full">
             <div className="w-full text-center self-center flex flex-col bg-transparent ">
