@@ -4,6 +4,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
+import EventSearch from "../components/EventSearch";
+
 function Events(props) {
   const { title, button, sectionRef, eventData, eventDescription } = props;
 
@@ -34,6 +36,7 @@ function Events(props) {
         <h1 className="font-[700] text-[75px] text-center text-[#0065B2]">
           {title}
         </h1>
+        <EventSearch />
         <div className="w-full flex flex-col">
           <div className="flex flex-col p-0 w-full  custom2:p-10">
             <nav>
