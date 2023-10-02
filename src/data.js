@@ -1,4 +1,6 @@
 import Alt from "./assets/img/noavatar.png";
+
+//Team members
 import nivedNarayanan from "./assets/img/teams/Nived Narayanan.jpg";
 import johnGeorge from "./assets/img/teams/John George.jpg";
 import ivinMK from "./assets/img/teams/Ivin_Mathew.png";
@@ -10,6 +12,7 @@ import aharonMathew from "./assets/img/teams/AharonMathews.jpeg";
 import aslamNaseer from "./assets/img/teams/AslamNaseer.png";
 import ajayGosh from "./assets/img/teams/ajayGosh.png";
 
+//Engagement Calls
 import campusAmb from "./assets/img/calls/campus_ambassador.png";
 import communityEng from "./assets/img/calls/community_engagement.png";
 import corporateEng from "./assets/img/calls/corporate_engagement.png";
@@ -22,6 +25,7 @@ import volunteers from "./assets/img/calls/volunteers.png";
 import studentProd from "./assets/img/calls/studentProd.png";
 import fleaMarket from "./assets/img/calls/fleaMarket.jpg";
 
+//Events
 import mascotChallenge from "./assets/img/events/mascotChallenge.jpg";
 import excelAdvanced from "./assets/img/events/excelAdvanced.jpg";
 import aiMentalHealth from "./assets/img/events/AIMentalHealth.jpg";
@@ -42,54 +46,128 @@ import cricket from "./assets/img/events/Cricket.jpg";
 import fashion from "./assets/img/events/Fashionshow.jpg";
 import warehouse from "./assets/img/events/SmartWarehouse.jpg";
 
+//Speakers
+import anoopAmbika from "./assets/img/speakers/Main_Stage/Anoop Ambika.jpg";
+import xavier from "./assets/img/speakers/Main_Stage/Dr.Xavier.jpg";
+import geromicGeorge from "./assets/img/speakers/Main_Stage/Geromic George.webp";
+import moosaMeher from "./assets/img/speakers/Main_Stage/Moosa MEher MP.jpg";
+import pinarayiVijayan from "./assets/img/speakers/Main_Stage/pinarayi-vijayan.jpeg";
+import rBindu from "./assets/img/speakers/Main_Stage/R_Bindu.webp";
+import rathanUKalkar from "./assets/img/speakers/Main_Stage/Rathan U Kalkar.jpg";
+import shajiGopinath from "./assets/img/speakers/Main_Stage/shaji Gopinath.webp";
+import tomThomas from "./assets/img/speakers/Main_Stage/Tom Thomas.jpg";
+import umarAbdussalam from "./assets/img/speakers/Main_Stage/Umar abdussalam.jpg";
+import mirzadMakhDoom from "./assets/img/speakers/1. MIRZAD MAKHDOOM CEO FOUNDER TRIBAL ACADEMY.jpeg";
+import nandakishorM from "./assets/img/speakers/2.NANDAKISHOR M CEO CONVAI INNOVATIONS.jpg";
+import vMSadique from "./assets/img/speakers/3.VM SADIQUE ALI WILDLIFE PHOTOGRAPHER FILMMAKER.jpg";
+import viswaR from "./assets/img/speakers/4. VISWA  R CO FOUNDER OF KAGAZEEINDIA .jpg";
+import shrijithNair from "./assets/img/speakers/5. SHRIJITH NAIR HR PARTNER @SCHNEIDER ELECTRIC , CO FOUNDER OF KAGAZEEINDIA.jpg";
+// import aswiniAT from "./assets/img/speakers/Aswini AT.jpg";
+import ashithaPR from "./assets/img/speakers/7.ASHITHA PR.jpg";
+import jomarshal from "./assets/img/speakers/8.JOMARSHAL ,MUSICIAN.jpeg";
+
 export const speakers = [
   {
-    img: Alt,
-    name: "",
-    title1: "",
+    img: pinarayiVijayan,
+    name: "Sri Pinarayi Vijayan",
+    title1: "Chief minister",
+    title2: "Kerala",
+  },
+  {
+    img: anoopAmbika,
+    name: "Anoop Ambika",
+    title1: "CEO",
+    title2: "Kerala Startup Mission",
+  },
+  {
+    img: xavier,
+    name: "Dr. Xavier",
+    title1: "Principal",
+    title2: "College of Engineering Trivandrum",
+  },
+  {
+    img: rathanUKalkar,
+    name: "Dr. Rathan U Kelkar IAS",
+    title1: "Secretary, E & IT",
+    title2: "Govt. of Kerala",
+  },
+  {
+    img: rBindu,
+    name: "Smt R Bindu",
+    title1: "Minister of Higher Education of Kerala",
     title2: "",
   },
   {
-    img: Alt,
-    name: "",
-    title1: "",
+    img: shajiGopinath,
+    name: "Dr. Shaji Gopinath",
+    title1: "Honourable Vice Chancelor",
+    title2: "Kerala Technological University and Digital University of Kerala",
+  },
+  {
+    img: umarAbdussalam,
+    name: "Umer Abdussalam",
+    title1: "CEO",
+    title2: "Edapt",
+  },
+  {
+    img: moosaMeher,
+    name: "Moosa Mehar MP",
+    title1: "CEO",
+    title2: "TinkerHub",
+  },
+  {
+    img: tomThomas,
+    name: "Sri Tom Thomas",
+    title1: "COO",
+    title2: "Kerala Startup Mission",
+  },
+  {
+    img: geromicGeorge,
+    name: "Geromic George IAS",
+    title1: "District Collector",
+    title2: "Thiruvananthapuram",
+  },
+  {
+    img: mirzadMakhDoom,
+    name: "Mirzad Makhdoom",
+    title1: "Web3 Educator and Creator",
+    title2: "Founder and CEO of tribe academy",
+  },
+  {
+    img: jomarshal,
+    name: "Jomarshal",
+    title1: "Music Composer",
     title2: "",
   },
   {
-    img: Alt,
-    name: "",
-    title1: "",
+    img: nandakishorM,
+    name: "Nandakishor M",
+    title1: "CEO",
+    title2: "Convai Innovations",
+  },
+  {
+    img: ashithaPR,
+    name: "Ashita PR",
+    title1: " DApp Developer",
     title2: "",
   },
   {
-    img: Alt,
-    name: "",
-    title1: "",
-    title2: "",
+    img: vMSadique,
+    name: "V M Sadique Ali",
+    title1: "Wildlife Photographer",
+    title2: "Filmmaker",
   },
   {
-    img: Alt,
-    name: "",
-    title1: "",
-    title2: "",
+    img: viswaR,
+    name: "Viswa R",
+    title1: "Co Founder",
+    title2: "Kagazee India",
   },
   {
-    img: Alt,
-    name: "",
-    title1: "",
-    title2: "",
-  },
-  {
-    img: Alt,
-    name: "",
-    title1: "",
-    title2: "",
-  },
-  {
-    img: Alt,
-    name: "",
-    title1: "",
-    title2: "",
+    img: shrijithNair,
+    name: "Shrijith Nair H R",
+    title1: "Partner @ Schneider Electric",
+    title2: "Co Founder of Kagazee India",
   },
 ];
 
