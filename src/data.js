@@ -99,7 +99,7 @@ export const speakers = [
   },
   {
     img: shajiGopinath,
-    name: "Dr. Shaji Gopinath",
+    name: "Dr. Saji Gopinath",
     title1: "Honourable Vice Chancelor",
     title2: "Kerala Technological University and Digital University of Kerala",
   },
