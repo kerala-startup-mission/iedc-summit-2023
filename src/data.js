@@ -63,7 +63,7 @@ import umarAbdussalam from "./assets/img/speakers/Main_Stage/Umar abdussalam.jpg
 import mirzadMakhDoom from "./assets/img/speakers/1. MIRZAD MAKHDOOM CEO FOUNDER TRIBAL ACADEMY.jpeg";
 import nandakishorM from "./assets/img/speakers/2.NANDAKISHOR M CEO CONVAI INNOVATIONS.jpg";
 import vMSadique from "./assets/img/speakers/3.VM SADIQUE ALI WILDLIFE PHOTOGRAPHER FILMMAKER.jpg";
-import viswaR from "./assets/img/speakers/4. VISWA  R CO FOUNDER OF KAGAZEEINDIA .jpg";
+import vishwa from "./assets/img/speakers/vishwa.jpeg";
 import shrijithNair from "./assets/img/speakers/5. SHRIJITH NAIR HR PARTNER @SCHNEIDER ELECTRIC , CO FOUNDER OF KAGAZEEINDIA.jpg";
 // import aswiniAT from "./assets/img/speakers/Aswini AT.jpg";
 import ashithaPR from "./assets/img/speakers/7.ASHITHA PR.jpg";
@@ -162,8 +162,8 @@ export const speakers = [
     title2: "Filmmaker",
   },
   {
-    img: viswaR,
-    name: "Viswa R",
+    img: vishwa,
+    name: "Vishwa R",
     title1: "Co Founder",
     title2: "Kagazee India",
   },
