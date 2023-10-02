@@ -73,13 +73,13 @@ export const speakers = [
   {
     img: pinarayiVijayan,
     name: "Sri Pinarayi Vijayan",
-    title1: "Chief minister",
+    title1: "Honourable Chief minister",
     title2: "Kerala",
   },
   {
     img: rBindu,
-    name: "Smt R Bindu",
-    title1: "Minister for Higher Education and Social Justice",
+    name: "Dr. R Bindu",
+    title1: "Honourable Minister for Higher Education and Social Justice",
     title2: "Govt. of Kerala",
   },
   {
@@ -157,7 +157,7 @@ export const speakers = [
   },
   {
     img: aswiniAT,
-    name: "Aswini A T",
+    name: "Ashwini A T",
     title1: " DApp Developer",
     title2: "",
   },
@@ -175,7 +175,7 @@ export const speakers = [
   },
   {
     img: shrijithNair,
-    name: "Shrijith Nair H R",
+    name: "Shrijit Nair H R",
     title1: "Partner @ Schneider Electric",
     title2: "Co Founder of Kagazee India",
   },
