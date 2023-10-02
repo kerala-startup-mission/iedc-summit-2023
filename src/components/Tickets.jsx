@@ -22,15 +22,14 @@ function Ticket(props) {
 
   return (
     <div
-      className="flex-none mb-6  overflow-hidden relative flex flex-col h-[622px] 
-
+    className="flex-none overflow-hidden relative flex flex-col h-[622px] border-b-2 border-r- border-gray-300
     bg-white
     w-[350px] rounded-[30px] mb-12 "
     >
-      <div className="h-[50%]   shadow-2xl shadow-blue-100  border border-2 rounded-[20px]  w-full self-center     rounded-t-[30px]">
+      <div className="h-[50%] shadow-2xl shadow-blue-100 border-2 rounded-[20px]  w-full self-center     rounded-t-[30px]">
         <img
           src={eventImg}
-          alt="mathew"
+          alt="Event Image"
           className=" rounded-[20px] w-full h-full  "
         />
       </div>
@@ -38,11 +37,11 @@ function Ticket(props) {
       <div className="h-[50%] ">
         <div className=" flex flex-row h-[25%] items-center  mx-auto">
           <div className="w-[38px]  rotate-180  overflow-hidden">
-            <div className="shadow-inner  w-[75px] bg-zinc-50 h-[75px] bg-white rounded-[75px]"></div>
+            <div className="shadow-inner  w-[75px] bg-zinc-50 h-[75px]  rounded-[75px]"></div>
           </div>
           <div className="ml-2 my-auto mx-auto flex">{squares}</div>
           <div className="w-[38px]   overflow-hidden">
-            <div className="shadow-inner w-[75px] bg-zinc-50 h-[75px] bg-white rounded-[75px]"></div>
+            <div className="shadow-inner w-[75px] bg-zinc-50 h-[75px] rounded-[75px]"></div>
           </div>
         </div>
         <div className="h-[75%]   border-t-0 rounded-b-[30px]">
@@ -58,14 +57,14 @@ function Ticket(props) {
                 <a
                   href={eventLink}
                   target="_blank"
-                  className="text-center bg-indigo-200 font-[500] absolute bottom-5 text-md font-extrabold w-[151px] p-3 bg-[#FFFFFF] shadow-md rounded-[30px] flex items-center justify-center hover:bg-[#E1F3FE]"
+                  className="text-center bg-[#32d9ff] absolute bottom-5 text-md font-extrabold w-[151px] p-3 shadow-md rounded-[30px] flex items-center justify-center hover:bg-gradient-to-tr from-[#0597F2] to-[#4656E1] hover:text-white"
                   rel="noreferrer"
                 >
                   {buttonTitleArray[0]}
                 </a>
               ) : (
                 <a
-                  className="text-center font-[600] absolute bottom-5 text-md font-extrabold w-[151px] h-[60px]  shadow-md rounded-[30px] flex items-center justify-center"
+                  className="text-center absolute bottom-5 text-md font-extrabold w-[151px] h-[60px]  shadow-md rounded-[30px] flex items-center justify-center"
                   rel="noreferrer"
                 >
                   {buttonTitleArray[eventButton]}
