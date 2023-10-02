@@ -22,7 +22,7 @@ function Ticket(props) {
 
   return (
     <div
-      className="flex-none overflow-hidden relative flex flex-col h-[622px] border-b-2 border-gray-200
+    className="flex-none overflow-hidden relative flex flex-col h-[622px] border-b-2 border-r- border-gray-300
     bg-white
     w-[350px] rounded-[30px] mb-12 "
     >
@@ -37,11 +37,11 @@ function Ticket(props) {
       <div className="h-[50%] ">
         <div className=" flex flex-row h-[25%] items-center  mx-auto">
           <div className="w-[38px]  rotate-180  overflow-hidden">
-            <div className="shadow-inner  w-[75px] bg-zinc-50 h-[75px] bg-white rounded-[75px]"></div>
+            <div className="shadow-inner  w-[75px] bg-zinc-50 h-[75px]  rounded-[75px]"></div>
           </div>
           <div className="ml-2 my-auto mx-auto flex">{squares}</div>
           <div className="w-[38px]   overflow-hidden">
-            <div className="shadow-inner w-[75px] bg-zinc-50 h-[75px] bg-white rounded-[75px]"></div>
+            <div className="shadow-inner w-[75px] bg-zinc-50 h-[75px] rounded-[75px]"></div>
           </div>
         </div>
         <div className="h-[75%]   border-t-0 rounded-b-[30px]">
@@ -64,7 +64,7 @@ function Ticket(props) {
                 </a>
               ) : (
                 <a
-                  className="text-center font-[600] absolute bottom-5 text-md font-extrabold w-[151px] h-[60px]  shadow-md rounded-[30px] flex items-center justify-center"
+                  className="text-center absolute bottom-5 text-md font-extrabold w-[151px] h-[60px]  shadow-md rounded-[30px] flex items-center justify-center"
                   rel="noreferrer"
                 >
                   {buttonTitleArray[eventButton]}
