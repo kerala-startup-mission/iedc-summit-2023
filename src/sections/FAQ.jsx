@@ -14,7 +14,7 @@ function FAQ({ faqData }, { sectionRef }) {
   return (
     <div
       ref={sectionRef}
-      className="sm:w-2/3 w-11/12 self-center flex flex-col relative mb-20"
+      className="sm:w-2/3 w-11/12 self-center flex flex-col relative  mb-20"
     >
       <div className="w-[500px] h-[500px] md:w-[700px] md:h-[700px] lg:w-[700px] lg:h-[700px] bg-transparent border-[#3866F2] border-[70px] md:border-[100px] lg:border-[140px] right-[-320px] sm:right-[-350px] md:right-[-550px] lg:right-[-600px] top-[100px] sm:top-0 lg:top-[-150px] opacity-40 absolute rounded-full -z-20" />
       <div className="absolute overflow-hidden -z-10 opacity-5 text-[#0597F2] xl:top-[-100px] lg:top-[-90px] md:top-[-70px] sm:top-[-70px]  w-full space-y-6 text-center self-center ">
