@@ -51,7 +51,7 @@ import marsStation from "./assets/img/events/LivingStationInMars.jpg";
 
 //Speakers
 import anoopAmbika from "./assets/img/speakers/Main_Stage/Anoop Ambika.jpg";
-import xavier from "./assets/img/speakers/Main_Stage/Dr.Xavier.jpg";
+import savier from "./assets/img/speakers/Main_Stage/Dr.Xavier.jpg";
 import geromicGeorge from "./assets/img/speakers/Main_Stage/Geromic George.webp";
 import moosaMeher from "./assets/img/speakers/Main_Stage/Moosa MEher MP.jpg";
 import pinarayiVijayan from "./assets/img/speakers/Main_Stage/pinarayi-vijayan.jpeg";
@@ -77,16 +77,10 @@ export const speakers = [
     title2: "Kerala",
   },
   {
-    img: anoopAmbika,
-    name: "Anoop Ambika",
-    title1: "CEO",
-    title2: "Kerala Startup Mission",
-  },
-  {
-    img: xavier,
-    name: "Dr. Xavier",
-    title1: "Principal",
-    title2: "College of Engineering Trivandrum",
+    img: rBindu,
+    name: "Smt R Bindu",
+    title1: "Minister for Higher Education and Social Justice",
+    title2: "Govt. of Kerala",
   },
   {
     img: rathanUKalkar,
@@ -95,17 +89,36 @@ export const speakers = [
     title2: "Govt. of Kerala",
   },
   {
-    img: rBindu,
-    name: "Smt R Bindu",
-    title1: "Minister of Higher Education of Kerala",
-    title2: "",
+    img: geromicGeorge,
+    name: "Geromic George IAS",
+    title1: "District Collector",
+    title2: "Thiruvananthapuram",
   },
   {
     img: shajiGopinath,
     name: "Dr. Saji Gopinath",
-    title1: "Honourable Vice Chancelor",
+    title1: "Honourable Vice Chancellor",
     title2: "Kerala Technological University and Digital University of Kerala",
   },
+  {
+    img: anoopAmbika,
+    name: "Anoop Ambika",
+    title1: "CEO",
+    title2: "Kerala Startup Mission",
+  },
+  {
+    img: savier,
+    name: "Dr. Savier J S",
+    title1: "Principal",
+    title2: "College of Engineering Trivandrum",
+  },
+  {
+    img: tomThomas,
+    name: "Sri Tom Thomas",
+    title1: "COO",
+    title2: "Kerala Startup Mission",
+  },
+
   {
     img: umarAbdussalam,
     name: "Umer Abdussalam",
@@ -117,18 +130,6 @@ export const speakers = [
     name: "Moosa Mehar MP",
     title1: "CEO",
     title2: "TinkerHub",
-  },
-  {
-    img: tomThomas,
-    name: "Sri Tom Thomas",
-    title1: "COO",
-    title2: "Kerala Startup Mission",
-  },
-  {
-    img: geromicGeorge,
-    name: "Geromic George IAS",
-    title1: "District Collector",
-    title2: "Thiruvananthapuram",
   },
   {
     img: mirzadMakhDoom,
