@@ -31,8 +31,6 @@ const AboutSummit = ({ sectionRef }) => {
           from panel discussions, expand your horizons in technical knowledge
           and financial literacy.
         </p>
-
-        <p>Let's unravel dimensions and unite perspectives together!</p>
       </>
     ),
   };
