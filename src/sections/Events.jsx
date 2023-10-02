@@ -23,7 +23,7 @@ function Events(props) {
   };
 
   return (
-    <div className="mt-4 md:pt-4 bg-zinc-100 w-full flex justify-center">
+    <div className="mt-4 md:pt-4 bg-zinc-50 w-full flex justify-center">
       <div
         ref={sectionRef}
         className="relative space-y-10 font-dm-sans  lg:w-10/12 w-11/12  flex flex-col "
