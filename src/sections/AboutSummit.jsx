@@ -43,16 +43,15 @@ const AboutSummit = ({ sectionRef }) => {
         className={`w-10/12 mx-auto ${ inView ? 'opacity-1 translate-y-0' : 'opacity-0 translate-y-7' } xs:w-11/12 py-10 min-h-[80vh] font-dm-sans flex flex-col lg:flex-row place-items-center transition duration-500`}
       >
         <div className="flex-1 flex-grow flex h-80 lg:pr-20 box-border my-5">
-          <iframe
+          <video
           style={{borderRadius:'5px'}}
           height="100%"
           width="100%"
           src={aboutVideo}
-          title="About video player"
-          allowFullScreen
-          sandbox //to disable autoplay
+          autoPlay
+          controls
           className="shadow-lg"
-        ></iframe>
+        ></video>
         </div>
         <div className="flex-1">
           <Paragraph
