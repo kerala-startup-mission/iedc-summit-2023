@@ -57,7 +57,7 @@ import moosaMeher from "./assets/img/speakers/Main_Stage/Moosa MEher MP.jpg";
 import pinarayiVijayan from "./assets/img/speakers/Main_Stage/pinarayi-vijayan.jpeg";
 import rBindu from "./assets/img/speakers/Main_Stage/R_Bindu.webp";
 import rathanUKalkar from "./assets/img/speakers/Main_Stage/Rathan U Kalkar.jpg";
-import shajiGopinath from "./assets/img/speakers/Main_Stage/shaji Gopinath.webp";
+import sajiGopinath from "./assets/img/speakers/Main_Stage/saji Gopinath.jpeg";
 import tomThomas from "./assets/img/speakers/Main_Stage/Tom Thomas.jpg";
 import umarAbdussalam from "./assets/img/speakers/Main_Stage/Umar abdussalam.jpg";
 import mirzadMakhDoom from "./assets/img/speakers/1. MIRZAD MAKHDOOM CEO FOUNDER TRIBAL ACADEMY.jpeg";
@@ -65,7 +65,7 @@ import nandakishorM from "./assets/img/speakers/2.NANDAKISHOR M CEO CONVAI INNOV
 import vMSadique from "./assets/img/speakers/3.VM SADIQUE ALI WILDLIFE PHOTOGRAPHER FILMMAKER.jpg";
 import vishwa from "./assets/img/speakers/vishwa.jpeg";
 import shrijithNair from "./assets/img/speakers/5. SHRIJITH NAIR HR PARTNER @SCHNEIDER ELECTRIC , CO FOUNDER OF KAGAZEEINDIA.jpg";
-// import aswiniAT from "./assets/img/speakers/Aswini AT.jpg";
+import aswiniAT from "./assets/img/speakers/Aswini AT.jpg";
 import ashithaPR from "./assets/img/speakers/7.ASHITHA PR.jpg";
 import jomarshal from "./assets/img/speakers/8.JOMARSHAL ,MUSICIAN.jpeg";
 
@@ -73,13 +73,13 @@ export const speakers = [
   {
     img: pinarayiVijayan,
     name: "Sri Pinarayi Vijayan",
-    title1: "Chief minister",
+    title1: "Honourable Chief minister",
     title2: "Kerala",
   },
   {
     img: rBindu,
-    name: "Smt R Bindu",
-    title1: "Minister for Higher Education and Social Justice",
+    name: "Dr. R Bindu",
+    title1: "Honourable Minister for Higher Education and Social Justice",
     title2: "Govt. of Kerala",
   },
   {
@@ -95,7 +95,7 @@ export const speakers = [
     title2: "Thiruvananthapuram",
   },
   {
-    img: shajiGopinath,
+    img: sajiGopinath,
     name: "Dr. Saji Gopinath",
     title1: "Honourable Vice Chancellor",
     title2: "Kerala Technological University and Digital University of Kerala",
@@ -152,6 +152,12 @@ export const speakers = [
   {
     img: ashithaPR,
     name: "Ashita PR",
+    title1: " DApp Developer",
+    title2: "",
+  },
+  {
+    img: aswiniAT,
+    name: "Ashwini A T",
     title1: " DApp Developer",
     title2: "",
   },
