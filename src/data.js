@@ -169,7 +169,7 @@ export const speakers = [
   },
   {
     img: shrijithNair,
-    name: "Shrijith Nair H R",
+    name: "Shrijit Nair",
     title1: "Partner @ Schneider Electric",
     title2: "Co Founder of Kagazee India",
   },
