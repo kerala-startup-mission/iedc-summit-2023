@@ -65,7 +65,7 @@ import nandakishorM from "./assets/img/speakers/2.NANDAKISHOR M CEO CONVAI INNOV
 import vMSadique from "./assets/img/speakers/3.VM SADIQUE ALI WILDLIFE PHOTOGRAPHER FILMMAKER.jpg";
 import viswaR from "./assets/img/speakers/4. VISWA  R CO FOUNDER OF KAGAZEEINDIA .jpg";
 import shrijithNair from "./assets/img/speakers/5. SHRIJITH NAIR HR PARTNER @SCHNEIDER ELECTRIC , CO FOUNDER OF KAGAZEEINDIA.jpg";
-import aswiniAT from "./assets/img/speakers/Aswini AT.JPG";
+import aswiniAT from "./assets/img/speakers/Aswini AT.jpg";
 import ashithaPR from "./assets/img/speakers/7.ASHITHA PR.jpg";
 import jomarshal from "./assets/img/speakers/8.JOMARSHAL ,MUSICIAN.jpeg";
 
@@ -175,8 +175,8 @@ export const speakers = [
   },
   {
     img: shrijithNair,
-    name: "Shrijit Nair H R",
-    title1: "Partner @ Schneider Electric",
+    name: "Shrijit Nair ",
+    title1: "HR @ Schneider Electric",
     title2: "Co Founder of Kagazee India",
   },
 ];
