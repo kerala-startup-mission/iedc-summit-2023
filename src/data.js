@@ -50,24 +50,24 @@ import craftCareer from "./assets/img/events/CraftingYourCareer.jpg";
 import marsStation from "./assets/img/events/LivingStationInMars.jpg";
 
 //Speakers
-import anoopAmbika from "./assets/img/speakers/Main_Stage/Anoop Ambika.jpg";
-import savier from "./assets/img/speakers/Main_Stage/Dr.Xavier.jpg";
-import geromicGeorge from "./assets/img/speakers/Main_Stage/Geromic George.webp";
-import moosaMeher from "./assets/img/speakers/Main_Stage/Moosa MEher MP.jpg";
-import pinarayiVijayan from "./assets/img/speakers/Main_Stage/pinarayi-vijayan.jpeg";
-import rBindu from "./assets/img/speakers/Main_Stage/R_Bindu.webp";
-import rathanUKalkar from "./assets/img/speakers/Main_Stage/Rathan U Kalkar.jpg";
-import sajiGopinath from "./assets/img/speakers/Main_Stage/saji Gopinath.jpeg";
-import tomThomas from "./assets/img/speakers/Main_Stage/Tom Thomas.jpg";
-import umarAbdussalam from "./assets/img/speakers/Main_Stage/Umar abdussalam.jpg";
-import mirzadMakhDoom from "./assets/img/speakers/1. MIRZAD MAKHDOOM CEO FOUNDER TRIBAL ACADEMY.jpeg";
-import nandakishorM from "./assets/img/speakers/2.NANDAKISHOR M CEO CONVAI INNOVATIONS.jpg";
-import vMSadique from "./assets/img/speakers/3.VM SADIQUE ALI WILDLIFE PHOTOGRAPHER FILMMAKER.jpg";
-import viswaR from "./assets/img/speakers/4. VISWA  R CO FOUNDER OF KAGAZEEINDIA .jpg";
-import shrijithNair from "./assets/img/speakers/5. SHRIJITH NAIR HR PARTNER @SCHNEIDER ELECTRIC , CO FOUNDER OF KAGAZEEINDIA.jpg";
-import aswiniAT from "./assets/img/speakers/Aswini AT.jpg";
-import ashithaPR from "./assets/img/speakers/7.ASHITHA PR.jpg";
-import jomarshal from "./assets/img/speakers/8.JOMARSHAL ,MUSICIAN.jpeg";
+import anoopAmbika from "./assets/img/speakers/Main_Stage/anoopAmbika.jpg";
+import savier from "./assets/img/speakers/Main_Stage/drSavier.jpg";
+import geromicGeorge from "./assets/img/speakers/Main_Stage/geromicGeorge.webp";
+import moosaMeher from "./assets/img/speakers/Main_Stage/moosaMeherMP.jpg";
+import pinarayiVijayan from "./assets/img/speakers/Main_Stage/pinarayiVijayan.jpeg";
+import rBindu from "./assets/img/speakers/Main_Stage/rBindu.webp";
+import rathanUKalkar from "./assets/img/speakers/Main_Stage/rathanUKalkar.jpg";
+import sajiGopinath from "./assets/img/speakers/Main_Stage/sajiGopinath.jpeg";
+import tomThomas from "./assets/img/speakers/Main_Stage/tomThomas.jpg";
+import umarAbdussalam from "./assets/img/speakers/Main_Stage/umarAbdussalam.jpg";
+import mirzadMakhDoom from "./assets/img/speakers/mirzad.jpeg";
+import nandakishorM from "./assets/img/speakers/nandakishor.jpg";
+import vMSadique from "./assets/img/speakers/vmSadique.jpg";
+import vishwa from "./assets/img/speakers/vishwa.jpeg";
+import shrijitNair from "./assets/img/speakers/shrijithNair.jpg";
+import aswiniAT from "./assets/img/speakers/aswiniAT.jpg";
+import ashithaPR from "./assets/img/speakers/ashithaPR.jpg";
+import jomarshal from "./assets/img/speakers/jomarshal.jpeg";
 
 export const speakers = [
   {
@@ -168,13 +168,13 @@ export const speakers = [
     title2: "Filmmaker",
   },
   {
-    img: viswaR,
+    img: vishwa,
     name: "Vishwa R",
     title1: "Co Founder",
     title2: "Kagazee India",
   },
   {
-    img: shrijithNair,
+    img: shrijitNair,
     name: "Shrijit Nair ",
     title1: "HR @ Schneider Electric",
     title2: "Co Founder of Kagazee India",
