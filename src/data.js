@@ -65,7 +65,7 @@ import nandakishorM from "./assets/img/speakers/2.NANDAKISHOR M CEO CONVAI INNOV
 import vMSadique from "./assets/img/speakers/3.VM SADIQUE ALI WILDLIFE PHOTOGRAPHER FILMMAKER.jpg";
 import viswaR from "./assets/img/speakers/4. VISWA  R CO FOUNDER OF KAGAZEEINDIA .jpg";
 import shrijithNair from "./assets/img/speakers/5. SHRIJITH NAIR HR PARTNER @SCHNEIDER ELECTRIC , CO FOUNDER OF KAGAZEEINDIA.jpg";
-import aswiniAT from "./assets/img/speakers/Aswini AT.jpg";
+import aswiniAT from "./assets/img/speakers/Aswini AT.JPG";
 import ashithaPR from "./assets/img/speakers/7.ASHITHA PR.jpg";
 import jomarshal from "./assets/img/speakers/8.JOMARSHAL ,MUSICIAN.jpeg";
 
