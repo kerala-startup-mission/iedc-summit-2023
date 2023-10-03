@@ -44,7 +44,7 @@ function Ticket(props) {
             <div className="shadow-inner w-[75px] bg-zinc-50 h-[75px] rounded-[75px]"></div>
           </div>
         </div>
-        <div className="h-[75%]   border-t-0 rounded-b-[30px]">
+        <div className="h-[75%] border-2 border-t-0  ">
           <div className="  h-3/4 p-2 w-full  items-center  mx-auto">
             <h1 className="font-[900] text-left text-2xl  leading-tight">
               {eventName}
