@@ -17,12 +17,15 @@ function FAQ({ faqData }, { sectionRef }) {
       className="sm:w-2/3 w-11/12 self-center flex flex-col relative  mb-20"
     >
       <div className="w-[500px] h-[500px] md:w-[700px] md:h-[700px] lg:w-[700px] lg:h-[700px] bg-transparent border-[#3866F2] border-[70px] md:border-[100px] lg:border-[140px] right-[-320px] sm:right-[-350px] md:right-[-550px] lg:right-[-600px] top-[100px] sm:top-0 lg:top-[-150px] opacity-40 absolute rounded-full -z-20" />
-      <div className="absolute overflow-hidden  opacity-5 text-[#0597F2] xl:top-[-100px] lg:top-[-90px] md:top-[-70px] sm:top-[-70px]  w-full space-y-6 text-center self-center ">
+      <div className="absolute overflow-hidden  opacity-5 text-[#0597F2] xl:top-[-110px] lg:top-[-110px] md:top-[-35px] sm:top-[-40px]  w-full space-y-6 text-center self-center ">
         <h1 className="xl:text-[220px] lg:text-[200px] md:text-[150px] sm:text-[150px] text-[0px] whitespace-nowrap font-bold">
           FAQ
         </h1>
       </div>
-      <h1 className="font-bold md:font-[500] text-[#0597F2] text-center text-[50px] xl:text-[100px] lg:text-[100px] md:text-[65px] sm:text-[60px]">
+      <h1 className="font-bold md:font-[500] text-[#0597F2] text-center text-[0px] xl:text-[70px] lg:text-[60px] lg:mb-10 ">
+        Frequently Asked Questions
+      </h1>
+      <h1 className="font-bold md:font-[500] text-[#0597F2] text-center text-[60px] lg:text-[0px] md:text-[65px] sm:text-[60px] ">
         FAQs
       </h1>
       <div className="space-y-5 mt-8">
