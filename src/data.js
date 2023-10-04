@@ -157,7 +157,7 @@ export const speakers = [
   },
   {
     img: aswiniAT,
-    name: "Ashwini A T",
+    name: "Aswini A T",
     title1: " DApp Developer",
     title2: "",
   },
