@@ -14,3 +14,6 @@
 - [Vite](https://vitejs.dev/)
 
 ### Contributors
+<a href="https://github.com/kerala-startup-mission/iedc-summit-2023/graphs/contributors">
+  <img  src="https://imageupload.io/ib/hELsf7Rezyx7lXq_1696429311.png" alt="Team.png"/>
+</a>
