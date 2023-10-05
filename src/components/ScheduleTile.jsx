@@ -27,7 +27,7 @@ const ScheduleTile = ({ datas, num, top, bottom }) => {
       </div>
       <div className="w-15 sm:w-17 md:w-28">
         <img
-          src={datas.img}
+          src={datas.image}
           className="aspect-square rounded-full object-cover"
         />
       </div>
@@ -36,13 +36,13 @@ const ScheduleTile = ({ datas, num, top, bottom }) => {
           {datas.time}
         </div>
         <div className="font-darker-grotesque text-xl sm:text-4xl font-semibold text-theme-blue">
-          {datas.title}
+          {datas.event}
         </div>
         <div className="font-darker-grotesque text-md sm:text-xl font-semibold">
-          {datas.name}
+          {datas.speaker}
         </div>
         <div className="font-darker-grotesque text-md sm:text-xl font-semibold">
-          {datas.position}
+          {datas.venue}
         </div>
       </div>
     </div>
