@@ -202,7 +202,7 @@ export const schedules = [
     speaker: "Nandakishor M",
     event: "CHATBOT MASTERY: CREATING INTELLIGENT CONVERSATIONAL AGENTS",
     venue: "CETAA Hall",
-    time: "1:00PM - 2:00AM",
+    time: "1:00PM - 2:00PM",
   },
   {
     image: jomarshal,
