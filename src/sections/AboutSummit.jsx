@@ -48,7 +48,7 @@ const AboutSummit = ({ sectionRef }) => {
           height="100%"
           width="100%"
           src={aboutVideo}
-          
+           
           controls
           className="shadow-lg"
         ></video>
