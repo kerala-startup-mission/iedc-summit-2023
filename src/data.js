@@ -73,7 +73,7 @@ import jomarshal from "./assets/img/speakers/jomarshal.jpeg";
 export const speakers = [
   {
     img: pinarayiVijayan,
-    name: "Pinarayi Vijayan",
+    name: "Shri.Pinarayi Vijayan",
     title1: "Honourable Chief minister",
     title2: "Kerala",
   },
