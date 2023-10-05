@@ -14,6 +14,7 @@ import { joinUs, faqData, eventData } from "../data";
 import LoadingScreen from "../sections/loadingScreen";
 import FAQ from "../sections/FAQ";
 import Speakers from "../sections/Speakers";
+import Schedule from '../sections/Schedule';
 
 function mainPage() {
   const [loading, setLoading] = useState(false);
@@ -56,6 +57,7 @@ function mainPage() {
             eventDescrition=""
           />
           <Speakers sectionRef={speakersSectionRef} />
+          <Schedule />
           <Calls title="Join Us" eventData={joinUs} eventDescrition="" />
           <PrevSummut />
           <About />
