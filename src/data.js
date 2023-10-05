@@ -63,6 +63,7 @@ import umarAbdussalam from "./assets/img/speakers/Main_Stage/umarAbdussalam.jpg"
 import mirzadMakhDoom from "./assets/img/speakers/mirzad.jpeg";
 import nandakishorM from "./assets/img/speakers/nandakishor.jpg";
 import vMSadique from "./assets/img/speakers/vmSadique.jpg";
+import kagazee from "./assets/img/speakers/kagazeelogo.jpg";
 import vishwa from "./assets/img/speakers/vishwa.jpeg";
 import shrijitNair from "./assets/img/speakers/shrijithNair.jpg";
 import aswiniAT from "./assets/img/speakers/aswiniAT.jpg";
@@ -183,39 +184,39 @@ export const speakers = [
 
 export const schedules = [
   {
-    img: Alt,
-    name: "",
-    title: "Welcome Speech",
-    position: "",
-    time: "9:30AM - 9:40AM",
+    image: Alt,
+    speaker: "Sudhish Payyanur",
+    event: "SHORTFILM COMPETITION AND SCREENING",
+    venue: "CETAA Hall",
+    time: "10:00AM - 10:45AM",
   },
   {
-    img: Alt,
-    name: "",
-    title: "Welcome Speech",
-    position: "",
-    time: "9:30AM - 9:40AM",
+    image: kagazee,
+    speaker: "Shrijit Nair, Vishwa R",
+    event: "ORIGAMI WORKSHOP",
+    venue: "CETAA Hall",
+    time: "11:00AM - 12:00AM",
   },
   {
-    img: Alt,
-    name: "",
-    title: "Welcome Speech",
-    position: "",
-    time: "9:30AM - 9:40AM",
+    image: nandakishorM,
+    speaker: "Nandakishor M",
+    event: "CHATBOT MASTERY: CREATING INTELLIGENT CONVERSATIONAL AGENTS",
+    venue: "CETAA Hall",
+    time: "1:00PM - 2:00AM",
   },
   {
-    img: Alt,
-    name: "",
-    title: "Welcome Speech",
-    position: "",
-    time: "9:30AM - 9:40AM",
+    image: jomarshal,
+    speaker: "Jomarshal",
+    event: "SURVIVAL GUIDE FOR INDEPENDENT MUSICIANS",
+    venue: "CETAA Hall",
+    time: "3:00PM - 4:00PM",
   },
   {
-    img: Alt,
-    name: "",
-    title: "Welcome Speech",
-    position: "",
-    time: "9:30AM - 9:40AM",
+    image: vMSadique,
+    speaker: "VM Sadique Ali",
+    event: "CAPTURING THE MOMENT: THE ESSENCE OF PHOTOGRAPHY",
+    venue: "CETAA Hall",
+    time: "4:30PM - 5:40PM",
   },
 ];
 
