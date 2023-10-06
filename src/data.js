@@ -74,7 +74,7 @@ export const speakers = [
   {
     img: pinarayiVijayan,
     name: "Shri.Pinarayi Vijayan",
-    title1: "Honourable Chief minister",
+    title1: "Hon'ble Chief minister",
     title2: "Kerala",
   },
   {
