@@ -91,7 +91,7 @@ const Schedule = () => {
           {schedules.map((schedule, index) => {
             return (
               <ScheduleTile
-                key={schedule.title + index}
+                key={schedule.event + index}
                 datas={schedule}
                 num={index + 1}
                 top={index === 0}
