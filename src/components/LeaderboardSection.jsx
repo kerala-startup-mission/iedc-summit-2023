@@ -1,9 +1,22 @@
 import LeaderboardCard from "./LeaderboardCard";
-import { leaderboard } from "../leaderBoardData";
+import { useState, useEffect } from "react";
+import { client } from "../../sanityConfig.js";
 import bg from "../assets/img/leaderboard.png";
 
+async function getLeaderboard() {
+  const leaderboard = await client.fetch('*[_type == "leaderboard"]');
+  return leaderboard;
+}
+
 function LBmodal() {
-  return (
+  const [leaderboard, setLeaderboard] = useState([]);
+  useEffect(() => {
+    getLeaderboard().then((leaderboard) => {
+      const sortedLeaderboard = leaderboard.sort((a, b) => b.score - a.score);
+      setLeaderboard(sortedLeaderboard);
+    });
+  }, []);
+  return(
       <div className=" relative w-full flex justify-center bg-gradient-to-br from-[#0597F2] to-[#6F04D9] p-1 ">
         <a className="absolute top-2 md:top-5 left-2 md:left-5 p-2 bg-transparent text-white border-[#FFF8] rounded-[10px] border-2 z-20" href="/">Go To Home</a>
         <img src={bg} className="invisible lg:visible fixed top-12" />
