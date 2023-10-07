@@ -1,14 +1,12 @@
-import React from "react";
 import { useInView } from "react-intersection-observer";
 import Speaker from "../components/SpeakerCard";
 import WaveLine from "../components/WaveLine";
-import { speakers } from "../data";
 import "../assets/css/animations.css";
 // import { useMediaQuery } from "react-responsive";
 // import { Swiper, SwiperSlide } from "swiper/react";
 // import "swiper/css";
 
-function Speakers({ sectionRef }) {
+function Speakers({ sectionRef ,speakersData }) {
   const { ref, inView } = useInView({
     threshold: 0.6,
   });
@@ -61,7 +59,7 @@ function Speakers({ sectionRef }) {
         <div
           className={`mb-20 md:mb-40 mt-10 md:grid md:grid-cols-4 flex flex-col items-center gap-20 md:ml-10`}
         >
-          {speakers.map((speaker, index) => (
+          {speakersData.map((speaker, index) => (
             <Speaker speaker={speaker} key={index} />
           ))}
         </div>
