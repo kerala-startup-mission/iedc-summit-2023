@@ -14,16 +14,25 @@ import { joinUs, faqData, eventData } from "../data";
 import LoadingScreen from "../sections/loadingScreen";
 import FAQ from "../sections/FAQ";
 import Speakers from "../sections/Speakers";
-import Schedule from '../sections/Schedule';
+import Schedule from "../sections/Schedule";
+import { client, getData, urlToImage } from "../../sanityConfig.js";
 
 function mainPage() {
   const [loading, setLoading] = useState(false);
-
+  const [speakers, setSpeakers] = useState([]);
   useEffect(() => {
     setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 4000);
+    getData('*[_type == "speaker"] | order(order asc)')
+      .then((data) => {
+        setSpeakers(data);
+        return data;
+      })
+      .then((data) => urlToImage(data))
+      .then(() => setLoading(false))
+      .catch((error) => {
+        console.error("Error:", error);
+        setLoading(false);
+      });
   }, []);
 
   const homeSectionRef = useRef(null);
@@ -48,7 +57,7 @@ function mainPage() {
           <LandingPage sectionRef={homeSectionRef} />
           <AboutSummit sectionRef={aboutSectionRef} />
           <IedcCircle />
-          <loadingScreen/>
+          <loadingScreen />
           <Events
             title="Events"
             button="Register Now"
@@ -56,7 +65,7 @@ function mainPage() {
             sectionRef={eventsSectionRef}
             eventDescrition=""
           />
-          <Speakers sectionRef={speakersSectionRef} />
+          <Speakers sectionRef={speakersSectionRef} speakersData={speakers} />
           <Schedule />
           <Calls title="Join Us" eventData={joinUs} eventDescrition="" />
           <PrevSummut />
