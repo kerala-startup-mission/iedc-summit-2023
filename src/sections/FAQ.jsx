@@ -22,7 +22,7 @@ function FAQ({ faqData }, { sectionRef }) {
           FAQ
         </h1>
       </div>
-      <h1 className="font-bold md:font-[500] text-[#0597F2] text-center text-[0px] xl:text-[70px] lg:text-[60px] ">
+      <h1 className="md:font-[400] text-[#0597F2] text-center text-[0px] xl:text-[70px] lg:text-[60px] ">
         Frequently Asked Questions
       </h1>
       <h1 className="font-bold mb-10 md:font-[500] text-[#0597F2] text-center text-[60px] lg:text-[0px] md:text-[65px] sm:text-[60px] ">
