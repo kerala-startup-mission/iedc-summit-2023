@@ -15,7 +15,10 @@ import LoadingScreen from "../sections/loadingScreen";
 import FAQ from "../sections/FAQ";
 import Speakers from "../sections/Speakers";
 import Schedule from "../sections/Schedule";
-import {  getData, urlToImage } from "../../sanityConfig.js";
+
+import { client, getData, urlToImage } from "../../sanityConfig.js";
+import Partners from "../sections/Partners";
+
 
 function mainPage() {
   const [loading, setLoading] = useState(false);
@@ -105,6 +108,7 @@ function mainPage() {
           <PrevSummut />
           <About />
           <Directions sectionRef={venueSectionRef} />
+          <Partners />
           <FAQ faqData={faqData} />
           <Footer />
         </>
