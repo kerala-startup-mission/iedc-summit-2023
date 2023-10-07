@@ -24,23 +24,49 @@ function mainPage() {
   const [events, setEvents] = useState([]);
   const [schedule, setSchedule] = useState([]);
 
-  const fetchData = (query, setData) => {
-    setLoading((prevLoading) => prevLoading + 1); // Increment loading count for each request
-    getData(query)
-      .then((data) => setData(urlToImage(data)))
-      .catch((error) => console.error("Error:", error))
-      .finally(() => {
-        setLoading((prevLoading) => prevLoading - 1); // Decrement loading count after each request
-        if (loading === 0) setLoading(false); // Set loading to false if all requests are completed
-      });
-  };
-  
   useEffect(() => {
-    setLoading(3); // Set loading count to the number of requests (3 in this case)
-    fetchData('*[_type == "speaker"] | order(order asc)', setSpeakers);
-    fetchData('*[_type == "event"]', setEvents);
-    fetchData('*[_type == "schedule"] | order(order asc)', setSchedule);
+    setLoading(true);
+    getData('*[_type == "speaker"] | order(order asc)')
+      .then((data) => {
+        setSpeakers(data);
+        return data;
+      })
+      .then((data) => urlToImage(data))
+      .then(() => setLoading(false))
+      .catch((error) => {
+        console.error("Error:", error);
+        setLoading(false);
+      });
+    getData('*[_type == "schedule"] | order(order asc)')
+      .then((data) => {
+        setSchedule(data);
+        return data;
+      })
+      .then((data) => urlToImage(data))
+      .then(() => setLoading(false))
+      .catch((error) => {
+        console.error("Error:", error);
+        setLoading(false);
+      });
   }, []);
+
+  // const fetchData = (query, setData) => {
+  //   setLoading((prevLoading) => prevLoading + 1); // Increment loading count for each request
+  //   getData(query)
+  //     .then((data) => setData(urlToImage(data)))
+  //     .catch((error) => console.error("Error:", error))
+  //     .finally(() => {
+  //       setLoading((prevLoading) => prevLoading - 1); // Decrement loading count after each request
+  //       if (loading === 0) setLoading(false); // Set loading to false if all requests are completed
+  //     });
+  // };
+  
+  // useEffect(() => {
+  //   setLoading(3); // Set loading count to the number of requests (3 in this case)
+  //   fetchData('*[_type == "speaker"] | order(order asc)', setSpeakers);
+  //   fetchData('*[_type == "event"]', setEvents);
+  //   fetchData('*[_type == "schedule"] | order(order asc)', setSchedule);
+  // }, []);
   
 
   const homeSectionRef = useRef(null);
