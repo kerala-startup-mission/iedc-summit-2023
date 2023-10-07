@@ -1,6 +1,8 @@
 <p align='center'>
   <a href="https://github.com/kerala-startup-mission/iedc-summit-2023">
-   <img src="https://2023.iedcsummit.in/images/summitlogo.png" alt="Logo" height='250' width='250'>
+  <img src="https://github.com/MVK2803/IEDCSummitOfficial/assets/90597530/03cff461-a323-4bf4-8e41-4625a1e0f8a9">
+
+
   </a>
 
 <h3 align="center">IEDC Summit 2023</h3>
@@ -27,3 +29,14 @@ IEDC Summit is an amalgamation of events from a plethora of domains, including t
 <a href="https://github.com/kerala-startup-mission/iedc-summit-2023/graphs/contributors">
   <img  src="https://imageupload.io/ib/hELsf7Rezyx7lXq_1696429311.png" alt="Team.png"/>
 </a>
+
+### Acknowledgements
+
+Special thanks to these amazing projects which help power Cal.com:
+
+[<img src="https://cal.com/powered-by-vercel.svg">](https://vercel.com/?utm_source=calend-so&utm_campaign=oss)
+
+- [Vercel](https://vercel.com/?utm_source=calend-so&utm_campaign=oss)
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Sanity](https://sanity.io/)
