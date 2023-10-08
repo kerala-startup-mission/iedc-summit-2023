@@ -1,16 +1,5 @@
-import Alt from "./assets/img/noavatar.png";
 
-//Team members
-import nivedNarayanan from "./assets/img/teams/Nived Narayanan.jpg";
-import johnGeorge from "./assets/img/teams/John George.jpg";
-import ivinMK from "./assets/img/teams/Ivin_Mathew.png";
-import noelGeorge from "./assets/img/teams/Noel_George.jpg";
-import mathewVK from "./assets/img/teams/Mathew_V_K.jpg";
-import aryaVijayan from "./assets/img/teams/AryaVijayan.jpg";
-import adwaithHR from "./assets/img/teams/Adwaith_HR.jpg";
-import aharonMathew from "./assets/img/teams/AharonMathews.jpeg";
-import aslamNaseer from "./assets/img/teams/AslamNaseer.png";
-import ajayGosh from "./assets/img/teams/ajayGosh.png";
+
 
 //Engagement Calls
 import campusAmb from "./assets/img/calls/campus_ambassador.png";
@@ -219,6 +208,7 @@ export const schedules = [
     time: "4:30PM - 5:40PM",
   },
 ];
+
 
 export const iedcCircle = [
   {
@@ -695,5 +685,11 @@ export const faqData = [
       "Do I need to be registered for the IEDC Summit to attend the pre-summit events?",
     answer:
       "NO, you do not need to be registered for the IEDC Summit to attend the pre-summit events.",
+  },
+  {
+    question:
+      "What is the refund policy of the summit tickets",
+    answer:
+      "No refunds possible after  8th October 11.59 PM",
   },
 ];

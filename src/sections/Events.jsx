@@ -1,5 +1,5 @@
 import Tickets from "../components/Tickets";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -10,6 +10,25 @@ function Events(props) {
   const { title, button, sectionRef, eventData, eventDescription } = props;
 
   const [activeLink, setActiveLink] = useState("1");
+  const [slides, setSlidesPerView] = useState(3);
+  useEffect(() => {
+    const handleResize = () => {
+      const screenWidth = window.innerWidth;
+      if (screenWidth <= 600) {
+        setSlidesPerView(1);
+      } else if (screenWidth <= 1200) {
+        setSlidesPerView(2);
+      } else if (screenWidth <= 1550) {
+        setSlidesPerView(3);
+      } else {
+        setSlidesPerView(4);
+      }
+    };
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const links = [
     { id: "1", text: "Road To Summit" },
@@ -79,14 +98,14 @@ function Events(props) {
             )}
         </div>
         <div className="md:hidden flex md:flex-wrap gap-16 md:gap-0 pb-8 md:justify-evenly horiz-scroll ">
-          <Swiper
-            spaceBetween={50}
-            slidesPerView={1}
-            pagination={{
-              clickable: true,
-            }}
-            modules={[Pagination]}
-          >
+        <Swiper
+          spaceBetween={0}
+          slidesPerView={slides}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Pagination]}
+        >
             {eventData &&
               eventData.length > 0 &&
               eventData.map(
