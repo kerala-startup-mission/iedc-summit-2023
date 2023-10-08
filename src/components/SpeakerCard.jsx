@@ -13,7 +13,7 @@ function Speaker({ speaker }) {
       >
         <img
           className="w-full h-full object-cover rounded-full border border-[6px] border-blue-700"
-          src={speaker.img}
+          src={speaker.image}
           alt="Speaker"
         />
         <div

@@ -14,17 +14,63 @@ import { joinUs, faqData, eventData } from "../data";
 import LoadingScreen from "../sections/loadingScreen";
 import FAQ from "../sections/FAQ";
 import Speakers from "../sections/Speakers";
-import Schedule from '../sections/Schedule';
+import Schedule from "../sections/Schedule";
+
+import { client, getData, urlToImage } from "../../sanityConfig.js";
+import Partners from "../sections/Partners";
+
 
 function mainPage() {
   const [loading, setLoading] = useState(false);
 
+  const [speakers, setSpeakers] = useState([]);
+  const [events, setEvents] = useState([]);
+  const [schedule, setSchedule] = useState([]);
+
   useEffect(() => {
     setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 4000);
+    getData('*[_type == "speaker"] | order(order asc)')
+      .then((data) => {
+        setSpeakers(data);
+        return data;
+      })
+      .then((data) => urlToImage(data))
+      .then(() => setLoading(false))
+      .catch((error) => {
+        console.error("Error:", error);
+        setLoading(false);
+      });
+    getData('*[_type == "schedule"] | order(order asc)')
+      .then((data) => {
+        setSchedule(data);
+        return data;
+      })
+      .then((data) => urlToImage(data))
+      .then(() => setLoading(false))
+      .catch((error) => {
+        console.error("Error:", error);
+        setLoading(false);
+      });
   }, []);
+
+  // const fetchData = (query, setData) => {
+  //   setLoading((prevLoading) => prevLoading + 1); // Increment loading count for each request
+  //   getData(query)
+  //     .then((data) => setData(urlToImage(data)))
+  //     .catch((error) => console.error("Error:", error))
+  //     .finally(() => {
+  //       setLoading((prevLoading) => prevLoading - 1); // Decrement loading count after each request
+  //       if (loading === 0) setLoading(false); // Set loading to false if all requests are completed
+  //     });
+  // };
+  
+  // useEffect(() => {
+  //   setLoading(3); // Set loading count to the number of requests (3 in this case)
+  //   fetchData('*[_type == "speaker"] | order(order asc)', setSpeakers);
+  //   fetchData('*[_type == "event"]', setEvents);
+  //   fetchData('*[_type == "schedule"] | order(order asc)', setSchedule);
+  // }, []);
+  
 
   const homeSectionRef = useRef(null);
   const aboutSectionRef = useRef(null);
@@ -48,7 +94,7 @@ function mainPage() {
           <LandingPage sectionRef={homeSectionRef} />
           <AboutSummit sectionRef={aboutSectionRef} />
           <IedcCircle />
-          <loadingScreen/>
+          <loadingScreen />
           <Events
             title="Events"
             button="Register Now"
@@ -56,12 +102,13 @@ function mainPage() {
             sectionRef={eventsSectionRef}
             eventDescrition=""
           />
-          <Speakers sectionRef={speakersSectionRef} />
-          <Schedule />
+          <Speakers sectionRef={speakersSectionRef} speakersData={speakers} />
+          <Schedule scheduleData={schedule}/>
           <Calls title="Join Us" eventData={joinUs} eventDescrition="" />
           <PrevSummut />
           <About />
           <Directions sectionRef={venueSectionRef} />
+          <Partners />
           <FAQ faqData={faqData} />
           <Footer />
         </>
