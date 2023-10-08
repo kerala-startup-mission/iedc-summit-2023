@@ -51,7 +51,7 @@ function Events(props) {
                     <button
                       key={link.value}
                       onClick={() => handleLinkClick(link.value)}
-                      className={` w-full md:w-1/4 nav-link ml-0 p-2 custom1:ml-0 ${
+                      className={` w-full md:w-1/3 nav-link ml-0 p-2 custom1:ml-0 ${
                         activeLink === link.value
                           ? "text-[#3866F2] bg-white rounded-md shadow-md"
                           : "text-[#858585]"
@@ -60,7 +60,7 @@ function Events(props) {
                       {link.title}
                     </button>
                   ))}
-                  <hr className="w-full border-[1px] opacity-30 border-black"></hr>
+                  <hr className="w-full border-[1px] mt-2 opacity-30 border-black"></hr>
                 </div>
               </div>
             </nav>
