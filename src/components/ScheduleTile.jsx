@@ -41,9 +41,7 @@ const ScheduleTile = ({ datas, num, top, bottom }) => {
         <div className="font-darker-grotesque text-md sm:text-xl font-semibold">
           {datas.speaker}
         </div>
-        <div className="font-darker-grotesque text-md sm:text-xl font-semibold">
-          {datas.venue}
-        </div>
+        
       </div>
     </div>
   );
