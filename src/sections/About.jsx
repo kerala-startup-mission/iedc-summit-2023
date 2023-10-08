@@ -64,7 +64,7 @@ const About = () => {
         { inViewOne ? (
           <>
             <div className="flex-1 lg:pr-20 box-border">
-              <img src={KSUM} alt="image of ksum" />
+              <img className="rounded-xl" src={KSUM} alt="image of ksum" />
             </div>
             <div className="flex-1">
               <Paragraph
@@ -86,7 +86,7 @@ const About = () => {
           />
         </div>
         <div className="flex-1 lg:pl-20 box-border">
-          <img className="w-full h-full" src={CET} alt="image of cet" />
+          <img className="w-full h-full rounded-xl" src={CET} alt="image of cet" />
         </div>
       </div>
     </>
