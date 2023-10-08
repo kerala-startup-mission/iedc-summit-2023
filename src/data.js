@@ -1,6 +1,215 @@
 
 
 
+//Engagement Calls
+import campusAmb from "./assets/img/calls/campus_ambassador.png";
+import communityEng from "./assets/img/calls/community_engagement.png";
+import corporateEng from "./assets/img/calls/corporate_engagement.png";
+import govtEng from "./assets/img/calls/govt_dept_engagement.png";
+import industryEng from "./assets/img/calls/industry_engagement.png";
+import invesrtorEng from "./assets/img/calls/investor_engagement.png";
+import mentorEng from "./assets/img/calls/mentor_engagement.png";
+import startupEng from "./assets/img/calls/startup_engagement.png";
+import volunteers from "./assets/img/calls/volunteers.png";
+import studentProd from "./assets/img/calls/studentProd.png";
+import fleaMarket from "./assets/img/calls/fleaMarket.jpg";
+
+//Events
+import mascotChallenge from "./assets/img/events/mascotChallenge.jpg";
+import excelAdvanced from "./assets/img/events/excelAdvanced.jpg";
+import aiMentalHealth from "./assets/img/events/AIMentalHealth.jpg";
+import gameDesign from "./assets/img/events/gameDesign.jpg";
+import shortFilm from "./assets/img/events/shortFilm.jpg";
+import valoComp from "./assets/img/events/valorantCompetition.jpg";
+import metaMysteries from "./assets/img/events/metaMysteries.jpg";
+import disruptiveInfo from "./assets/img/events/disruptiveInformation.jpg";
+import exoskeleton from "./assets/img/events/exoskeleton.jpg";
+import uiux from "./assets/img/events/uiux.jpg";
+import vfx from "./assets/img/events/vfx.jpg";
+import masteringMarketing from "./assets/img/events/masteringMarketing.jpg";
+import bestIedcChallenge from "./assets/img/events/BestIedcChallenge.jpg";
+import sketchUp from "./assets/img/events/sketchUp.jpg";
+import photoComp from "./assets/img/events/photoComp.png";
+import autocad from "./assets/img/events/Autocad.jpg";
+import cricket from "./assets/img/events/Cricket.jpg";
+import fashion from "./assets/img/events/Fashionshow.jpg";
+import warehouse from "./assets/img/events/SmartWarehouse.jpg";
+import craftEntre from "./assets/img/events/CraftEntrepreneurship.jpg";
+import craftCareer from "./assets/img/events/CraftingYourCareer.jpg";
+import marsStation from "./assets/img/events/LivingStationInMars.jpg";
+
+//Speakers
+import anoopAmbika from "./assets/img/speakers/Main_Stage/anoopAmbika.jpg";
+import savier from "./assets/img/speakers/Main_Stage/drSavier.jpg";
+import geromicGeorge from "./assets/img/speakers/Main_Stage/geromicGeorge.webp";
+import moosaMeher from "./assets/img/speakers/Main_Stage/moosaMeherMP.jpg";
+import pinarayiVijayan from "./assets/img/speakers/Main_Stage/pinarayiVijayan.jpeg";
+import rBindu from "./assets/img/speakers/Main_Stage/rBindu.webp";
+import rathanUKalkar from "./assets/img/speakers/Main_Stage/rathanUKalkar.jpg";
+import sajiGopinath from "./assets/img/speakers/Main_Stage/sajiGopinath.jpeg";
+import tomThomas from "./assets/img/speakers/Main_Stage/tomThomas.jpg";
+import umarAbdussalam from "./assets/img/speakers/Main_Stage/umarAbdussalam.jpg";
+import mirzadMakhDoom from "./assets/img/speakers/mirzad.jpeg";
+import nandakishorM from "./assets/img/speakers/nandakishor.jpg";
+import vMSadique from "./assets/img/speakers/vmSadique.jpg";
+import kagazee from "./assets/img/speakers/kagazeelogo.jpg";
+import vishwa from "./assets/img/speakers/vishwa.jpeg";
+import shrijitNair from "./assets/img/speakers/shrijithNair.jpg";
+import aswiniAT from "./assets/img/speakers/aswiniAT.jpg";
+import ashithaPR from "./assets/img/speakers/ashithaPR.jpg";
+import jomarshal from "./assets/img/speakers/jomarshal.jpeg";
+
+export const speakers = [
+  {
+    img: pinarayiVijayan,
+    name: "Shri.Pinarayi Vijayan",
+    title1: "Hon'ble Chief minister",
+    title2: "Kerala",
+  },
+  {
+    img: rBindu,
+    name: "Dr. R Bindu",
+    title1: "Honourable Minister for Higher Education and Social Justice",
+    title2: "Govt. of Kerala",
+  },
+  {
+    img: rathanUKalkar,
+    name: "Dr. Rathan U Kelkar IAS",
+    title1: "Secretary, E & IT",
+    title2: "Govt. of Kerala",
+  },
+  {
+    img: geromicGeorge,
+    name: "Geromic George IAS",
+    title1: "District Collector",
+    title2: "Thiruvananthapuram",
+  },
+  {
+    img: sajiGopinath,
+    name: "Dr. Saji Gopinath",
+    title1: "Honourable Vice Chancellor",
+    title2: "Kerala Technological University and Digital University of Kerala",
+  },
+  {
+    img: anoopAmbika,
+    name: "Anoop Ambika",
+    title1: "CEO",
+    title2: "Kerala Startup Mission",
+  },
+  {
+    img: savier,
+    name: "Dr. Savier J S",
+    title1: "Principal",
+    title2: "College of Engineering Trivandrum",
+  },
+  {
+    img: tomThomas,
+    name: "Tom Thomas",
+    title1: "COO",
+    title2: "Kerala Startup Mission",
+  },
+
+  {
+    img: umarAbdussalam,
+    name: "Umer Abdussalam",
+    title1: "CEO",
+    title2: "Edapt",
+  },
+  {
+    img: moosaMeher,
+    name: "Moosa Mehar MP",
+    title1: "CEO",
+    title2: "TinkerHub",
+  },
+  {
+    img: mirzadMakhDoom,
+    name: "Mirzad Makhdoom",
+    title1: "Web3 Educator and Creator",
+    title2: "Founder and CEO of tribe academy",
+  },
+  {
+    img: jomarshal,
+    name: "Jomarshal",
+    title1: "Music Composer",
+    title2: "",
+  },
+  {
+    img: nandakishorM,
+    name: "Nandakishor M",
+    title1: "CEO",
+    title2: "Convai Innovations",
+  },
+  {
+    img: ashithaPR,
+    name: "Ashita PR",
+    title1: " DApp Developer",
+    title2: "",
+  },
+  {
+    img: aswiniAT,
+    name: "Aswini A T",
+    title1: " DApp Developer",
+    title2: "",
+  },
+  {
+    img: vMSadique,
+    name: "V M Sadique Ali",
+    title1: "Wildlife Photographer",
+    title2: "Filmmaker",
+  },
+  {
+    img: vishwa,
+    name: "Vishwa R",
+    title1: "Co Founder",
+    title2: "Kagazee India",
+  },
+  {
+    img: shrijitNair,
+    name: "Shrijit Nair ",
+    title1: "HR @ Schneider Electric",
+    title2: "Co Founder of Kagazee India",
+  },
+];
+
+export const schedules = [
+  {
+    image: Alt,
+    speaker: "Sudhish Payyanur",
+    event: "Shortfilm Competition and Screening",
+    venue: "CETAA Hall",
+    time: "10:00AM - 10:45AM",
+  },
+  {
+    image: kagazee,
+    speaker: "Shrijit Nair, Vishwa R",
+    event: "Origami Workshop",
+    venue: "CETAA Hall",
+    time: "11:00AM - 12:00AM",
+  },
+  {
+    image: nandakishorM,
+    speaker: "Nandakishor M",
+    event: "Chatbot Mastery: Creating Intelligent Conversational Agents",
+    venue: "CETAA Hall",
+    time: "1:00PM - 2:00PM",
+  },
+  {
+    image: jomarshal,
+    speaker: "Jomarshal",
+    event: "Survival Guide For Independent Musicians",
+    venue: "CETAA Hall",
+    time: "3:00PM - 4:00PM",
+  },
+  {
+    image: vMSadique,
+    speaker: "VM Sadique Ali",
+    event: "Capturing The Moment: The Essence of Photography",
+    venue: "CETAA Hall",
+    time: "4:30PM - 5:40PM",
+  },
+];
+
+
 export const iedcCircle = [
   {
     value: 14,
