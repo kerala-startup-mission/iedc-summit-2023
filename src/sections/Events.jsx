@@ -104,7 +104,7 @@ function Events(props) {
         <div className="md:hidden flex md:flex-wrap gap-16 md:gap-0 pb-8 md:justify-evenly horiz-scroll ">
           <Swiper
             spaceBetween={50}
-            slidesPerView={1}
+            slidesPerView={slides}
             pagination={{
               clickable: true,
             }}
