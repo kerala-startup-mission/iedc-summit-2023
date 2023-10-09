@@ -2,9 +2,10 @@ import { useInView } from "react-intersection-observer";
 import Speaker from "../components/SpeakerCard";
 import WaveLine from "../components/WaveLine";
 import "../assets/css/animations.css";
-// import { useMediaQuery } from "react-responsive";
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import "swiper/css";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
 
 function Speakers({ sectionRef ,speakersData }) {
   const { ref, inView } = useInView({
@@ -55,14 +56,32 @@ function Speakers({ sectionRef ,speakersData }) {
           The Speakers
         </h1>
       </div>
-      <div className="lg:h-3/4 4/5">
+      <div className="  lg:h-3/4 4/5">
         <div
-          className={`mb-20 md:mb-40 mt-10 md:grid md:grid-cols-4 flex flex-col items-center gap-20 md:ml-10`}
+          className={` hidden  mb-20 md:mb-40 mt-10 md:grid md:grid-cols-4 flex flex-col items-center gap-20 md:ml-10`}
         >
           {speakersData.map((speaker, index) => (
             <Speaker speaker={speaker} key={index} />
           ))}
         </div>
+        <div
+          className="md:hidden flex"
+        >
+          <Swiper
+          
+            slidesPerView={1}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Pagination]}
+          >
+          {speakersData.map((speaker, index) => (
+            <SwiperSlide>
+            <Speaker  speaker={speaker} key={index} /></SwiperSlide>
+          ))}
+          </Swiper>
+        </div>
+        
       </div>
 
       <div className={`${inView ? "animate-left" : "animate-left-return"}`}>
