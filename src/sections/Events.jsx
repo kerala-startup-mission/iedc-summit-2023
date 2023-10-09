@@ -120,7 +120,7 @@ function Events(props) {
                       <Tickets
                         key={index}
                         eventName={ticket.title}
-                        eventImg={ticket.image}
+                        eventImg={ticket.poster}
                         eventDescription={ticket.description}
                         eventLink={ticket.link}
                         eventButton={ticket.buttonText}
