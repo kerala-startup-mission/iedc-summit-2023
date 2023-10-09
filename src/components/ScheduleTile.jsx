@@ -39,14 +39,11 @@ const ScheduleTile = ({ schedule, num, top, bottom }) => {
         <div className="font-darker-grotesque text-md sm:text-xl font-semibold">
           {schedule.speaker}
         </div>
-<<<<<<< HEAD
-        
-=======
+
         <div className="font-darker-grotesque text-md sm:text-xl font-semibold">
           {schedule.title}
         </div>
->>>>>>> 8181fea7cae8f27056c82c4faabc8631c208676f
-      </div>
+</div>
     </div>
   );
 };
