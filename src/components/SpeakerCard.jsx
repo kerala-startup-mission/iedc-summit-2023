@@ -31,7 +31,7 @@ function Speaker({ speaker }) {
       </div>
    
     </div>
-            <h className="text-xl font-[600] text-white font-dm-sans">{speaker.name}</h>
+            <h1 className="text-xl font-[600] text-white font-dm-sans">{speaker.name}</h1>
     </div>
   );
 }

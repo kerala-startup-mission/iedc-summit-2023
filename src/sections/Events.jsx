@@ -7,9 +7,9 @@ import { Pagination } from "swiper/modules";
 import EventSearch from "../components/EventSearch";
 
 function Events(props) {
-  const { title, button, sectionRef, eventData, eventDescription } = props;
+  const { title, sectionRef, eventData } = props;
 
-  const [activeLink, setActiveLink] = useState("1");
+  const [activeLink, setActiveLink] = useState("summitDayEvents");
   const [slides, setSlidesPerView] = useState(3);
   useEffect(() => {
     const handleResize = () => {
@@ -31,16 +31,20 @@ function Events(props) {
   }, []);
 
   const links = [
-    { id: "1", text: "Road To Summit" },
-    { id: "2", text: "Everything is Entrepreneurship" },
-    { id: "3", text: "Industry of future" },
-    { id: "4", text: "Startup Symposium" },
+    { title: "Summit Day Events", value: "summitDayEvents" },
+    { title: "Road to summit", value: "roadToSummit" },
+    {
+      title: "Everything is Entreprenuership",
+      value: "everythingIsEntreprenuership",
+    },
   ];
-
-  const handleLinkClick = (linkId) => {
-    setActiveLink(linkId);
+  const [categorisedEvents, setCategorisedEvents] = useState(
+    eventData.filter((event) => event.category === activeLink)
+  );
+  const handleLinkClick = (link) => {
+    setActiveLink(link);
+    setCategorisedEvents(eventData.filter((event) => event.category === link));
   };
-
   return (
     <div className="mt-4 md:pt-4 bg-zinc-50 w-full flex justify-center">
       <div
@@ -55,7 +59,7 @@ function Events(props) {
         <h1 className="font-[700] text-[75px] text-center text-[#0065B2]">
           {title}
         </h1>
-        <EventSearch />
+        <EventSearch eventData={eventData} />
         <div className="w-full flex flex-col">
           <div className="flex flex-col p-0 w-full  custom2:p-10">
             <nav>
@@ -63,62 +67,63 @@ function Events(props) {
                 <div className=" items-start text-2xl flex flex-wrap flex-col md:flex-row  font-darker-grotesque font-semibold custom1:flex-row custom2:flex-col custom2:items-center custom1:items-start">
                   {links.map((link) => (
                     <button
-                      key={link.id}
-                      onClick={() => handleLinkClick(link.id)}
-                      className={` w-full md:w-1/4 nav-link ml-0 p-2 custom1:ml-0 ${
-                        activeLink === link.id
+                      key={link.value}
+                      onClick={() => handleLinkClick(link.value)}
+                      className={` w-full md:w-1/3 nav-link ml-0 p-2 custom1:ml-0 ${
+                        activeLink === link.value
                           ? "text-[#3866F2] bg-white rounded-md shadow-md"
                           : "text-[#858585]"
                       }`}
                     >
-                      {link.text}
+                      {link.title}
                     </button>
                   ))}
-                  <hr className="w-full border-[1px] opacity-30 border-black"></hr>
+                  <hr className="w-full border-[1px] mt-2 opacity-30 border-black"></hr>
                 </div>
               </div>
             </nav>
           </div>
         </div>
         <div className="hidden md:flex md:flex-wrap gap-16 md:gap-0 pb-8 md:justify-evenly horiz-scroll ">
-          {eventData &&
-            eventData.length > 0 &&
-            eventData.map(
+          {categorisedEvents &&
+            categorisedEvents.length > 0 &&
+            categorisedEvents.map(
               (ticket, index) =>
-                ticket.sectionId === parseInt(activeLink) && (
+                ticket.category === activeLink && (
                   <Tickets
                     key={index}
-                    eventName={ticket.ticketTitle}
-                    eventImg={ticket.ticketImg}
-                    eventDescription={ticket.ticketDescription}
-                    eventLink={ticket.ticketLink}
-                    eventButton={ticket.ticketButton}
+                    eventName={ticket.title}
+                    eventImg={ticket.poster}
+                    eventDescription={ticket.description}
+                    eventLink={ticket.link}
+                    eventButton={ticket.buttonText}
                   />
                 )
             )}
         </div>
         <div className="md:hidden flex md:flex-wrap gap-16 md:gap-0 pb-8 md:justify-evenly horiz-scroll ">
-        <Swiper
-          spaceBetween={0}
-          slidesPerView={slides}
-          pagination={{
-            clickable: true,
-          }}
-          modules={[Pagination]}
-        >
-            {eventData &&
-              eventData.length > 0 &&
-              eventData.map(
+          <Swiper
+            spaceBetween={50}
+            slidesPerView={1}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Pagination]}
+          >
+            {categorisedEvents &&
+              categorisedEvents.length > 0 &&
+              categorisedEvents.map(
+
                 (ticket, index) =>
-                  ticket.sectionId === parseInt(activeLink) && (
+                  ticket.category === activeLink && (
                     <SwiperSlide>
                       <Tickets
                         key={index}
-                        eventName={ticket.ticketTitle}
-                        eventImg={ticket.ticketImg}
-                        eventDescription={ticket.ticketDescription}
-                        eventLink={ticket.ticketLink}
-                        eventButton={ticket.ticketButton}
+                        eventName={ticket.title}
+                        eventImg={ticket.image}
+                        eventDescription={ticket.description}
+                        eventLink={ticket.link}
+                        eventButton={ticket.buttonText}
                       />
                     </SwiperSlide>
                   )
