@@ -671,11 +671,7 @@ export const faqData = [
     answer:
       "Yes, any interested individual out of college can register with the individual pass.",
   },
-  {
-    question:
-      "What are the facilities provided by CET for students attending the summit?",
-    answer: "",
-  },
+  
   {
     question: "What are the perks of registering for the summit?",
     answer:
@@ -690,12 +686,7 @@ export const faqData = [
     question: "Upto when are registrations open?",
     answer: "Registrations are open till Sept 30. Seats filling fast!",
   },
-  {
-    question:
-      "Do I need to be registered for the IEDC Summit to attend the pre-summit events?",
-    answer:
-      "NO, you do not need to be registered for the IEDC Summit to attend the pre-summit events.",
-  },
+  
   {
     question:
       "Do I need to be registered for the IEDC Summit to attend the pre-summit events?",
