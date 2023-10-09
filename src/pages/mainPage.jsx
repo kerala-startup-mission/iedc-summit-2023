@@ -10,13 +10,13 @@ import Directions from "../sections/Directions";
 import PrevSummut from "../sections/prevSummits";
 import { useState, useEffect, useRef } from "react";
 import Navbar from "../components/Navbar";
-import { joinUs, faqData, eventData } from "../data";
+import { joinUs, faqData } from "../data";
 import LoadingScreen from "../sections/loadingScreen";
 import FAQ from "../sections/FAQ";
 import Speakers from "../sections/Speakers";
 import Schedule from "../sections/Schedule";
 
-import { client, getData, urlToImage } from "../../sanityConfig.js";
+import { getData, urlToImage } from "../../sanityConfig.js";
 import Partners from "../sections/Partners";
 
 
