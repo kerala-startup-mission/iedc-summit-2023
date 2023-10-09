@@ -1,5 +1,5 @@
 import Tickets from "../components/Tickets";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -10,6 +10,25 @@ function Events(props) {
   const { title, sectionRef, eventData } = props;
 
   const [activeLink, setActiveLink] = useState("summitDayEvents");
+  const [slides, setSlidesPerView] = useState(3);
+  useEffect(() => {
+    const handleResize = () => {
+      const screenWidth = window.innerWidth;
+      if (screenWidth <= 600) {
+        setSlidesPerView(1);
+      } else if (screenWidth <= 1200) {
+        setSlidesPerView(2);
+      } else if (screenWidth <= 1550) {
+        setSlidesPerView(3);
+      } else {
+        setSlidesPerView(4);
+      }
+    };
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const links = [
     { title: "Summit Day Events", value: "summitDayEvents" },
@@ -26,7 +45,6 @@ function Events(props) {
     setActiveLink(link);
     setCategorisedEvents(eventData.filter((event) => event.category === link));
   };
-  console.log(categorisedEvents);
   return (
     <div className="mt-4 md:pt-4 bg-zinc-50 w-full flex justify-center">
       <div
@@ -95,6 +113,7 @@ function Events(props) {
             {categorisedEvents &&
               categorisedEvents.length > 0 &&
               categorisedEvents.map(
+
                 (ticket, index) =>
                   ticket.category === activeLink && (
                     <SwiperSlide>

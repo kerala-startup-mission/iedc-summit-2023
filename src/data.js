@@ -696,4 +696,16 @@ export const faqData = [
     answer:
       "NO, you do not need to be registered for the IEDC Summit to attend the pre-summit events.",
   },
+  {
+    question:
+      "Do I need to be registered for the IEDC Summit to attend the pre-summit events?",
+    answer:
+      "NO, you do not need to be registered for the IEDC Summit to attend the pre-summit events.",
+  },
+  {
+    question:
+      "What is the refund policy of the Summit tickets?",
+    answer:
+      "No refunds possible after 8th October 11:59pm",
+  },
 ];
