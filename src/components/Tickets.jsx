@@ -1,16 +1,19 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 function Ticket(props) {
   const numberOfSquares = 14;
   const buttonTitleArray = [
-    "Register Now",
-    "Event Completed",
-    "Registrations Closed",
-    "Forthcoming Results",
+    {title:'Register Now',value:'register'},
+    {title:'Registrations Closed',value:'closed'},
+    {title:'Event Completed',value:'completed'},
+    {title:'Forthcoming results',value:'forthcoming'},
   ];
   const squares = [];
-  const { eventName, eventImg, eventDescription, eventLink, eventButton } =
-    props;
+  const { eventName, eventImg, eventDescription, eventLink, eventButton } = props;
+  const [buttonTitle, setButtonTitle] = useState("Register Now");
+  useEffect(() => {
+    buttonTitleArray.forEach((button) => {if(button.value === eventButton) setButtonTitle(button.title)});
+  }, [eventButton]);
   for (let i = 0; i < numberOfSquares; i++) {
     squares.push(
       <div
@@ -53,22 +56,22 @@ function Ticket(props) {
           </div>
           <div className="h-1/4  items-center  mx-auto">
             <div className="justify-center flex">
-              {eventButton == 0 ? (
+              {buttonTitle === 'Register Now' ? (
                 <a
                   href={eventLink}
                   target="_blank"
-                  className="text-center bg-[#32d9ff] absolute bottom-5 text-md font-extrabold w-[151px] p-3 shadow-md rounded-[30px] flex items-center justify-center hover:bg-gradient-to-tr from-[#0597F2] to-[#4656E1] hover:text-white"
+                  className="text-center bg-[#32d9ff] absolute bottom-5 text-md font-extrabold w-[151px] p-3 shadow-md rounded-[30px] flex items-center justify-center hover:bg-gradient-to-tr from-[#0597F2] to-[#4656E1] hover:text-white hover:cursor-pointer"
                   rel="noreferrer"
                 >
-                  {buttonTitleArray[0]}
+                  {buttonTitle}
                 </a>
               ) : (
-                <a
+                <p
                   className="text-center absolute bottom-5 text-md font-extrabold w-[151px] h-[60px]  shadow-md rounded-[30px] flex items-center justify-center"
                   rel="noreferrer"
                 >
-                  {buttonTitleArray[eventButton]}
-                </a>
+                  {buttonTitle}
+                </p>
               )}
             </div>
           </div>

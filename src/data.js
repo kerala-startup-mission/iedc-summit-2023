@@ -186,35 +186,35 @@ export const schedules = [
   {
     image: Alt,
     speaker: "Sudhish Payyanur",
-    event: "Shortfilm Competition and Screening",
+    event: "SHORTFILM COMPETITION AND SCREENING",
     venue: "CETAA Hall",
     time: "10:00AM - 10:45AM",
   },
   {
     image: kagazee,
     speaker: "Shrijit Nair, Vishwa R",
-    event: "Origami Workshop",
+    event: "ORIGAMI WORKSHOP",
     venue: "CETAA Hall",
     time: "11:00AM - 12:00AM",
   },
   {
     image: nandakishorM,
     speaker: "Nandakishor M",
-    event: "Chatbot Mastery: Creating Intelligent Conversational Agents",
+    event: "CHATBOT MASTERY: CREATING INTELLIGENT CONVERSATIONAL AGENTS",
     venue: "CETAA Hall",
-    time: "1:00PM - 2:00PM",
+    time: "1:00PM - 2:00AM",
   },
   {
     image: jomarshal,
     speaker: "Jomarshal",
-    event: "Survival Guide For Independent Musicians",
+    event: "SURVIVAL GUIDE FOR INDEPENDENT MUSICIANS",
     venue: "CETAA Hall",
     time: "3:00PM - 4:00PM",
   },
   {
     image: vMSadique,
     speaker: "VM Sadique Ali",
-    event: "Capturing The Moment: The Essence of Photography",
+    event: "CAPTURING THE MOMENT: THE ESSENCE OF PHOTOGRAPHY",
     venue: "CETAA Hall",
     time: "4:30PM - 5:40PM",
   },
@@ -695,5 +695,17 @@ export const faqData = [
       "Do I need to be registered for the IEDC Summit to attend the pre-summit events?",
     answer:
       "NO, you do not need to be registered for the IEDC Summit to attend the pre-summit events.",
+  },
+  {
+    question:
+      "Do I need to be registered for the IEDC Summit to attend the pre-summit events?",
+    answer:
+      "NO, you do not need to be registered for the IEDC Summit to attend the pre-summit events.",
+  },
+  {
+    question:
+      "What is the refund policy of the Summit tickets?",
+    answer:
+      "No refunds possible after 8th October 11:59pm",
   },
 ];
