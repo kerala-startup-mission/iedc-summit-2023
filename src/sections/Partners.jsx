@@ -12,9 +12,10 @@ import riglabs from '../assets/img/partners/riglabs.png'
 import tie from '../assets/img/partners/tie.jpg'
 import tinkerhub from '../assets/img/partners/tinkerhub.png'
 import ulearn from '../assets/img/partners/ulearn.png'
-
+import microsoft from "../assets/img/partners/microsoft.png"
+import microsoft2 from "../assets/img/partners/microsoft2.png"
 const Partners = () => {
-    const partnerLogos = [cdac, cdacVega, dapp, gdsc, kagazee, pheonix, polygon, riglabs, tie, tinkerhub, ulearn];
+    const partnerLogos = [cdac, cdacVega, dapp, gdsc, kagazee, pheonix, polygon, riglabs, tie, tinkerhub, ulearn,microsoft,microsoft2];
 
   return (
     <div className='w-full py-10 bg-gradient-to-tr from-[#0597F2] to-[#6F04D9] space-y-4 mb-14'>
