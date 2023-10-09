@@ -4,7 +4,7 @@ function Speaker({ speaker }) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div className=" flex flex-col space-y-2 items-center">
+    <div className="  mb-12 md:md-0 flex flex-col space-y-2 items-center">
     <div className="bg-white w-[240px] h-[240px] rounded-[240px] p-[8px]">
       <div
         className="group hover:animate-shrink-circle relative w-full h-full"
