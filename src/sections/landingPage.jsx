@@ -50,7 +50,7 @@ function LandingPage({ sectionRef }) {
         <h1 className="font-semibold text-xl md:text-3xl text-[#676C70] pb-4">
           TRIVANDRUM
         </h1>
-        <div className="flex flex-col md:flex-row gap-4 items-center">
+        <div className="flex flex-col sm:flex-row gap-4 items-center">
           <div className="flex items-center w-[232px] h-[58px] bg-[#0597F2] cursor-pointer rounded-[30px] hover:bg-gradient-to-tr from-[#0597F2] to-[#4656E1]">
             <a
               onClick={() => {

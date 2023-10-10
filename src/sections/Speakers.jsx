@@ -1,17 +1,36 @@
-import React from "react";
 import { useInView } from "react-intersection-observer";
 import Speaker from "../components/SpeakerCard";
 import WaveLine from "../components/WaveLine";
-import { speakers } from "../data";
 import "../assets/css/animations.css";
-// import { useMediaQuery } from "react-responsive";
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import "swiper/css";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
+import { useState,useEffect } from "react";
 
-function Speakers({ sectionRef }) {
+function Speakers({ sectionRef ,speakersData }) {
   const { ref, inView } = useInView({
     threshold: 0.6,
   });
+  const [slides, setSlidesPerView] = useState(3);
+  useEffect(() => {
+    const handleResize = () => {
+      const screenWidth = window.innerWidth;
+      if (screenWidth <= 600) {
+        setSlidesPerView(1);
+      } else if (screenWidth <= 1200) {
+        setSlidesPerView(2);
+      } else if (screenWidth <= 1550) {
+        setSlidesPerView(3);
+      } else {
+        setSlidesPerView(4);
+      }
+    };
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   // const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   // if (!isMobile) {
   return (
@@ -57,14 +76,32 @@ function Speakers({ sectionRef }) {
           The Speakers
         </h1>
       </div>
-      <div className="lg:h-3/4 4/5">
+      <div className="  lg:h-3/4 4/5">
         <div
-          className={`mb-20 md:mb-40 mt-10 md:grid md:grid-cols-4 flex flex-col items-center gap-20 md:ml-10`}
+          className={` hidden  mb-20 md:mb-40 mt-10 md:grid md:grid-cols-4 flex flex-col items-center gap-20 md:ml-10`}
         >
-          {speakers.map((speaker, index) => (
+          {speakersData.map((speaker, index) => (
             <Speaker speaker={speaker} key={index} />
           ))}
         </div>
+        <div
+          className="md:hidden flex"
+        >
+          <Swiper
+          
+            slidesPerView={slides}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Pagination]}
+          >
+          {speakersData.map((speaker, index) => (
+            <SwiperSlide>
+            <Speaker  speaker={speaker} key={index} /></SwiperSlide>
+          ))}
+          </Swiper>
+        </div>
+        
       </div>
 
       <div className={`${inView ? "animate-left" : "animate-left-return"}`}>

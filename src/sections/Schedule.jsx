@@ -1,108 +1,91 @@
 import { useState } from "react";
 import ScheduleTile from "../components/ScheduleTile";
-import { schedules } from "../data";
 
-const Schedule = () => {
-  const [location, setLocation] = useState("0");
-  const selectLocation = (e) => {
-    setLocation(e.target.getAttribute("data-loc-id"));
-  };
-
-  const [selectedOption, setSelectedOption] = useState("venue");
+function Schedule({ scheduleData }) {
+  const venues = [
+    { title: "Main Stage", value: "mainStage" },
+    { title: "DJ Hall", value: "djHall" },
+    { title: "Sargam Stage", value: "sargamStage" },
+    { title: "CGPU Hall", value: "cgpuHall" },
+    { title: "CETAA Hall", value: "ceataaHall" },
+    { title: "EC Seminar Hall", value: "ecSeminarHall" },
+    { title: "PG Kuriakose Hall", value: "pgKuriakoseHall" },
+    { title: "Mech Seminar Hall", value: "mechSeminarHall" },
+    { title: "EEE PG Seminar Hall", value: "eeePgSeminarHall" },
+    { title: "Civil Seminar Hall 1", value: "civilSeminarHall1" },
+    { title: "Civil Seminar Hall 2", value: "civilSeminarHall2" },
+    { title: "EC Conference Hall", value: "ecConferenceHall" },
+    { title: "Archie Department", value: "archieDept" },
+    { title: "CS", value: "cs" },
+    { title: "MCA", value: "mca" },
+    { title: "Dhwani Stage", value: "dhwaniStage" },
+    { title: "Other Venues", value: "otherVenues" },
+  ];
+  const [selectedVenue, setSelectedVenue] = useState("cetaaHall");
 
   const handleOptionChange = (event) => {
-    setSelectedOption(event.target.value);
+    setSelectedVenue(event.target.value);
   };
+
+  const filteredSchedules = scheduleData.filter(
+    (schedule) => schedule.venue === selectedVenue
+  );
+
   return (
-    <div className="px-6 sm:px-16 md:w-11/12 py-10 sm:py-20 font-darker-grotesque">
-      <h1 className="text-2xl sm:text-4xl lg:text-6xl text-start font-semibold">
-        THE SCHEDULE
-      </h1>
-
-      <div className="flex gap-4 py-6 sm:py-8 lg:py-16 justify-between text-xl sm:text-2xl lg:text-3xl font-semibold lg:mx-[16vw]">
-        <div
-          className={`transition-colors	cursor-pointer	duration-500 ${
-            location === "0" ? "" : "text-theme-blue2"
-          }`}
-          onClick={selectLocation}
-          data-loc-id={0}
-        >
-          DJ Hall
-        </div>
-        <div
-          className={`transition-colors	cursor-pointer	duration-500 ${
-            location === "1" ? "" : "text-theme-blue2"
-          }`}
-          onClick={selectLocation}
-          data-loc-id={1}
-        >
-          Sargam Stage
-        </div>
-        <div
-          className={`transition-colors	cursor-pointer	duration-500 ${
-            location === "2" ? "" : "text-theme-blue2"
-          }`}
-          onClick={selectLocation}
-          data-loc-id={2}
-        >
-          CGPU
-        </div>
-        <div
-          className={`transition-colors	cursor-pointer	duration-500 ${
-            location === "2" ? "" : "text-theme-blue2"
-          }`}
-          onClick={selectLocation}
-          data-loc-id={2}
-        >
-          Substage
-        </div>
+    <div className="relative px-6 sm:px-16 md:w-11/12 py-10 sm:py-20 font-darker-grotesque">
+      <div className="w-full space-y-6 text-center self-center">
+        <h1 className="inline font-[700] text-[75px] bg-gradient-to-tr from-[#0597F2] to-[#6F04D9] bg-clip-text text-transparent">
+          THE SCHEDULE
+        </h1>
       </div>
-
-      <div className="flex flex-col lg:flex-row text-lg sm:text-xl lg:text-2xl font-medium">
-        <div className="lg:w-3/12 py-0 lg:py-10 lg:pl-10 flex gap-6 lg:block">
-          Filter By:
-          <div className="lg:leading-6 flex lg:flex-col gap-3 lg:gap-0">
-            <div>
-              <input
-                type="radio"
-                className="align-middle cursor-pointer"
-                name="filter-by"
-                value="venue"
-                checked={selectedOption === "venue"}
-                onChange={handleOptionChange}
-              />{" "}
-              Venue
+      <div className="flex flex-col md:flex-row ">
+        <div className="hidden text-3xl md:w-1/3 w-full  md:flex md:flex-col">
+          <h1 className="mb-5 text-5xl font-bold">VENUES</h1>
+          {venues.map((venueItem, index) => (
+            <div
+              key={index}
+              className={`transition-colors cursor-pointer duration-500 ${
+                selectedVenue === venueItem.value ? "" : "text-theme-blue2"
+              }`}
+              onClick={() => setSelectedVenue(venueItem.value)}
+            >
+              {venueItem.title}
             </div>
-            <div>
-              <input
-                type="radio"
-                className="align-middle cursor-pointer"
-                name="filter-by"
-                value="type"
-                checked={selectedOption === "type"}
-                onChange={handleOptionChange}
-              />{" "}
-              Type
-            </div>
-          </div>
+          ))}
         </div>
-
-        <div className="flex-1 lg:order-first">
-          {schedules.map((schedule, index) => {
-            return (
+        <div className=" block md:hidden rounded-md text-xl  mx-auto w-1/2">
+          <select
+            className="p-2 text-center text-white w-full rounded-md bg-blue-700"
+            value={selectedVenue}
+            onChange={handleOptionChange}
+          >
+            {venues.map((venue, index) => (
+              <option
+                className="text-black bg-white"
+                key={index}
+                value={venue.value}
+              >
+                {venue.title}
+              </option>
+            ))}
+          </select>
+        </div>
+        <div className="md:w-2/3 w-full flex flex-col lg:flex-row text-lg sm:text-xl lg:text-2xl font-medium">
+          <div className="flex-1 lg:order-first">
+            {filteredSchedules.map((schedule, index) => (
               <ScheduleTile
-                key={schedule.title + index}
-                datas={schedule}
+                key={index}
+                schedule={schedule}
                 num={index + 1}
                 top={index === 0}
-                bottom={index + 1 === schedules.length}
+                bottom={index + 1 === filteredSchedules.length}
               />
-            );
-          })}
+            ))}
+          </div>
         </div>
       </div>
     </div>
   );
-};
+}
 
 export default Schedule;

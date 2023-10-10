@@ -10,20 +10,37 @@ import Directions from "../sections/Directions";
 import PrevSummut from "../sections/prevSummits";
 import { useState, useEffect, useRef } from "react";
 import Navbar from "../components/Navbar";
-import { joinUs, faqData, eventData } from "../data";
+import { joinUs, faqData } from "../data";
 import LoadingScreen from "../sections/loadingScreen";
 import FAQ from "../sections/FAQ";
 import Speakers from "../sections/Speakers";
+import Schedule from "../sections/Schedule";
+
+import { getData, urlToImage } from "../../sanityConfig.js";
+import Partners from "../sections/Partners";
+
 
 function mainPage() {
   const [loading, setLoading] = useState(false);
 
+  const [speakers, setSpeakers] = useState([]);
+  const [events, setEvents] = useState([]);
+  const [schedule, setSchedule] = useState([]);
+
+  const fetchData = (query, setData) => { // Increment loading count for each request
+    getData(query)
+      .then((data) => setData(urlToImage(data)))
+      .catch((error) => console.error("Error:", error))
+  };
+  
   useEffect(() => {
     setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 4000);
+    fetchData('*[_type == "speaker"] | order(order asc)', setSpeakers);
+    fetchData('*[_type == "event"]', setEvents);
+    fetchData('*[_type == "schedule"] | order(order asc)', setSchedule);
+    setTimeout(() => setLoading(false), 4000); // Wait for all requests to finish
   }, []);
+  
 
   const homeSectionRef = useRef(null);
   const aboutSectionRef = useRef(null);
@@ -47,19 +64,19 @@ function mainPage() {
           <LandingPage sectionRef={homeSectionRef} />
           <AboutSummit sectionRef={aboutSectionRef} />
           <IedcCircle />
-          <loadingScreen/>
+          <loadingScreen />
           <Events
             title="Events"
-            button="Register Now"
-            eventData={eventData}
+            eventData={events}
             sectionRef={eventsSectionRef}
-            eventDescrition=""
           />
-          <Speakers sectionRef={speakersSectionRef} />
+          <Speakers sectionRef={speakersSectionRef} speakersData={speakers} />
+          <Schedule scheduleData={schedule}/>
           <Calls title="Join Us" eventData={joinUs} eventDescrition="" />
           <PrevSummut />
           <About />
           <Directions sectionRef={venueSectionRef} />
+          <Partners />
           <FAQ faqData={faqData} />
           <Footer />
         </>
