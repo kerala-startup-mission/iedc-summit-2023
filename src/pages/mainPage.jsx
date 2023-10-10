@@ -55,7 +55,9 @@ function mainPage() {
     { text: "SPEAKERS", href: "#speakers", sectionRef: speakersSectionRef },
     { text: "SCHEDULE", href: "#schedule", sectionRef: scheduleSectionRef},
     { text: "VENUE", href: "#venue", sectionRef: venueSectionRef },
+    { text: "SCHEDULE", href: "#venue", sectionRef:eventsSectionRef },
   ];
+  
   return (
     <div className="flex flex-col justify-center items-center overflow-hidden bg-zinc-50">
       {loading ? (

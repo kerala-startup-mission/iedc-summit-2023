@@ -74,14 +74,14 @@ function Navbar({ navbarItems }) {
         </button>
 
         <div
-          className={`absolute top-20 left-0 right-0 flex flex-col items-center justify-center bg-white text-2xl duration-500 ${
+          className={`absolute top-20 space-y-2 left-0 right-0 flex flex-col items-center justify-center bg-white text-2xl duration-500 ${
             isDropDownOpen ? "translate-y-0" : "-translate-y-80"
           }`}
         >
           {navbarItems.map((item, index) => (
             <a
               key={index}
-              className="mx-4 my-2 text-gray-500  hover:text-white"
+              className="mx-4  text-gray-500  hover:text-white"
               href={item.href}
               onClick={() => scrollToSection(item.sectionRef)}
             >
@@ -90,7 +90,7 @@ function Navbar({ navbarItems }) {
           ))}
         </div>
       </div>
-      <div className={`absolute bottom-0 bg-[#3866F2] h-1`} style={{width: `${scroll}%`}}></div>
+      <div className={`absolute bottom-0 bg-[#3866F2] `} style={{width: `${scroll}%`}}></div>
     </nav>
   );
 }
