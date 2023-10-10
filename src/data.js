@@ -231,6 +231,24 @@ export const TeamMembers = [
   },
 ];
 
+export const sponsorData = [
+  {
+    img: Alt,
+    title: "K-DISC",
+    desc: "Kerala Startup Mission is organizing the eight edition of the flagship event- IEDC Summit 2023 and,College of Engineering Trivandrum, heartily welcome you to witness and be a part of Asia's largest summit for aspiring student innovators and entrepreneurs.",
+  },
+  {
+    img: Alt,
+    title: "K-DISC",
+    desc: "Kerala Startup Mission is organizing the eight edition of the flagship event- IEDC Summit 2023 and,College of Engineering Trivandrum, heartily welcome you to witness and be a part of Asia's largest summit for aspiring student innovators and entrepreneurs.",
+  },
+  {
+    img: Alt,
+    title: "K-DISC",
+    desc: "Kerala Startup Mission is organizing the eight edition of the flagship event- IEDC Summit 2023 and,College of Engineering Trivandrum, heartily welcome you to witness and be a part of Asia's largest summit for aspiring student innovators and entrepreneurs.",
+  },
+];
+
 export const faqData = [
   {
     question:
@@ -256,7 +274,7 @@ export const faqData = [
     answer:
       "Yes, any interested individual out of college can register with the individual pass.",
   },
-  
+
   {
     question: "What are the perks of registering for the summit?",
     answer:
@@ -271,7 +289,7 @@ export const faqData = [
     question: "Upto when are registrations open?",
     answer: "Registrations are open till Sept 30. Seats filling fast!",
   },
-  
+
   {
     question:
       "Do I need to be registered for the IEDC Summit to attend the pre-summit events?",
@@ -279,9 +297,7 @@ export const faqData = [
       "NO, you do not need to be registered for the IEDC Summit to attend the pre-summit events.",
   },
   {
-    question:
-      "What is the refund policy of the Summit tickets?",
-    answer:
-      "No refunds possible after 5th October 11:59pm",
+    question: "What is the refund policy of the Summit tickets?",
+    answer: "No refunds possible after 5th October 11:59pm",
   },
 ];

@@ -1,5 +1,6 @@
 import React from "react";
 import SponsorCard from "../components/SponsorCard";
+import { sponsorData } from "../data";
 
 const Sponsors = () => {
   return (
@@ -12,8 +13,14 @@ const Sponsors = () => {
       <h1 className="font-bold text-5xl text-[#0597F2] text-center text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#0597F2] to-[#6F04D9] mb-12">
         OUR SPONSORS
       </h1>
-      <SponsorCard odd={true} />
-      <SponsorCard odd={false} />
+      {sponsorData &&
+        sponsorData.map((sponsor, index) => (
+          <SponsorCard
+            data={sponsor}
+            odd={index % 2 == 0}
+            key={index + Math.random() + sponsor.title}
+          />
+        ))}
     </div>
   );
 };
