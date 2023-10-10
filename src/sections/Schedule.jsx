@@ -5,7 +5,6 @@ function Schedule({ scheduleData }) {
   const venues = [
     { title: "Main Stage", value: "mainStage" },
     { title: "DJ Hall", value: "djHall" },
-    { title: "Sargam Stage", value: "sargamStage" },
     { title: "CGPU Hall", value: "cgpuHall" },
     { title: "CETAA Hall", value: "ceataaHall" },
     { title: "EC Seminar Hall", value: "ecSeminarHall" },
@@ -39,13 +38,13 @@ function Schedule({ scheduleData }) {
         </h1>
       </div>
       <div className="flex flex-col md:flex-row ">
-        <div className="hidden text-3xl md:w-1/3 w-full  md:flex md:flex-col">
-          <h1 className="mb-5 text-5xl font-bold">VENUES</h1>
+        <div className="hidden text-2xl font-bold  md:w-1/3 w-full  md:flex md:flex-col">
+          <h1 className="mb-5 text-5xl    font-bold ">VENUES</h1>
           {venues.map((venueItem, index) => (
             <div
               key={index}
               className={`transition-colors cursor-pointer duration-500 ${
-                selectedVenue === venueItem.value ? "" : "text-theme-blue2"
+                selectedVenue === venueItem.value ? "text-blue-700" : "text-gray-400"
               }`}
               onClick={() => setSelectedVenue(venueItem.value)}
             >
