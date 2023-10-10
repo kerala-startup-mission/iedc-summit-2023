@@ -1,7 +1,7 @@
 import { useState } from "react";
 import ScheduleTile from "../components/ScheduleTile";
 
-function Schedule({ scheduleData }) {
+function Schedule({ scheduleData, sectionRef }) {
   const venues = [
     { title: "Main Stage", value: "mainStage" },
     { title: "DJ Hall", value: "djHall" },
@@ -31,7 +31,7 @@ function Schedule({ scheduleData }) {
   );
 
   return (
-    <div className="relative px-6 sm:px-16 md:w-11/12 py-10 sm:py-20 font-darker-grotesque">
+    <div ref={sectionRef} className="relative px-6 sm:px-16 md:w-11/12 py-10 sm:py-20 font-darker-grotesque">
       <div className="w-full space-y-6 text-center self-center">
         <h1 className="inline font-[700] text-[75px] bg-gradient-to-tr from-[#0597F2] to-[#6F04D9] bg-clip-text text-transparent">
           THE SCHEDULE
