@@ -3,11 +3,23 @@ import ScheduleTile from "../components/ScheduleTile";
 
 function Schedule({ scheduleData }) {
   const venues = [
-    { name: "DJ Hall", id: "djHall" },
-    { name: "CETAA Hall", id: "cetaaHall" },
-    { name: "Sargam Stage", id: "sargamStage" },
-    { name: "CGPU", id: "cgpuHall" },
-    { name: "Substage", id: "substage" }
+    { title: "Main Stage", value: "mainStage" },
+    { title: "DJ Hall", value: "djHall" },
+    { title: "Sargam Stage", value: "sargamStage" },
+    { title: "CGPU Hall", value: "cgpuHall" },
+    { title: "CETAA Hall", value: "ceataaHall" },
+    { title: "EC Seminar Hall", value: "ecSeminarHall" },
+    { title: "PG Kuriakose Hall", value: "pgKuriakoseHall" },
+    { title: "Mech Seminar Hall", value: "mechSeminarHall" },
+    { title: "EEE PG Seminar Hall", value: "eeePgSeminarHall" },
+    { title: "Civil Seminar Hall 1", value: "civilSeminarHall1" },
+    { title: "Civil Seminar Hall 2", value: "civilSeminarHall2" },
+    { title: "EC Conference Hall", value: "ecConferenceHall" },
+    { title: "Archie Department", value: "archieDept" },
+    { title: "CS", value: "cs" },
+    { title: "MCA", value: "mca" },
+    { title: "Dhwani Stage", value: "dhwaniStage" },
+    { title: "Other Venues", value: "otherVenues" },
   ];
   const [selectedVenue, setSelectedVenue] = useState("cetaaHall");
 
@@ -29,23 +41,31 @@ function Schedule({ scheduleData }) {
       <div className="flex flex-col md:flex-row ">
         <div className="hidden text-3xl md:w-1/3 w-full  md:flex md:flex-col">
           <h1 className="mb-5 text-5xl font-bold">VENUES</h1>
-          {venues.map((venueItem) => ( 
+          {venues.map((venueItem, index) => (
             <div
-              key={venueItem.id}
+              key={index}
               className={`transition-colors cursor-pointer duration-500 ${
-                selectedVenue === venueItem.id ? "" : "text-theme-blue2"
+                selectedVenue === venueItem.value ? "" : "text-theme-blue2"
               }`}
-              onClick={() => setSelectedVenue(venueItem.id)}
+              onClick={() => setSelectedVenue(venueItem.value)}
             >
-              {venueItem.name}
+              {venueItem.title}
             </div>
           ))}
         </div>
         <div className=" block md:hidden rounded-md text-xl  mx-auto w-1/2">
-          <select className="p-2 text-center text-white w-full rounded-md bg-blue-700" value={selectedVenue} onChange={handleOptionChange}>
-            {venues.map((venue) => (
-              <option className="text-black bg-white" key={venue.id} value={venue.id}>
-                {venue.name}
+          <select
+            className="p-2 text-center text-white w-full rounded-md bg-blue-700"
+            value={selectedVenue}
+            onChange={handleOptionChange}
+          >
+            {venues.map((venue, index) => (
+              <option
+                className="text-black bg-white"
+                key={index}
+                value={venue.value}
+              >
+                {venue.title}
               </option>
             ))}
           </select>
