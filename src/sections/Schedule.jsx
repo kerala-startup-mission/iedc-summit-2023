@@ -21,7 +21,7 @@ function Schedule({ scheduleData }) {
     { title: "Dhwani Stage", value: "dhwaniStage" },
     { title: "Other Venues", value: "otherVenues" },
   ];
-  const [selectedVenue, setSelectedVenue] = useState("cetaaHall");
+  const [selectedVenue, setSelectedVenue] = useState("mainStage");
 
   const handleOptionChange = (event) => {
     setSelectedVenue(event.target.value);
