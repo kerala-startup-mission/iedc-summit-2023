@@ -6,11 +6,31 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
+import { useState,useEffect } from "react";
 
 function Speakers({ sectionRef ,speakersData }) {
   const { ref, inView } = useInView({
     threshold: 0.6,
   });
+  const [slides, setSlidesPerView] = useState(3);
+  useEffect(() => {
+    const handleResize = () => {
+      const screenWidth = window.innerWidth;
+      if (screenWidth <= 600) {
+        setSlidesPerView(1);
+      } else if (screenWidth <= 1200) {
+        setSlidesPerView(2);
+      } else if (screenWidth <= 1550) {
+        setSlidesPerView(3);
+      } else {
+        setSlidesPerView(4);
+      }
+    };
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   // const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   // if (!isMobile) {
   return (
@@ -69,7 +89,7 @@ function Speakers({ sectionRef ,speakersData }) {
         >
           <Swiper
           
-            slidesPerView={1}
+            slidesPerView={slides}
             pagination={{
               clickable: true,
             }}
