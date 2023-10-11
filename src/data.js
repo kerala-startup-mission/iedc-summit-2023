@@ -25,6 +25,9 @@ import volunteers from "./assets/img/calls/volunteers.png";
 import studentProd from "./assets/img/calls/studentProd.png";
 import fleaMarket from "./assets/img/calls/fleaMarket.jpg";
 
+//Sponsor
+import kdisc from "./assets/img/partners/kdisc.jpeg";
+
 export const iedcCircle = [
   {
     value: 14,
@@ -233,19 +236,9 @@ export const TeamMembers = [
 
 export const sponsorData = [
   {
-    img: Alt,
+    img: kdisc,
     title: "K-DISC",
-    desc: "Kerala Startup Mission is organizing the eight edition of the flagship event- IEDC Summit 2023 and,College of Engineering Trivandrum, heartily welcome you to witness and be a part of Asia's largest summit for aspiring student innovators and entrepreneurs.",
-  },
-  {
-    img: Alt,
-    title: "K-DISC",
-    desc: "Kerala Startup Mission is organizing the eight edition of the flagship event- IEDC Summit 2023 and,College of Engineering Trivandrum, heartily welcome you to witness and be a part of Asia's largest summit for aspiring student innovators and entrepreneurs.",
-  },
-  {
-    img: Alt,
-    title: "K-DISC",
-    desc: "Kerala Startup Mission is organizing the eight edition of the flagship event- IEDC Summit 2023 and,College of Engineering Trivandrum, heartily welcome you to witness and be a part of Asia's largest summit for aspiring student innovators and entrepreneurs.",
+    desc: "We proudly present to you our Platinum Sponsor K-DISC, the spearhead of socio-economic changes and innovation of our state. The strategic think-tank advisory body of the Government of Kerala, collaborating with our community, is a dream team for us.",
   },
 ];
 

@@ -17,7 +17,7 @@ const Sponsors = () => {
         sponsorData.map((sponsor, index) => (
           <SponsorCard
             data={sponsor}
-            odd={index % 2 == 0}
+            odd={index % 2 == 1}
             key={index + Math.random() + sponsor.title}
           />
         ))}
