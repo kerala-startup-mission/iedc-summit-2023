@@ -12,7 +12,7 @@ const SponsorCard = ({ odd, data }) => {
         src={data.img}
         className={`${
           odd ? "order-1" : "order-1 sm:order-3"
-        } sm:w-[25%] md:w-[12%] rounded-[10px]`}
+        } sm:w-[25%] md:w-[12%] rounded-[10px] object-contain`}
       />
       <div className="order-1">
         <div

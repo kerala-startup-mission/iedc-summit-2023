@@ -19,6 +19,7 @@ import Schedule from "../sections/Schedule";
 import { getData, urlToImage } from "../../sanityConfig.js";
 import Partners from "../sections/Partners";
 import Sponsors from "../sections/Sponsors";
+import EcologyPartner from "../sections/EcologyPartner";
 
 function mainPage() {
   const [loading, setLoading] = useState(false);
@@ -80,7 +81,7 @@ function mainPage() {
           <About />
           <Directions sectionRef={venueSectionRef} />
           <Partners />
-          <Sponsors />
+          <EcologyPartner />
           <FAQ faqData={faqData} />
           <Footer />
         </>
