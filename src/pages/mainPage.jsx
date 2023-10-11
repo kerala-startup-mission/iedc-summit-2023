@@ -80,9 +80,11 @@ function mainPage() {
           <PrevSummut />
           <About />
           <Directions sectionRef={venueSectionRef} />
-          <Partners />
-          <EcologyPartner />
           <Sponsors />
+          <EcologyPartner />
+          
+          <Partners />
+          
           <FAQ faqData={faqData} />
           <Footer />
         </>
