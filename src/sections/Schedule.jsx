@@ -6,22 +6,18 @@ function Schedule({ scheduleData, sectionRef }) {
   const venues = [
     { title: "Main Stage", value: "mainStage" },
     { title: "DJ Hall", value: "djHall" },
-    { title: "Sargam Stage", value: "sargamStage" },
+    
     { title: "CGPU Hall", value: "cgpuHall" },
     { title: "CETAA Hall", value: "ceataaHall" },
     { title: "EC Seminar Hall", value: "ecSeminarHall" },
     { title: "PG Kuriakose Hall", value: "pgKuriakoseHall" },
     { title: "Mech Seminar Hall", value: "mechSeminarHall" },
-    { title: "EEE Research Block", value: "eeeResearchBlock" },
     { title: "MCA Seminar Hall 3", value: "mcaSeminarHall3" },
     { title: "Civil Seminar Hall 2", value: "civilSeminarHall2" },
     { title: "Archie Department", value: "archieDept" },
-    { title: "Civil Classroom", value: "civilClassroom" },
-    { title: "EC Classroom", value: "ecClassroom" },
     { title: "CS Department", value: "csDepartment" },
     { title: "EC Conference Hall", value: "ecConferenceHall" },
     { title: "EEE PG Seminar Hall", value: "eeePgSeminarHall" },
-    { title: "Civil Seminar Hall 1", value: "civilSeminarHall1" },
     { title: "Other Venues", value: "otherVenues" },
   ];
   const [selectedVenue, setSelectedVenue] = useState("mainStage");
