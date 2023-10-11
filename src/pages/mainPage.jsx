@@ -18,7 +18,8 @@ import Schedule from "../sections/Schedule";
 
 import { getData, urlToImage } from "../../sanityConfig.js";
 import Partners from "../sections/Partners";
-
+import Sponsors from "../sections/Sponsors";
+import EcologyPartner from "../sections/EcologyPartner";
 
 function mainPage() {
   const [loading, setLoading] = useState(false);
@@ -27,12 +28,13 @@ function mainPage() {
   const [events, setEvents] = useState([]);
   const [schedule, setSchedule] = useState([]);
 
-  const fetchData = (query, setData) => { // Increment loading count for each request
+  const fetchData = (query, setData) => {
+    // Increment loading count for each request
     getData(query)
       .then((data) => setData(urlToImage(data)))
-      .catch((error) => console.error("Error:", error))
+      .catch((error) => console.error("Error:", error));
   };
-  
+
   useEffect(() => {
     setLoading(true);
     fetchData('*[_type == "speaker"] | order(order asc)', setSpeakers);
@@ -40,7 +42,6 @@ function mainPage() {
     fetchData('*[_type == "schedule"] | order(order asc)', setSchedule);
     setTimeout(() => setLoading(false), 4000); // Wait for all requests to finish
   }, []);
-  
 
   const homeSectionRef = useRef(null);
   const aboutSectionRef = useRef(null);
@@ -53,11 +54,10 @@ function mainPage() {
     { text: "ABOUT", href: "#about", sectionRef: aboutSectionRef },
     { text: "EVENTS", href: "#events", sectionRef: eventsSectionRef },
     { text: "SPEAKERS", href: "#speakers", sectionRef: speakersSectionRef },
-    { text: "SCHEDULE", href: "#schedule", sectionRef: scheduleSectionRef},
+    { text: "SCHEDULE", href: "#schedule", sectionRef: scheduleSectionRef },
     { text: "VENUE", href: "#venue", sectionRef: venueSectionRef },
-   
   ];
-  
+
   return (
     <div className="flex flex-col justify-center items-center overflow-hidden bg-zinc-50">
       {loading ? (
@@ -81,6 +81,7 @@ function mainPage() {
           <About />
           <Directions sectionRef={venueSectionRef} />
           <Partners />
+          <EcologyPartner />
           <FAQ faqData={faqData} />
           <Footer />
         </>
