@@ -92,9 +92,9 @@ function Schedule({ scheduleData, sectionRef }) {
           </div>
         </div>
       </div>
-      <div className="">
+      {/* <div className="">
         <img src={map} className="rounded-xl lg:rounded-3xl" />
-      </div>
+      </div> */}
     </div>
   );
 }
