@@ -1,6 +1,6 @@
 import { useState } from "react";
 import ScheduleTile from "../components/ScheduleTile";
-import map from "../assets/img/map.png"
+import map from "../assets/img/cet_map.jpg"
 
 function Schedule({ scheduleData, sectionRef }) {
   const venues = [
