@@ -6,7 +6,6 @@ function Schedule({ scheduleData, sectionRef }) {
   const venues = [
     { title: "Main Stage", value: "mainStage" },
     { title: "DJ Hall", value: "djHall" },
-    
     { title: "CGPU Hall", value: "cgpuHall" },
     { title: "CETAA Hall", value: "ceataaHall" },
     { title: "EC Seminar Hall", value: "ecSeminarHall" },
