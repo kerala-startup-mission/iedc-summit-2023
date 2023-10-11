@@ -11,7 +11,7 @@ const EcologyPartner = () => {
   };
 
   return (
-    <div className="relative font-darker-grotesque flex flex-col gap-12 bg-gradient-to-r from-[#0597f266] to-[#6f04d966] py-16 mb-14">
+    <div className="relative font-darker-grotesque flex flex-col gap-12 bg-gradient-to-r from-[#0597f266] to-[#6f04d966] py-16 ">
       <div className="absolute overflow-hidden  opacity-5 text-[#0597F2] lg:top-[-70px] md:top-[-20px] top-0 w-full text-center self-center">
         <h1 className="lg:text-[200px] sm:text-[120px] whitespace-nowrap font-bold">
           ECOLOGY PARTNER
