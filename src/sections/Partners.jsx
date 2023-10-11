@@ -1,3 +1,4 @@
+
 import React from 'react'
 import background from '../assets/img/partners/background.png'
 import iia from "../assets/img/partners/iia.png"
@@ -72,8 +73,11 @@ const Partners = () => {
                 </div>
             ))}
         </div>
-    </div>
-  )
-}
 
-export default Partners
+      </div>
+
+    
+  );
+};
+
+export default Partners;
