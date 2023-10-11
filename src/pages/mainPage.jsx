@@ -46,14 +46,17 @@ function mainPage() {
   const aboutSectionRef = useRef(null);
   const speakersSectionRef = useRef(null);
   const eventsSectionRef = useRef(null);
+  const scheduleSectionRef = useRef(null);
   const venueSectionRef = useRef(null);
   const navbarItems = [
     { text: "HOME", href: "#", sectionRef: homeSectionRef },
     { text: "ABOUT", href: "#about", sectionRef: aboutSectionRef },
-    { text: "SPEAKERS", href: "#speakers", sectionRef: speakersSectionRef },
     { text: "EVENTS", href: "#events", sectionRef: eventsSectionRef },
+    { text: "SPEAKERS", href: "#speakers", sectionRef: speakersSectionRef },
+    { text: "SCHEDULE", href: "#schedule", sectionRef: scheduleSectionRef },
     { text: "VENUE", href: "#venue", sectionRef: venueSectionRef },
   ];
+
   return (
     <div className="flex flex-col justify-center items-center overflow-hidden bg-zinc-50">
       {loading ? (
@@ -71,7 +74,7 @@ function mainPage() {
             sectionRef={eventsSectionRef}
           />
           <Speakers sectionRef={speakersSectionRef} speakersData={speakers} />
-          <Schedule scheduleData={schedule} />
+          <Schedule scheduleData={schedule} sectionRef={scheduleSectionRef} />
           <Calls title="Join Us" eventData={joinUs} eventDescrition="" />
           <PrevSummut />
           <About />

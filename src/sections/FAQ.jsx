@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-
+import upCaret from "../assets/svg/upCaret.png"
+import downCaret from "../assets/svg/downCaret.png"
 function FAQ({ faqData }, { sectionRef }) {
   const [expandedQuestion, setExpandedQuestion] = useState(null);
 
@@ -21,6 +22,7 @@ function FAQ({ faqData }, { sectionRef }) {
         <h1 className="xl:text-[200px] lg:text-[200px] md:text-[150px] sm:text-[150px] text-[0px] whitespace-nowrap font-bold">
           FAQ
         </h1>
+        
       </div>
       <h1 className="md:font-[400] text-[#0597F2] text-center text-[0px] xl:text-[70px] lg:text-[60px] ">
         Frequently Asked Questions
@@ -32,7 +34,7 @@ function FAQ({ faqData }, { sectionRef }) {
         {faqData.map((faq, index) => (
           <div
             key={index}
-            className="p-2 w-full text-white rounded-md shadow-lg border-[2px] border-blue-300 bg-zinc-50"
+            className="p-2 w-full text-white rounded-md shadow-lg   bg-zinc-50"
           >
             <div className="flex justify-between items-center">
               <div className="flex-1">
@@ -46,39 +48,12 @@ function FAQ({ faqData }, { sectionRef }) {
                 </button>
               </div>
               <div>
-                <button className="" onClick={() => handleQuestionClick(index)}>
+                <button  onClick={() => handleQuestionClick(index)}>
                   {expandedQuestion === index ? (
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 26 26"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M5 13.3477H21"
-                        stroke="#0597F1"
-                        strokeWidth="5.14286"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
+                    <img src={upCaret}
+                    className="h-[10px]"></img>
                   ) : (
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 26 26"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M13 3.34766V23.3477M3 13.3477H23"
-                        stroke="#0597F1"
-                        strokeWidth="5.14286"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
+                    <img className="h-[10px]" src={downCaret}></img>
                   )}
                 </button>
               </div>

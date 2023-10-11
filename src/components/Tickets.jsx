@@ -7,6 +7,7 @@ function Ticket(props) {
     {title:'Registrations Closed',value:'closed'},
     {title:'Event Completed',value:'completed'},
     {title:'Forthcoming results',value:'forthcoming'},
+    {title:'Guidelines', value:'guidelines'},
   ];
   const squares = [];
   const { eventName, eventImg, eventDescription, eventLink, eventButton } = props;
@@ -56,7 +57,7 @@ function Ticket(props) {
           </div>
           <div className="h-1/4  items-center  mx-auto">
             <div className="justify-center flex">
-              {buttonTitle === 'Register Now' ? (
+              {buttonTitle === 'Register Now' || buttonTitle ==='Guidelines' ? (
                 <a
                   href={eventLink}
                   target="_blank"

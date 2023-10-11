@@ -72,20 +72,20 @@ function Speakers({ sectionRef ,speakersData }) {
         <h1>The Speakers</h1>
       </div>
       <div className="absolute overflow-hidden opacity-5 text-white xl:top-[-100px] lg:top-[-70px] md:top-[-20px] hidden-xs top-0 w-full space-y-6 text-center self-center">
-        <h1 className="xl:text-[250px] lg:text-[200px] md:text-[150px] sm:text-[120px] whitespace-nowrap font-bold">
+        <h1 className="xl:text-[250px] lg:text-[200px] md:text-[150px] sm:text-[120px] whitespace-nowrap font-bold ">
           The Speakers
         </h1>
       </div>
       <div className="  lg:h-3/4 4/5">
         <div
-          className={` hidden  mb-20 md:mb-40 mt-10 md:grid md:grid-cols-4 flex flex-col items-center gap-20 md:ml-10`}
+          className={` hidden  mb-20 lg:mb-40 mt-10 lg:grid lg:grid-cols-4 flex flex-col items-center gap-20 lg:ml-10`}
         >
           {speakersData.map((speaker, index) => (
             <Speaker speaker={speaker} key={index} />
           ))}
         </div>
         <div
-          className="md:hidden flex"
+          className="lg:hidden flex"
         >
           <Swiper
           
