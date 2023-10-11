@@ -21,7 +21,7 @@ import drone from "../assets/img/partners/drone.png";
 import careStack from "../assets/img/partners/careStack.png";
 import entri from "../assets/img/partners/entri.png";
 import haeal from "../assets/img/partners/haeal.png";
-
+import pronetin from "../assets/img/partners/pronetin.jpg";
 const Partners = () => {
   const partnerLogos = [
     cdac,
@@ -46,6 +46,7 @@ const Partners = () => {
   const ecoPartnersLogos = [urbanTrash];
   const industryPartner = [cdacVega];
   const giftPartner = [haeal];
+  const certificatePartner=[pronetin]
   return (
     <div className="w-full py-10 bg-gradient-to-tr from-[#0597F2] to-[#6F04D9] space-y-4">
       <h1 className="font-medium md:font-[500] text-center text-white font-darker-grotesque text-5xl md:text-[60px]">
@@ -87,6 +88,17 @@ const Partners = () => {
 
       <div className="px-10 flex flex-wrap gap-6 justify-center items-center">
         {giftPartner.map((partner) => (
+          <div className="w-24 md:w-32 mx-3 flex justify-center items-center">
+            <img width={20} className="w-40" src={partner} />
+          </div>
+        ))}
+      </div>
+      <h1 className="font-medium md:font-[500] text-center text-white font-darker-grotesque text-5xl md:text-[60px]">
+        Certificate Partner
+      </h1>
+
+      <div className="px-10 flex flex-wrap gap-6 justify-center items-center">
+        {certificatePartner.map((partner) => (
           <div className="w-24 md:w-32 mx-3 flex justify-center items-center">
             <img width={20} className="w-40" src={partner} />
           </div>
