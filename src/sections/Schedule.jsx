@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ScheduleTile from "../components/ScheduleTile";
+import map from "../assets/img/cet_map.jpg"
 
 function Schedule({ scheduleData, sectionRef }) {
   const venues = [
@@ -82,6 +83,9 @@ function Schedule({ scheduleData, sectionRef }) {
             ))}
           </div>
         </div>
+      </div>
+      <div className="">
+        <img src={map} className="rounded-xl lg:rounded-3xl" />
       </div>
     </div>
   );
