@@ -27,7 +27,7 @@ import fleaMarket from "./assets/img/calls/fleaMarket.jpg";
 
 //Sponsor
 import kdisc from "./assets/img/partners/kdisc.jpeg";
-
+import sigmaGokul from "./assets/img/partners/sigmaGokul.png"
 export const iedcCircle = [
   {
     value: 14,
@@ -240,6 +240,12 @@ export const sponsorData = [
     title: "K-DISC",
     desc: "We proudly present to you our Platinum Sponsor K-DISC, the spearhead of socio-economic changes and innovation of our state. The strategic think-tank advisory body of the Government of Kerala, collaborating with our community, is a dream team for us.",
   },
+  {
+    img: sigmaGokul,
+    title: "M SIGMA GOKULAM",
+    desc: "We proudly present to you our Golden Sponsor M SIGMA GOKULAM, a platform evoking passion and valor within the engineering visionaries preparing for the national level GATE exam. An institute at the pinnacle of engineering, all set to collaborate with our community is indeed a sincere and definite boon to us.",
+  },
+
 ];
 
 export const faqData = [

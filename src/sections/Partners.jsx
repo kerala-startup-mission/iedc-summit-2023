@@ -21,7 +21,11 @@ import drone from "../assets/img/partners/drone.png";
 import careStack from "../assets/img/partners/careStack.png";
 import entri from "../assets/img/partners/entri.png";
 import haeal from "../assets/img/partners/haeal.png";
+import pronetin from "../assets/img/partners/pronetin.png";
+import milma from "../assets/img/partners/milma.svg";
+import royalEnfield from "../assets/img/partners/royalEnfield.png";
 import pronetin from "../assets/img/partners/pronetin.jpg";
+
 const Partners = () => {
   const partnerLogos = [
     cdac,
@@ -41,16 +45,18 @@ const Partners = () => {
     tinkerhub,
     ulearn,
     microsoft,
-    microsoft2,
+    microsoft2,milma,royalEnfield
   ];
   const ecoPartnersLogos = [urbanTrash];
   const industryPartner = [cdacVega];
   const giftPartner = [haeal];
   const certificatePartner=[pronetin]
   return (
-    <div className="w-full py-10 bg-gradient-to-tr from-[#0597F2] to-[#6F04D9] space-y-4">
-      <h1 className="font-medium md:font-[500] text-center text-white font-darker-grotesque text-5xl md:text-[60px]">
-        Community Partners
+    <div className=" w-full py-10 font-darker-grotesque bg-gradient-to-r from-[#0597f266] to-[#6f04d966] space-y-4 mb-14 ">
+      <div className="relative w-full">
+      
+      <h1 className="font-bold text-5xl text-[#0597F2] text-center text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#0597F2] to-[#6F04D9] mb-12">
+      COMMUNITY PARTNERS
       </h1>
 
       <div className="px-10 my-10 flex flex-wrap gap-6 justify-center items-center">
@@ -60,19 +66,10 @@ const Partners = () => {
           </div>
         ))}
       </div>
-      <h1 className="font-medium md:font-[500] text-center text-white font-darker-grotesque text-5xl md:text-[60px]">
-        Ecosystem Partners
-      </h1>
-
-      <div className="px-10 my-10 flex flex-wrap gap-6 justify-center items-center">
-        {ecoPartnersLogos.map((partner) => (
-          <div className="w-24 md:w-32 my-6 mx-3 flex justify-center items-center">
-            <img width={20} className="w-40" src={partner} />
-          </div>
-        ))}
       </div>
-      <h1 className="font-medium md:font-[500] text-center text-white font-darker-grotesque text-5xl md:text-[60px]">
-        Industry Partner
+      
+      <h1 className="font-bold text-5xl text-[#0597F2] text-center text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#0597F2] to-[#6F04D9] mb-12">
+      INDUSTRY PARTNERS
       </h1>
 
       <div className="px-10 my-10 flex flex-wrap gap-6 justify-center items-center">
@@ -82,12 +79,24 @@ const Partners = () => {
           </div>
         ))}
       </div>
-      <h1 className="font-medium md:font-[500] text-center text-white font-darker-grotesque text-5xl md:text-[60px]">
-        Gift Partner
+      
+      <h1 className="font-bold text-5xl text-[#0597F2] text-center text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#0597F2] to-[#6F04D9] mb-12">
+      GIFT PARTNER
       </h1>
 
       <div className="px-10 flex flex-wrap gap-6 justify-center items-center">
         {giftPartner.map((partner) => (
+          <div className="w-24 md:w-32 mx-3 flex justify-center items-center">
+            <img width={20} className="w-40" src={partner} />
+          </div>
+        ))}
+      </div>
+      <h1 className="font-bold text-5xl text-[#0597F2] text-center text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#0597F2] to-[#6F04D9] mb-12">
+      CERTIFICATE PARTNER
+      </h1>
+
+      <div className="px-10 flex flex-wrap gap-6 justify-center items-center">
+        {certificatePartner.map((partner) => (
           <div className="w-24 md:w-32 mx-3 flex justify-center items-center">
             <img width={20} className="w-40" src={partner} />
           </div>
