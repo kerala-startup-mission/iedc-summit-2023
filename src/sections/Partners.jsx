@@ -24,6 +24,7 @@ import haeal from "../assets/img/partners/haeal.png";
 import pronetin from "../assets/img/partners/pronetin.png";
 import milma from "../assets/img/partners/milma.svg";
 import royalEnfield from "../assets/img/partners/royalEnfield.png";
+import pronetin from "../assets/img/partners/pronetin.jpg";
 
 const Partners = () => {
   const partnerLogos = [
@@ -92,6 +93,17 @@ const Partners = () => {
       </div>
       <h1 className="font-bold text-5xl text-[#0597F2] text-center text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#0597F2] to-[#6F04D9] mb-12">
       CERTIFICATE PARTNER
+      </h1>
+
+      <div className="px-10 flex flex-wrap gap-6 justify-center items-center">
+        {certificatePartner.map((partner) => (
+          <div className="w-24 md:w-32 mx-3 flex justify-center items-center">
+            <img width={20} className="w-40" src={partner} />
+          </div>
+        ))}
+      </div>
+      <h1 className="font-medium md:font-[500] text-center text-white font-darker-grotesque text-5xl md:text-[60px]">
+        Certificate Partner
       </h1>
 
       <div className="px-10 flex flex-wrap gap-6 justify-center items-center">
