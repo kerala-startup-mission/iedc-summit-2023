@@ -5,19 +5,22 @@ function Schedule({ scheduleData, sectionRef }) {
   const venues = [
     { title: "Main Stage", value: "mainStage" },
     { title: "DJ Hall", value: "djHall" },
+    { title: "Sargam Stage", value: "sargamStage" },
     { title: "CGPU Hall", value: "cgpuHall" },
     { title: "CETAA Hall", value: "ceataaHall" },
     { title: "EC Seminar Hall", value: "ecSeminarHall" },
     { title: "PG Kuriakose Hall", value: "pgKuriakoseHall" },
     { title: "Mech Seminar Hall", value: "mechSeminarHall" },
+    { title: "EEE Research Block", value: "eeeResearchBlock" },
+    { title: "MCA Seminar Hall 3", value: "mcaSeminarHall3" },
+    { title: "Civil Seminar Hall 2", value: "civilSeminarHall2" },
+    { title: "Archie Department", value: "archieDept" },
+    { title: "Civil Classroom", value: "civilClassroom" },
+    { title: "EC Classroom", value: "ecClassroom" },
+    { title: "CS Department", value: "csDepartment" },
+    { title: "EC Conference Hall", value: "ecConferenceHall" },
     { title: "EEE PG Seminar Hall", value: "eeePgSeminarHall" },
     { title: "Civil Seminar Hall 1", value: "civilSeminarHall1" },
-    { title: "Civil Seminar Hall 2", value: "civilSeminarHall2" },
-    { title: "EC Conference Hall", value: "ecConferenceHall" },
-    { title: "Archie Department", value: "archieDept" },
-    { title: "CS", value: "cs" },
-    { title: "MCA", value: "mca" },
-    { title: "Dhwani Stage", value: "dhwaniStage" },
     { title: "Other Venues", value: "otherVenues" },
   ];
   const [selectedVenue, setSelectedVenue] = useState("mainStage");
@@ -31,7 +34,10 @@ function Schedule({ scheduleData, sectionRef }) {
   );
 
   return (
-    <div ref={sectionRef} className="relative px-6 sm:px-16 md:w-11/12 py-10 sm:py-20 font-darker-grotesque">
+    <div
+      ref={sectionRef}
+      className="relative px-6 sm:px-16 md:w-11/12 py-10 sm:py-20 font-darker-grotesque"
+    >
       <div className="w-full space-y-6 text-center self-center">
         <h1 className="inline font-[700] text-[75px] bg-gradient-to-tr from-[#0597F2] to-[#6F04D9] bg-clip-text text-transparent">
           THE SCHEDULE
@@ -44,7 +50,9 @@ function Schedule({ scheduleData, sectionRef }) {
             <div
               key={index}
               className={`transition-colors cursor-pointer duration-500 ${
-                selectedVenue === venueItem.value ? "text-blue-700" : "text-gray-400"
+                selectedVenue === venueItem.value
+                  ? "text-blue-700"
+                  : "text-gray-400"
               }`}
               onClick={() => setSelectedVenue(venueItem.value)}
             >
