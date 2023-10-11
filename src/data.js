@@ -26,7 +26,7 @@ import studentProd from "./assets/img/calls/studentProd.png";
 import fleaMarket from "./assets/img/calls/fleaMarket.jpg";
 
 //Sponsor
-import kdisc from "./assets/img/partners/kdisc.gif";
+import kdisc from "./assets/img/partners/kdisc.jpeg";
 
 export const iedcCircle = [
   {
