@@ -82,6 +82,7 @@ function mainPage() {
           <Directions sectionRef={venueSectionRef} />
           <Partners />
           <EcologyPartner />
+          <Sponsors />
           <FAQ faqData={faqData} />
           <Footer />
         </>
