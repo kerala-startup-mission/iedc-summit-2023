@@ -3,8 +3,8 @@ import background from '../assets/img/partners/background.png'
 import iia from "../assets/img/partners/iia.png"
 import cdac from '../assets/img/partners/cdac-logo.png'
 import cdacVega from '../assets/img/partners/cdac.png'
-import dapp from '../assets/img/partners/dapp.jpg'
-import gdsc from '../assets/img/partners/gdsc.jpg'
+import dapp from '../assets/img/partners/secureDapp.png'
+import gdsc from '../assets/img/partners/gdsc.png'
 import kagazee from '../assets/img/partners/kagazee.png'
 import pheonix from '../assets/img/partners/pheonixGuild.png'
 import polygon from '../assets/img/partners/polygon.png'
@@ -17,7 +17,7 @@ import ola from "../assets/img/partners/ola.png"
 import microsoft2 from "../assets/img/partners/microsoft2.png"
 import genRobotics from "../assets/img/partners/genRobotics.png"
 import urbanTrash from "../assets/img/partners/urbanTrash.jpg"
-import drone from "../assets/img/partners/drone.jpg"
+import drone from "../assets/img/partners/drone.png"
 const Partners = () => {
     const partnerLogos = [cdac, cdacVega, dapp, gdsc, ola,kagazee,iia, pheonix, polygon,genRobotics,drone, riglabs, tie, tinkerhub, ulearn,microsoft,microsoft2];
     const ecoPartnersLogos=[urbanTrash]
