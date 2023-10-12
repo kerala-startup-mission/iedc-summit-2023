@@ -40,8 +40,8 @@ function LandingPage({ sectionRef }) {
             </h1>
           </div>
         </div>
-        <CountDown />
-        <h1 className="font-bold text-2xl md:text-5xl text-[#0597F2] pb-4">
+{/*         <CountDown />
+ */}        <h1 className="font-bold text-2xl md:text-5xl text-[#0597F2] pb-4">
           OCTOBER 12
         </h1>
         <h1 className="font-semibold text-xl md:text-3xl text-[#676C70] pb-0">
