@@ -34,10 +34,13 @@ function Schedule({ scheduleData, sectionRef }) {
       ref={sectionRef}
       className="relative px-6 sm:px-16 md:w-11/12 py-10 sm:py-20 font-darker-grotesque"
     >
-      <div className="w-full space-y-6 text-center self-center">
+      <div className="mb-5 flex flex-col w-full space-y-6 text-center self-center">
         <h1 className="inline font-[700] text-[75px] bg-gradient-to-tr from-[#0597F2] to-[#6F04D9] bg-clip-text text-transparent">
           THE SCHEDULE
         </h1>
+        <a href="https://drive.google.com/file/d/1pD9Yg3TNPsARKo3FJ8YDPkn7ET2hPZIb/view?usp=sharing" target="_blank" className="inline font-[900] text-2xl bg-gradient-to-tr from-[#0597F2] to-[#6F04D9] bg-clip-text text-transparent">
+          Link to Schedule 🡢
+        </a>
       </div>
       <div className="flex flex-col md:flex-row ">
         <div className="hidden text-2xl font-bold  md:w-1/3 w-full  md:flex md:flex-col">
